@@ -76,13 +76,15 @@ body.layout-demo {
   </style>
 </head>
 
-<body  ng-controller="MainCtrl"> <!--class="layout-demo demo-no-padding"-->
-
+<body  ng-controller="MainCtrl" style="background-color: #E7E7E7;"> 
 <md-toolbar md-theme="indigo" class="app-toolbar md-indigo-theme md-whiteframe-z2" style="position: fixed; top:0;">
       <div class="md-toolbar-tools" tabindex="0">
-        <button class="menu-icon" ng-click="toggleRight()" aria-label="Toggle Menu">
-          <md-icon icon="img/icons/ic_menu_24px.svg"><object class="md-icon" data="img/icons/ic_menu_24px.svg"></object></md-icon>
-        </button>
+        
+
+<md-button class="menu-icon" ng-click="toggleRight()" aria-label="Toggle Menu" style="width: 56px; height: 56px;">
+          <md-icon icon="img/icons/ic_menu_24px.svg"></md-icon>
+        </md-button>
+
        
          Список задач {{oneSelected}}
       
@@ -91,25 +93,10 @@ body.layout-demo {
 
 <div style="background-color: #E7E7E7; padding-top: 80px;"  flex ng-view></div>
 
-<!--  <div layout="horizontal" style="height: 10%;">
-    <div>
-      <md-button ng-click="toggleRight()" class="md-primary">
-            Toggle right
-      </md-button>
-    </div>
-    <div flex>
-    DF
-    </div>
-  </div>
-  <div layout="vertical" style="height: 90%;">
-    <div flex ng-view></div>
-  </div>
--->
-
 <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left">
       <div ng-controller="LeftCtrl" ng-click="close()">
         <md-toolbar md-theme="indigo">
-          <h1 class="md-toolbar-tools">Список дел</h1>
+          <h1 class="md-toolbar-tools">Меню</h1>
         </md-toolbar>
         <md-content class="md-padding">
           <ul>
@@ -119,13 +106,6 @@ body.layout-demo {
         </md-content>
       </div>
   </md-sidenav>
-<!--
-
-<div >
-   
-  </div>
--->
-  
   
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>

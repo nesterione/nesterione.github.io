@@ -23,39 +23,64 @@ angular.module('myApp.view1', ['ngRoute','ngMaterial'])
         notes: " I'll be in your neighborhood doing errands",
         check: false,
         show: false,
-        visible: true // для анимации удаления
+        visible: true, // для анимации удаления
+        btns: false
       },
       {
+      	color: {
+    		red: 125,
+    		green: 225,
+    		blue: 0
+      	},
         what: 'Brunch this weekend?',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands",
         check: false,
         show: false,
-        visible: true
+        visible: true,
+        btns: false
       },
       {
+      	color: {
+    		red: 25,
+    		green: 15,
+    		blue: 50
+      	},
         what: 'Brunch this weekend?',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands",
         check: false,
         show: false,
-        visible: true
+        visible: true,
+        btns: false
       },
       {
+      	color: {
+    		red: 125,
+    		green: 5,
+    		blue: 150
+      	},
         what: 'Brunch this weekend?',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands",
         check: false,
         show: false,
-        visible: true
+        visible: true,
+        btns: false
       },
       {
+      	color: {
+    		red: 25,
+    		green: 5,
+    		blue: 150
+      	},
         what: 'Brunch this weekend?',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands",
         check: false,
         show: false,
-        visible: true
+        visible: true,
+        btns: false
       },
     ]
 
@@ -88,6 +113,29 @@ $scope.deselectAll = function(item) {
 		$scope.oneSelected = false;
 	}
 }
+
+$scope.remove = function(item) {
+	item.visible = false;
+	var idx = $scope.todos.indexOf(item);
+	
+
+
+	setTimeout( function() {
+		$scope.todos.splice(idx,1);
+	 
+		$mdToast.show(
+	      $mdToast.simple()
+	        .content('Запись отправлена в архив')
+	        .position($scope.getToastPosition())
+	        .hideDelay(3000)
+	    );
+
+		
+		$scope.countSelected = 0; 
+
+		} ,1000);
+
+};
 
  $scope.toastPosition = {
     bottom: true,
