@@ -6,8 +6,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
+  <title>TODO list</title>
+  <meta name="description" content="Material design angular demo">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
@@ -15,11 +15,11 @@
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 
   <style type="text/css">
-body.layout-demo {
-  margin: 0;
-  padding: 0;
-  color: white;
-}
+  body.layout-demo {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
 
 .demo-no-padding [layout] > div {
   padding: 10px;
@@ -73,15 +73,22 @@ body.layout-demo {
   border: 1px solid #8e24aa;
   background: #AB47BC;
 }
+
+html { height:100%; }
+body { /*position:fixed; top:0; bottom:0; right:0; left:0; */}
+
   </style>
 </head>
 
-<body  ng-controller="MainCtrl" style="background-color: #E7E7E7;"> 
+<body  ng-controller="MainCtrl" style="height: none; background-color: #E7E7E7;"> 
 <md-toolbar md-theme="indigo" class="app-toolbar md-indigo-theme md-whiteframe-z2" style="position: fixed; top:0;">
       <div class="md-toolbar-tools" tabindex="0">
         
 
 <md-button class="menu-icon" ng-click="toggleRight()" aria-label="Toggle Menu" style="width: 56px; height: 56px;">
+          <md-tooltip >
+             Меню
+          </md-tooltip>
           <md-icon icon="img/icons/ic_menu_24px.svg"></md-icon>
         </md-button>
 
@@ -100,6 +107,7 @@ body.layout-demo {
         </md-toolbar>
         <md-content class="md-padding">
           <ul>
+            <li><a href="#/view1">Главная</a></li>
             <li><a href="#/view1">Список дел</a></li>
             <li><a href="#/view2">Архив</a></li>
           </ul>
@@ -127,9 +135,5 @@ body.layout-demo {
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
-
-<link rel="import" href="bower_components/core-tooltip/core-tooltip.html">
-<link rel="import" href="bower_components/paper-fab/paper-fab.html">
-<link rel="import" href="bower_components/core-icon/core-icon.html">
 </body>
 </html>

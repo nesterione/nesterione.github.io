@@ -10,8 +10,9 @@
         </md-icon>
       </md-button>
 
-      <span flex> Выбранно элементов: {{countSelected}}</span>
-      <md-button ng-click="archiveAll()"  class="md-accent  " style="width:54px; height:54px; border-radius: 50%;" aria-label="В архив">
+      <span  > Выбранно элементов: {{countSelected}}</span> 
+      <div flex> </div>
+      <md-button ng-click="archiveAll()"  class="md-accent" style="width:54px; height:54px; border-radius: 50%;" aria-label="В архив">
         <md-tooltip>
           В архив
         </md-tooltip>
@@ -21,23 +22,22 @@
     </h1>
 </md-toolbar>
  
-  <md-content style="background-color: #E7E7E7; max-width: 800px; margin: 0 auto;"   >
+  <md-content style="background-color: #E7E7E7; max-width: 800px; margin: 0 auto; height: 100%; overflow: hidden; "   >
  
     <md-list  >
       <md-item ng-repeat="item in todos">
         <md-whiteframe   ng-show="item.visible" ng-class="{'md-whiteframe-z2': item.check, check:item.check }" class="sample-show-hide md-whiteframe-z1"  layout layout-align="center center" style="margin: 10px; padding: 0px;">
         <md-item-content style="padding: 5px; margin: 0;" ng-mouseenter="item.btns=true" ng-mouseleave="item.btns=false">
          
-		
-
 		<div class="md-tile-left">
 
                <div style="width:56px; height: 56px; padding:0; margin-right: 10px;" ng-mouseenter="doSomething(item)" ng-mouseleave="doSomethingElse(item)" >
 			  
 			   <div ng-class="{'active-checkbox': (item.show||oneSelected)}" 
-
 			   ng-style="{'background-color':'rgb({{item.color.red}},{{item.color.green}},{{item.color.blue}})'}" class="left-box" > 
-				   <md-checkbox style="margin: 0;  position: relative; top: 15px; left: 19px; "  ng-show="item.show||oneSelected" ng-show="item.show||oneSelected" ng-change="oneCheck(item)" ng-model="item.check"></md-checkbox>
+				   <md-checkbox style="margin: 0;  position: relative; top: 15px; left: 19px; "  ng-show="item.show||oneSelected" ng-show="item.show||oneSelected" ng-change="oneCheck(item)" ng-model="item.check">
+						
+				   </md-checkbox>
 			   </div>
 			</div>
 
@@ -53,6 +53,9 @@
 				<md-button ng-show="item.btns&&(!oneSelected)" style="width:56px; height: 56px;" ng-click="remove(item)">
 							<md-icon icon="img/icons/ic_done_24px.svg">
 		        			</md-icon>
+		        			<md-tooltip >
+				             В архив
+				          </md-tooltip>
 						</md-button>
 		</div>
  

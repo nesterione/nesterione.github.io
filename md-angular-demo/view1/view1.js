@@ -85,7 +85,6 @@ angular.module('myApp.view1', ['ngRoute','ngMaterial'])
     ]
 
 
-
   $scope.alert = '';
     $scope.doSomething = function(item ) {
     	item.show = true;

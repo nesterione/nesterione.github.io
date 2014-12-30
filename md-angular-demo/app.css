@@ -115,4 +115,19 @@ md-whiteframe {
 
   
 
- 
+ md-backdrop {
+  position: fixed !important;
+ }
+
+ md-toast {
+    position: fixed !important;
+
+ }
+
+ md-sidenav {
+  position: fixed !important;
+ }
+
+ md-tooltip {
+  position: fixed !important;
+ }
