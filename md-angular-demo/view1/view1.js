@@ -11,7 +11,7 @@ angular.module('myApp.view1', ['ngRoute','ngMaterial'])
 
 .controller('View1Ctrl', function($scope, $mdDialog, $mdToast, $animate) {
   	
-   $scope.todos = [
+  $scope.todos = [
       {
       	color: {
     		red: 125,
@@ -85,16 +85,13 @@ angular.module('myApp.view1', ['ngRoute','ngMaterial'])
     ]
 
 
-  $scope.alert = '';
-    $scope.doSomething = function(item ) {
-    	item.show = true;
-    	//$scope.isShow= true;
-    };
+$scope.showItem = function(item ) {
+ 	item.show = true;
+};
 
-	$scope.doSomethingElse = function(item ) {
-		item.show = false;
-		//$scope.isShow= false;
-    };
+$scope.hideItem = function(item ) {
+	item.show = false;
+};
 
 $scope.countSelected = 0;
 $scope.oneSelected= false;
@@ -119,20 +116,19 @@ $scope.remove = function(item) {
 	
 
 
-	setTimeout( function() {
-		$scope.todos.splice(idx,1);
+setTimeout( function() {
+	$scope.todos.splice(idx,1);
 	 
-		$mdToast.show(
-	      $mdToast.simple()
-	        .content('Запись отправлена в архив')
-	        .position($scope.getToastPosition())
-	        .hideDelay(3000)
-	    );
+	$mdToast.show(
+    $mdToast.simple()
+      .content('Запись отправлена в архив')
+      .position($scope.getToastPosition())
+      .hideDelay(3000)
+  );
 
 		
-		$scope.countSelected = 0; 
-
-		} ,1000);
+	$scope.countSelected = 0; 
+	} ,1000);
 
 };
 
@@ -247,16 +243,6 @@ var item = {
     }, function() {
        /*  'You cancelled the dialog.';*/
     });
-
-
-   /* $mdDialog.show(
-      $mdDialog.alert()
-        .title('This is an alert title')
-        .content('You can specify some description text in here.')
-        .ariaLabel('Password notification')
-        .ok('Got it!')
-        .targetEvent(ev)
-    );*/
   };
 
 });
@@ -281,4 +267,3 @@ $scope.todo = {};
     $mdDialog.hide(answer);
   };
 }
-
