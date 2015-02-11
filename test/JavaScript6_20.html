@@ -1,0 +1,13 @@
+<form method="GET" action="JavaScript6_19.html">
+	<input type="button" value="get" onclick="getFromURL()">
+	<p id="result"></p>
+</form>
+
+
+<script>
+
+	function getFromURL() {
+		 
+		document.getElementById("result").innerHTML = document.location.search;
+	}
+</script>
