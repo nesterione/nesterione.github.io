@@ -1,0 +1,227 @@
+<style type="text/css">
+
+body {
+	background-color: #998181;
+}
+
+.dark {
+	
+	background-color: black;
+}
+
+.cell {
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+
+.light {
+	
+	background-color: white;
+}
+
+.divider {
+	height: 10px;
+	 
+	background-color: black;
+}
+
+.bord {
+	width: 640px;
+	height: 650px;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+.clear {
+	clear: both;
+}
+
+.figure img {
+	width: 80px;
+	height: 80px;
+}
+
+.figure {
+
+}
+
+.figure:hover {
+	background-color: #AFC7DD;
+}
+
+.figure.selected {
+	background-color: #AFC7DD;
+}
+
+.active-figure {
+
+	position: absolute;
+	border: 2px solid black;
+	width: 128px;
+	text-align: center;
+	background-color: white;
+}
+
+.active-figure img {
+	width: 128px;
+	height: 128px;
+
+}
+
+.wpawn {
+	background: url(img/wpawn.png);
+}
+
+.info {
+	width: 128px;
+	height: 128px;
+}
+
+</style>
+<script src="../libs/jQuery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	var figureClass;
+	
+	$( document ).ready(function() {
+	   $(".figure").click( function(event) {
+	   			
+	   			figureClass = jQuery("img", this).attr("data-type");
+	   			$(".info").addClass(figureClass);
+	   			console.log("body cl")
+	   			$(this).addClass("selected");
+	   			event.stopPropagation();
+	   			 
+	   		}
+	   	);
+
+	   $("body").click( function() {
+	   		$(".info").removeClass(figureClass);
+	   		console.log("body clidk")
+	   		$(".figure.selected").removeClass("selected");
+	   });
+
+	    $(".cell").click( function() {
+
+	    	  var el = $(".figure.selected");
+	    	  el.removeClass("selected");
+	    	  //$(".figure.selected").remove();
+	    	  $(this).append(el);
+	    	//if(figureDOMElement!==undefined)
+	    	//$( "div" ).remove( ".hello" );
+	    	//	this.add(figureDOMElement);
+	    });
+	});
+
+</script>
+
+<body>
+<div class="active-figure">
+	<div class="info"></div>
+<p>Выбрана фигура</p>
+ </div>
+	<div class="bord">
+		<div class="line"> 
+			<div class="cell dark"></div>
+			<div class="cell light">
+				<div class="figure"> 
+					<img data-type="wpawn" src="img/wpawn.png"/>
+				</div>
+			</div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="clear"> </div>
+		</div>
+		<div class="line"> 
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>	
+			<div class="clear"> </div>
+		</div>
+		<div class="line"> 
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="clear"> </div>
+		</div>
+		<div class="line"> 
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light">
+				<div class="figure"> 
+					<img data-type="wpawn" src="img/wpawn.png"/>
+				</div>
+			</div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>	
+			<div class="clear"> </div>
+		</div>
+		<div class="divider"></div>
+		<div class="line"> 
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark">
+				<div class="figure"> 
+					<img data-type="wpawn" src="img/wpawn.png"/>
+				</div>
+			</div>
+			<div class="cell light"></div>
+			<div class="clear"> </div>
+		</div>
+		<div class="line"> 
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>	
+			<div class="clear"> </div>
+		</div>
+		<div class="line"> 
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="clear"> </div>
+		</div>
+		<div class="line"> 
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>
+			<div class="cell light"></div>
+			<div class="cell dark"></div>	
+			<div class="clear"> </div>
+		</div>
+	</div>
+
+</body>
