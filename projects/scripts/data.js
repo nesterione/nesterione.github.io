@@ -11,19 +11,16 @@ data = [
 				hidden: false
 			},
 			{
-				name: "Заголовок2",
-				description: "sdfgdgsdf gdgdgdgd gdgdgd gdg dfgd gfdg",
-				imgurl: "images/ig.png",
+				name: "Мои работы Adobe Flash",
+				description: "Реализованы различные вещи на Adobe Flash: анимация, верстка сайта, элементы управления. ",
+				imgurl: "images/flash.png",
 				links: [
-					{name: "ccskrf",
-					href: "www.google.com"},
-					{name: "sdf",
-					href: "www.google.com"}
-					 
+					{name: "Демонстрация",
+					href: "http://nesterenya.com/demo/flash"}
 				],
-				tags: ["sdf", "dd"],
+				tags: ["Flash", "Animation", "Web","Design"],
 				hidden: false
-			},
+			}/*,
 			{
 				name: "Заголовок3",
 				description: "ffdffdf",
@@ -50,5 +47,5 @@ data = [
 				],
 				tags: ["tags", "sdf", "sdff", "ttt"],
 				hidden: false
-			}
+			}*/
 		]
