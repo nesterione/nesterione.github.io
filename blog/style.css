@@ -1,10 +1,11 @@
 @font-face {
-	font-family: RobotoSlab;
-	src: url(../styles/fonts/RobotoSlab-Light.ttf);
+	font-family: OpenSang;
+	src: url(../styles/fonts/OpenSans-Regular.ttf);
+	
 }
 
 * {
-	font-family: RobotoSlab;
+	font-family: OpenSang;
 	
 }
 
