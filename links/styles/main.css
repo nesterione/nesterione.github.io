@@ -1,0 +1,110 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url(HelveticaNeueCyr-Thin.otf) format("opentype");
+}
+
+body {
+  font-family: HelveticaNeue,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  border:0;
+  /*font-family: arial;*/
+  color: #3c3c3c;
+  font-size: 1.429em;
+  font-weight: 400;
+  line-height: 1.8;
+  background-color: #ececec;
+}
+
+body a {
+  text-decoration: none;
+} 
+
+a:hover{
+  text-decoration: underline;
+}
+
+.wrapper {
+
+  width: 1024px;
+  margin: 0 auto 0 auto;
+}
+
+header h1 {
+	margin: 0;
+}
+
+h3 {
+	margin: 5px;
+}
+
+.headstyle {
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+		.project {
+			/*border: 1px solid #ccc;*/
+			
+			 
+		}
+
+		#tagbox {
+			position: fixed;
+			right: 10px;
+			top: 10px;
+			background-color: #d6d6d6;
+			padding: 2px;
+			border-radius: 10px;
+		}
+		
+		#categorybox {
+			position: fixed;
+			right: 10px;
+			top: 60px;
+			background-color: #d6d6d6;
+			padding: 2px;
+			border-radius: 10px;
+		}
+
+		.m-hide {
+			display: none;
+		}
+
+		.m-show {
+			display: true;
+		}
+
+		.project {
+			overflow: auto;
+			margin: 20px 0 20px 0;
+			background-color: white;
+		}
+		.project .header {
+			background-color: #ddd;
+			padding: 0 20px 0 20px;
+		}
+
+		.project .cont {
+			padding: 1%;
+			width: 98%; 
+		}
+
+		.project .clean {
+			 
+			clean: both;
+		}
+
+		.project h3 {
+			color: #666;
+			font-size: 1.1em;
+			font-weight: 600;
+			line-height: 0.8;
+		}
+
+		.project p {
+			font-size: 0.8em;
+			font-weight: 400;
+			line-height: 1.2;
+		}
