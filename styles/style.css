@@ -100,3 +100,24 @@ footer p {
 	line-height: 400px;
 	vertical-align: center;
 }
+
+#ad {
+	width: 260px;
+	height: 600px;
+	background: gray;
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+@media only screen and (max-width:1200px) {
+	#ad {
+		width: 260px;
+		height: 600px;
+		background: gray;
+		position: absolute;
+		right: 0;
+		top: 50px;
+		display: none;
+	}
+}
