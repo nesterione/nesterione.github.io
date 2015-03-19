@@ -33,35 +33,24 @@ data = [
 				],
 				tags: ["Flash", "Animation", "Web","Design"],
 				hidden: false
-			}
-
-
-			/*,
-			{
-				name: "Заголовок3",
-				description: "ffdffdf",
-				imgurl: "images/ig.png",
-				links: [
-				
-					{name: "ffdssfdf",
-					href: "www.google.com"}
-				],
-				tags: ["dd"],
-				hidden: false
 			},
 			{
-				name: "Заголовок4",
-				description: "fs df sdf sdfsdf sdf s",
-				imgurl: "images/ig.png",
+				name: "Макеты страниц",
+				description: "Различные небольшие шалбоны-наброски верстки страниц",
+				imgurl: "images/htmlcss.png",
 				links: [
-					{name: "ccskrf",
-					href: "www.google.com"},
-					{name: "sdf",
-					href: "www.google.com"},
-					{name: "ytu",
-					href: "www.google.com"}
+					{name: "Макет1",
+					href: "../demo/htmlcss/simple/mockup1.html"},
+					{name: "Макет2",
+					href: "../demo/htmlcss/simple/mockup2.html"},
+					{name: "Брашюра",
+					href: "../demo/htmlcss/simple/demo.html"},
+					{name: "Форма",
+					href: "../demo/htmlcss/simple/form.html"}
 				],
-				tags: ["tags", "sdf", "sdff", "ttt"],
+				tags: ["Html", "Css", "Web","Design", "Верстка"],
 				hidden: false
-			}*/
+			}
+
+			
 		]
