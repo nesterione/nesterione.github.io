@@ -50,6 +50,17 @@ data = [
 				],
 				tags: ["Html", "Css", "Web","Design", "Верстка"],
 				hidden: false
+			},
+			{
+				name: "Action Script 3.0",
+				description: "Различные небольшие проектики",
+				imgurl: "images/as3.png",
+				links: [
+					{name: "Демонстрация",
+					href: "../demo/as3"}
+				],
+				tags: ["Flash", "Action Script", "Web","Design", "AS3"],
+				hidden: false
 			}
 
 			
