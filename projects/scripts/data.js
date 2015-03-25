@@ -5,9 +5,9 @@ data = [
 				imgurl: "images/modeling.png",
 				links: [
 					{name: "Демонстрация",
-					href: "#"},
+					href: "http://modeling.nesterenya.com/cloud-modeling-app/modeling.html"},
 					{name: "Исходный код",
-					href: "#"}
+					href: "https://github.com/nesterione/cloud-modeling"}
 				],
 				tags: ["Java", "JavaEE", "Web","jQuery", "Css","Html", "Bootstrap", "Ajax","JavaScript","Maven", "AngularJS", "WebGL", "ThreeJS", "REST", "RESTful", "Jersy", "МКЭ", "Моделирование", "Численные методы"],
 				hidden: false
@@ -34,6 +34,19 @@ data = [
 					href: "https://github.com/nesterione/FunnySnake"}
 				],
 				tags: ["Android", "LigGDX", "GameDev","Mobile","Game","OpenGL"],
+				hidden: false
+			},
+			{
+				name: "Психологический тест",
+				description: "Личностный опросник Ганса Айзенка (EPI) поможет вам узнать свой темперамент, определить тип темперамента с учетом интроверсии и экстраверсии личности, а так же эмоциональной устойчивости. Диагностика самооценки по Г.Айзенку является, пожалуй, классической методикой для определения темперамента и одной из самых значимых в современной психологии.",
+				imgurl: "images/test.png",
+				links: [
+					{name: "Google Play",
+					href: "https://play.google.com/store/apps/details?id=nesterenya.com.psychologicaltests"},
+					{name: "Проект на github",
+					href: "https://github.com/nesterione/psychological-tests-app-android"}
+				],
+				tags: ["Android", "Mobile"],
 				hidden: false
 			},
 			{
