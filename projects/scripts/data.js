@@ -24,6 +24,19 @@ data = [
 				hidden: false
 			},
 			{
+				name: "Игра змейка",
+				description: "Android приложение. В этой игре Вы управляете змейкой с помощью акселерометра  , т.е. наклоном телефона. Змейка может двигаться по произвольной траектории. Собирайте различные предметы и фрукты, за это Вы получаете очки, ставьте рекорды и пытайтесь их побить!",
+				imgurl: "images/snake.png",
+				links: [
+					{name: "Google Play",
+					href: "https://play.google.com/store/apps/details?id=com.nesterenya.fannysnake.android"},
+					{name: "Проект на github",
+					href: "https://github.com/nesterione/FunnySnake"}
+				],
+				tags: ["Android", "LigGDX", "GameDev","Mobile","Game","OpenGL"],
+				hidden: false
+			},
+			{
 				name: "Мои работы Adobe Flash",
 				description: "Реализованы различные вещи на Adobe Flash: анимация, верстка сайта, элементы управления. ",
 				imgurl: "images/flash.png",
