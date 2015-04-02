@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+
+
+  <div class="wrap"> 
+  	<h1>Пакет Pandas (Для Python) </h1>
+    <a href="ML.html"><< Назад</a>
+  	<h6>Категория: Машинное обучение и анализ данных / Дата создания: 03.04.2015 / Последняя правка: 03.04.2015</h6>
+    
+    <img src="00005/image00.PNG"/>
+    <h2>Вступление</h2>
+    <p>
+      Я относительно недавно занимаюсь машинным обучением и анализом данных, и при решении одной задачи на <a href="www.kaggle.com" target="_blank">www.kaggle.com</a> встретил pandas: библиотеку Python для предназначенную для анализа данных. В данной статье хочу выписать самые основы данного инструмента.
+   </p>
+    <p>
+    Эта публикация не претендует на tutorial, больше как введение для начала работы. Pandas имеет хорошую документацию и постоянно развивается, поэтому проблем с информацией нет.
+    Сразу же размещу ссылку исходный код примеров в данной статьи <a href="https://github.com/nesterione/experiments-of-programming/tree/master/Python/pandas" target="_blank">Исходный код примеров</a>
+    </p>
+   <p>В Pandas есть основные типы данных: Series и DataFrame</p>
+   <p>Series - индексированный одномерный массив значений. Похож на dict.
+DataFrame - индексированный многомерный массив. Каждый столбец DataFrame -> Series.
+</p>
+    <p>
+    Pandas умеет загружать данные с различных источников. Я буду использовать csv файл (это обычный текстовый файл, где данные разделены каким-нибудь символом, как правило запятой). Большинство задач на <a href="www.kaggle.com" target="_blank">www.kaggle.com</a> исходный данные поставляются именно в таком формате. 
+    </p>
+    <p>Для чтения из файла:</p>
+
+    <pre><code class="py">
+import pandas
+
+f1 = pandas.read_csv("f1.csv")
+f2 = pandas.read_csv("f2.csv",";")
+  </code></pre>
+   
+<p>При чтении данных вы получите DataFrame</p>
+<h2>Что можно делать с данными?</h2>
+<p>Я покажу основные операции, которые вы привыкли делать на SQL, которых достаточно для начала работы.</p>
+<p>Можно вставлять столбцы командой insert. Если размерность вставляемого столбца не совпадает, получите ошибку. Первый параметр указывает после какого столбца следует добавить столбец.</p>
+
+<pre><code class="py">
+f2.insert(1, 'hedername', dataset)
+</code></pre> 
+<p>Теперь проверим выборки данных. Нам нужно выбрать записи для которых некоторое поле рано указанному значению. Это подобно SELECT .., WHERE (condition) если вы знакомы с SQL. В pandas это делается так:</p>
+
+<pre><code class="py">
+dset = f2[f2.somecolumn== u'Sometext']
+</code></pre> 
+
+<h4>Добавление строк в набор </h4> 
+<p>Добавлять можно Dict (словари) и Series и DataFrame вот пример</p>
+<pre><code class="py">
+news = pandas.DataFrame([["Name", "444","Gomel"], ["N2","43","Brest"]], columns=["country","shop","name"])
+print(news)
+f3 = f2.append(news)
+print(f3)
+</code></pre> 
+
+<p>обратите внимание что команда append не изменяет текущий DataFrame, а возращает новый, в который будут добавлены строки из другого фрейма.</p>
+
+<h4>Агрегация (Объединение)  данных</h4>
+<p>Эта конструкция очень похожа на JOIN в SQL (и принимает такиеже параметры: left, right, inner)</p>
+
+<pre><code class="py">
+res = f2.merge(f1, 'left', on='shop')
+</code></pre>
+
+<img src="00005/image01.PNG"/>
+
+<p>Сводная таблица (GROUP BY в SQL)
+первый параметр, по которым будет выполняться расчет
+второй, список столбцов итоговой таблицы
+третий, как считать
+последний, каким значением заполнять пустые значения
+</p>
+
+<pre><code class="py">
+res = res.pivot_table(['qty'],['country'], aggfunc='sum', fill_value = 0)
+</code></pre>
+
+<h2>Ресурсы</h2>
+
+<p>Полный код примера на GitHub (там же находятся и исходные файлы примеров)</p>
+<a href="https://github.com/nesterione/experiments-of-programming/tree/master/Python/pandas" target="_blank">Исходный код примеров</a>
+
+<p>использованные источники:</p>
+<a href="http://habrahabr.ru/post/196980/ " target="_blank">http://habrahabr.ru/post/196980/ </a>
+
+<h2>Заключение</h2>
+<p>
+
+Это был небольшой обзор теперь можно приступать непосредственно к решению задач. 
+Я не стал сюда же добавлять еще и решение задачи, что бы не делать этот обзор очень большим, поэтому как только обзор задачи будет готов, 
+я добавлю сюда ссылку. Также при решении задачи, скорее всего понадобятся дополнительные функции pandas,
+которые я буду рассматривать прямо там. Для определенности скажу что я буду решать задачу с <a href="www.kaggle.com" target="_blank"> www.kaggle.com </a> 
+<a href="https://www.kaggle.com/c/titanic-gettingStarted" target="_blank">https://www.kaggle.com/c/titanic-gettingStarted</a> (это задача для новичков, там есть пояснения как решать и хорошо структурированы данные).
+ Суть задачи проста, нужно определить по данным о пассажирах титаника, кто из них погиб. 
+ Эту задачу предлагается решать в Excel, Python или R. Я буду использовать, как вы поняли, python и pandas. 
+</p>
+ </div>
+
+<link rel="stylesheet" href="../../libs/highlight/styles/default.css">
+<script src="../../libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59740475-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</html>
