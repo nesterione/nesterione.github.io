@@ -87,6 +87,17 @@ data = [
 				],
 				tags: ["Flash", "Action Script", "Web","Design", "AS3"],
 				hidden: false
+			},
+			{
+				name: "Joomla",
+				description: "Новостной блог на joomla. Это небольшой проектик, блог, установлены модули: комментарии, оценки, гостевая книга. Опубликовано несколько тестовых статей. Люблю ли я joomla? нет, это скучно, но если нужно могу сделать, что-то полезное.",
+				imgurl: "images/joomla.png",
+				links: [
+					{name: "Демонстрация",
+					href: "http://jblog.16mb.com"}
+				],
+				tags: ["Joomla", "Web","Design", "CMS", "Html", "Css"],
+				hidden: false
 			}
 
 			
