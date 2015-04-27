@@ -14,39 +14,105 @@
 
 </head>
 <body>
-	<header>
-		<div class="panel">
-			<h1> Всем привет! &mdash; Я Нестереня Игорь </h1>
-		</div>
+	<header class="main background-sky">
+		<h1 class="main-title">Добро пожаловать!</h1>
+		<h2 class="main-subtitle">Я Нестереня Игорь</h2>
 	</header>
-	<!--<h6>Вы тоже видите белые кружки между блоками?</h6>-->
-	<!--<h6>Обычный сайт, обычного программиста.</h6>-->
-	<section class="section">
-			<div class="row"> 
-				<a href="http://nesterenya.com/business-card" target="blank"><div class="card">Визитка</div></a>
-				<a href="http://nesterenya.com/projects" target="blank"><div class="card">Проекты</div></a>
-				<a href="https://www.google.com/maps/views/profile/103601681023547359198?hl=ru&gl=us&po=1&pv=2&tab=1&cn=0" target="blank"><div class="card">Сферические панорамы и фотографии</div></a>
+	<article class="content">
+		<div class="intro">
+			<h3 class="text-headline text-uppercase"> Что здесь?</h3>
+			<p class="text-body">Это моя стартовая страница, здесь находятся ссылки на мои основные ресурсы: проекты, визитка, и прочее, все что 
+			будет появляться новое, будет появляться здесь.
+			</p>
+		</div>
+		
+		<div class="grid-fluid">
+		<h3 class="text-headline text-uppercase text-center">Ссылки</h3>
+		
+		<a href="http://nesterenya.com/business-card" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head blue"></div>
+					<h3 class="text-headline card-title">Сайт визитка</h3>
+					<p class="card-body">резюме, и прочая информация</p>
+				</div>
 			</div>
-			<div class="row"> 
-				<a href="http://nesterenya.com/sketch"><div class="card">Наброски</div></a>
-				<div class="card disabled">Полезные ссылки</div>
-				<a href="http://nesterenya.com/blog"><div class="card">Блог</div></a>
+		</a>
+		<a href="http://nesterenya.com/projects" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head red"></div>
+					<h3 class="text-headline card-title">Проекты</h3>
+					<p class="card-body">описание и демонстрация, если это возможно</p>
+				</div>
 			</div>
-			<div class="row"> 
-				<a href="http://nesterenya.com/md-angular-demo/#/home"><div class="card">Демонстрация Angular material design</div></a>
-				<a href="http://modeling.nesterenya.com/cloud-modeling-app/modeling.html"> <div class="card">Демонстрация Cloud modeling</div></a>
-				<a href="moodle"> <div class="card">
-					Генератор тестов moodle
-				</div> </a>
+		</a>
+		<a href="https://www.google.com/maps/views/profile/103601681023547359198?hl=ru&gl=us&po=1&pv=2&tab=1&cn=0" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head green"></div>
+					<h3 class="text-headline card-title">Мои панорамы</h3>
+					<p class="card-body">панорамы на Google maps сделанные мной</p>
+				</div>
 			</div>
-	</section>
-	<footer>
-	<p>Игорь Нестереня © 2015</p>
-	</footer>
-	
- 
-
-	
+		</a>
+		<a href="sketch" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head yellow"></div>
+					<h3 class="text-headline card-title">Наброски</h3>
+					<p class="card-body">разноя мелочь, недоработки и прочее</p>
+				</div>
+			</div>
+		</a>
+		<a href="http://nesterenya.com/blog" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head green"></div>
+					<h3 class="text-headline card-title">Мой блог</h3>
+					<p class="card-body">Да, и у меня есть блог, и иногда что-то добавляется новое</p>
+				</div>
+			</div>
+		</a>
+		<a href="http://nesterenya.com/md-angular-demo/#/home" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head red"></div>
+					<h3 class="text-headline card-title">Демонстрация Angular material design</h3>
+					<p class="card-body">Небольшая демка по Material Angular</p>
+				</div>
+			</div>
+		</a>
+		<a href="http://modeling.nesterenya.com/cloud-modeling-app/modeling.html" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head red"></div>
+					<h3 class="text-headline card-title">Демонстрация Cloud modeling</h3>
+					<p class="card-body">Компьютерное моделирование, webgl и еще много чего</p>
+				</div>
+			</div>
+		</a>
+		<a href="moodle" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head blue"></div>
+					<h3 class="text-headline card-title">Генератор тестов moodle</h3>
+					<p class="card-body">Помогает быстро создавать простые тесты в сисеме moodle</p>
+				</div>
+			</div>
+		</a>
+		<a href="#" target="blank">
+			<div class="c3">
+				<div class="link-card">
+					<div class="card-head green"></div>
+					<h3 class="text-headline card-title">Полезные ссылки</h3>
+					<p class="card-body">Мое хранилище ссылок</p>
+				</div>
+			</div>
+		</a>
+		</div>
+	</article>
+	<footer ><small class="text-caption">Нестереня Игорь ©2015. </small></footer>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
