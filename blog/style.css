@@ -22,3 +22,22 @@
 	code {
 		font-size: 10;
 	}
+
+.cover-image {
+    width: 20%;
+    display: inline-block;
+}
+
+.middle-content {
+    width: 1000px;
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+    padding-left: 70%;
+}
+
+.quote {
+    font-style: italic;
+}

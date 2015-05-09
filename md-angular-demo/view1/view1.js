@@ -99,7 +99,6 @@ $scope.oneSelected= false;
 $scope.deselectAll = function(item) {
 	
 	$scope.todos.forEach( function(element) {
-
 		decheck(element);
 	});
 
