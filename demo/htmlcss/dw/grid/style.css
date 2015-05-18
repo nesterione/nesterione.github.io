@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrap {
+	width:800px;
+	margin:0 auto;
+}
+
+div {
+	border: 3px solid #CCC;
+	background-color:#999;
+}
+
+.header {
+	height:150px;	
+}
+
+.footer {
+	height: 50px;	
+}
+
+.clear {
+	clear: both;
+	border: none;
+}
+
+.content .small-col {
+	float: left;
+	width: 200px;	
+	height: 500px;
+}
+
+.content .wide-col {
+	width: 582px;	
+	height: 500px;
+	float: left;
+}
+
+.content .mid-col {
+	width: 376px;	
+	height: 500px;
+	float: left;
+}
+
+.v-menu {
+	border-color:#999;
+	background-color:#CCC;
+	width: 194px;
+	height:30px;
+}
+
+.h-menu {
+	float:left;
+	border-color:#999;
+	background-color:#CCC;
+	width: 126px;
+	height:24px;
+}
+
+.nav {
+	height: 30px;
+}

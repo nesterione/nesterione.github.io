@@ -1,0 +1,26 @@
+/* задание 1*/
+H1{
+color:#990000; /* цвет шрифта */
+font-size:20px; /* размер шрифта */
+font-family: Verdana, Arial, Helvetica,  Geneva,  sans-serif; /* тип шрифта */
+}
+p {
+color: #666666; /* цвет шрифта */
+font-size:12px; /* размер шрифта */
+line-height: 22px; /* межстрочное расстояние */
+font-family: Verdana, Arial, Helvetica,  Geneva,  sans-serif; /* тип шрифта */
+}
+i{font-weight: bold; }
+img { float:right; }
+
+/* задание 2*/
+.copy  {
+font-size:   12px; 
+line-height:   150%; 
+font-family: Book Antiqua, Times New Roman, Georgia, Times, serif;
+}
+blockquote.copy {
+font-weight: bold; 
+font-size: 14px; 
+line-height: 16px; 
+text-align: center }

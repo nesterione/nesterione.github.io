@@ -1,0 +1,269 @@
+/*
+* Created by Igor Nesterenya
+* september 2014
+* igor.nesterenya@gmail.com
+*/
+header nav {
+	display: none;
+}
+
+header {
+	height: 60px;
+}
+
+header h2 {
+	line-height: 60px;
+}
+
+.container {
+	display: block;
+
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.position {
+	position: relative;
+}
+/*--------------*/
+.main {
+	background-size: auto auto;
+	height: 440px;
+}
+
+.main h1 {
+	padding-top: 130px;
+	font-size: 2.25em; /*86/16*/
+}
+
+.main h2,
+.activities h2 {
+	font-size: 1.5em;/*42*/
+}
+
+.main a {
+	text-transform: lowercase;
+}
+/*-------------*/
+.paragraphs {
+	height: auto;
+}
+.paragraphs .paragraph {
+	padding: 0 0 2% 0;
+	width: 100%;
+}
+
+.paragraph h2 {
+	padding: 4% 0;
+	font-size: 1em;
+}
+/*---------------*/
+.activities {
+	height: auto;	
+}
+
+.activities  .posts-wrap {
+	display: block;
+}
+
+.activities .post {
+	padding: 1%;
+	width: 100%;
+	float: none;
+	display: block;
+}
+/*---------------*/
+footer ul {
+	display: none;
+}
+
+footer ul:last-of-type {
+	display: block;
+}
+
+footer h2 {
+	font-size: 1.5em;
+}
+/*------------ABOUT US----------------*/
+.info {
+	height: 60px;
+}
+
+.info h2 {
+	font-size: 1.5em;/*24*/
+	line-height: 60px;
+}
+
+.main-about p:last-of-type {
+	display: none;
+}
+
+.main-about h2 {
+	padding-top: 20px;
+	font-size: 1.25em;
+}
+
+.about-additions,
+.main-contact {
+	height: auto;
+}
+
+.about-addition h2 {
+	font-size: 1.25em;
+}
+
+.address,
+.submitform,
+.about-additions .about-addition {
+	width: 100%;
+	float: none;
+	padding-left: 0;
+}
+
+/*-----------CONTACT--------------*/
+.main-contact h2,
+.main-service h2,
+.main-blog h2 {
+	font-size: 1.25em;
+	padding: 20px 0 10px 0;
+}
+
+.submitform {
+	padding: 10px 0;
+}
+/*---------------SERVISE----------------*/
+.img-diagram {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.list {
+	width: 100%;
+	float: right;
+	padding-bottom: 10px;
+	background-color: #fff;
+}
+
+.list ul {
+	padding-left: 10%;
+
+}
+/*---------------Blog---------------*/
+.main-blog p:nth-of-type(even) {
+	display: none;
+}
+
+.img-sky {
+	width: 100%;
+}
+/*------------------SIDEBAR-----------------*/
+.container {
+    position: absolute;
+	height: 100%;
+    width: 100%;
+    right: 0;
+    -webkit-transition:  right 0.4s ease-in-out;
+    -moz-transition:  right 0.4s ease-in-out;
+    -ms-transition:  right 0.4s ease-in-out;
+    -o-transition:  right 0.4s ease-in-out;
+    transition:  right 0.4s ease-in-out;
+
+}
+
+.container.open-sidebar {
+    right: 76%;
+}
+
+#sidebar {
+	top: -60px;
+    position: absolute;
+    right: -76%;
+    background: #16a085;
+    width: 76%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+	background-color: #386ae8;
+    margin: 0;
+}
+
+#sidebar ul li a {
+    padding: 10px 10%;
+    font-weight: 100;
+    color: white;
+    display: block;
+    opacity: 0.6;
+	-moz-opacity: 0.6;
+    border-bottom: 1px solid white;
+    -webkit-transition:  background 0.3s ease-in-out;
+    -moz-transition:  background 0.3s ease-in-out;
+    -ms-transition:  background 0.3s ease-in-out;
+    -o-transition:  background 0.3s ease-in-out;
+    transition:  background 0.3s ease-in-out;
+}
+
+
+.image {
+	border-radius: 50%;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+}
+
+#sidebar .current {
+	opacity: 1;
+	-moz-opacity: 1;
+}
+
+#sidebar ul li:hover a {
+    background: #37aef9;
+}
+
+ #sidebar-toggle {
+    background: #37aef9;
+    display: block;
+    position: absolute;
+    padding: 14px 10%;
+    right: 0;
+    top: -60px;
+}
+ #sidebar-toggle .bar{
+    display: block;
+    width: 25px;
+    margin-bottom: 5px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 1px;   
+}
+
+ #sidebar-toggle .bar:last-child{
+     margin-bottom: 5px;   
+}
+#sidebar-toggle .bar:first-child{
+     margin-top: 5px;   
+}
+
+.data {
+	padding: 20px 10px;
+	float: none;
+	font-size: 1.4em;
+}
+
+footer {
+	padding: 0;
+	height: auto;
+}
+

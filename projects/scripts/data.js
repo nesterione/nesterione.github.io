@@ -71,8 +71,14 @@ data = [
 					href: "../demo/htmlcss/simple/mockup2.html"},
 					{name: "Брашюра",
 					href: "../demo/htmlcss/simple/demo.html"},
-					{name: "Форма",
-					href: "../demo/htmlcss/simple/form.html"}
+					{name: "Форма1",
+					href: "../demo/htmlcss/simple/form.html"},
+                    {name: "Форма2",
+					href: "../demo/htmlcss/dw/form/index.html"},
+                    {name: "grid",
+					href: "../demo/htmlcss/dw/grid/modulCSS04.html"},
+                    {name: "simple",
+					href: "../demo/htmlcss/dw/simple/indexCSS.html"}
 				],
 				tags: ["Html", "Css", "Web","Design", "Верстка"],
 				hidden: false
@@ -88,6 +94,19 @@ data = [
 				tags: ["Flash", "Action Script", "Web","Design", "AS3"],
 				hidden: false
 			},
+            {
+				name: "Пример верстки",
+				description: "Как правило Вы даете свое изображение, мы делаем вам HTML страницу, которая выглядит в браузере также как на изображении. Созданный макет Вы с легкостью можете наполнить своей, актуальной информацие и получить сайт в соответствии с Вашими желаниями.",
+				imgurl: "images/view.png",
+				links: [
+					{name: "Демонстрация", href: "../demo/wash/wash.html"},
+                    {name: "Пример 2", href: "../demo/sites/site01/helena01.html"},
+                    {name: "Пример 3", href: "../demo/sites/site01/helena02.html"},
+                    {name: "Пример 4", href: "../demo/sites/site02/Morozof01.html"}
+				],
+				tags: ["Html", "Css", "Web", "Верстка"],
+				hidden: false
+			},
 			{
 				name: "Joomla",
 				description: "Новостной блог на joomla. Это небольшой проектик, блог, установлены модули: комментарии, оценки, гостевая книга. Опубликовано несколько тестовых статей. Люблю ли я joomla? нет, это скучно, но если нужно могу сделать, что-то полезное.",
@@ -98,7 +117,16 @@ data = [
 				],
 				tags: ["Joomla", "Web","Design", "CMS", "Html", "Css"],
 				hidden: false
+			},
+        {
+				name: "Pacman",
+				description: "Классическая игра pacman, но сетевая, написана под windows, linux и на .NET.  Проект написан на C, с использованием OpenGL",
+				imgurl: "images/pacman.png",
+				links: [
+					{name: "GitHub",
+					href: "https://github.com/nesterione/pacman"}
+				],
+				tags: ["C", "Games","Linux", ".Net", "C#", "OpenGL"],
+				hidden: false
 			}
-
-			
 		]
