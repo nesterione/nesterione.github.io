@@ -5,8 +5,8 @@
    
 <div style="width: 700px; float: left;">
    <map class="map" center="53.96, 28.51" zoom="6" styles=' [{"stylers": [{ "visibility": "on" },{ "invert_lightness": true }]}]' > 
-   
-    <marker ng-repeat="beach in beaches" title="{{beach[0]}}" on-click="toggleBounce()" position="{{beach[1]}}" icon={{image}} mid ={{beach[2]}}></marker>
+    
+    <marker ng-repeat="place in places" title="{{place.title}}" on-click="toggleBounce()" position="{{place.position}}" icon={{image}} mid ={{place.id}}></marker>
 <!--     on-mouseover="cli()"-->
 
    </map>
@@ -14,16 +14,16 @@
 <div style="padding-left:700px; width: 300px; ">
     <b>Замки</b>
       <div>
-          <div ng-repeat="beach in beaches" style="cursor: pointer; border: solid 1px black; margin: 5px; padding: 2px;" ng-click="togleMarker(beach[2])"> {{beach[0]}} </div>
+          <div ng-repeat="place in places" style="cursor: pointer; border: solid 1px black; margin: 5px; padding: 2px;" ng-click="togleMarker(place.id)"> {{place.title}} </div>
       </div>
 <br>
       <br>
       <br>
       <br>
-       <button ng-click="en()">select button</button>
+       <button ng-click="getAll()">get all</button>
        <button ng-click="cli()"  >fsdsfsfdf</button >
        count: {{ count }}
-       <div  > {{ map.center  + map.zoom}} </div>
+       <div> {{ map.center  + map.zoom}} </div>
     </p>
     </div>
 </div>

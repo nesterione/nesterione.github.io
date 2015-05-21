@@ -9,7 +9,7 @@ app.config(['$routeProvider', function($routeProvider) {
   });
 }]);
 
-app.controller('View2Ctrl', function($scope) {
+app.controller('View2Ctrl', function($scope, $http) {
     
     $scope.image = {
       url: 'images/markers/castle32.png',        
@@ -17,13 +17,19 @@ app.controller('View2Ctrl', function($scope) {
       origin: [0,0],
       anchor: [0, 32]
     };
+        
+    $scope.places = [];
     
-    $scope.beaches = [
-      ['Мирский замок', "53.451281, 26.473303",1],
-      ['Несвижский замок', "53.222892, 26.691773",2],
-      ['Брестская крепость', "52.083109, 23.658875", 3],
-     ['Гольшанский замок', "54.251562, 26.020300", 4]
-    ];
+    $scope.$on('$viewContentLoaded', function() {
+        $http.get('http://services.nesterenya.com/journey/places/all').
+              success(function(data, status, headers, config) {
+                   $scope.places = data;
+              }).
+              error(function(data, status, headers, config) {
+                    alert("error data load, will be used test data");
+                    $scope.places = [{"id":1,"position":"53.451281, 26.473303","title":"Мирский замок"},{"id":2,"position":"53.222892, 26.691773","title":"Несвижский замок"},{"id":3,"position":"52.083109, 23.658875","title":"Брестская крепость"},{"id":4,"position":"54.251562, 26.020300","title":"Гольшанский замок"},{"id":5,"position":"52.422152, 31.016734","title":"Дворец Румянцевых-Паскевичей"},{"id":6,"position":"53.677282, 23.822971","title":"Старый замок Гродно"}];
+              });
+    });
     
     $scope.count = 0;
      $scope.cli = function () {
@@ -45,22 +51,21 @@ app.controller('View2Ctrl', function($scope) {
 
      }
      
+     $scope.getAll = function() {
+        /* $http.get('http://localhost:8080/api/journey/places/all').
+              success(function(data, status, headers, config) {
+                    alert(data);
+              }).
+              error(function(data, status, headers, config) {
+                    alert("error");
+              });*/
+     }
+     
      $scope.toggleBounce = function() {
-         debugger;
-      if (this.getAnimation() != null) {
-        this.setAnimation(null);
-      } else {
-        this.setAnimation(google.maps.Animation.BOUNCE);
-      }
+          if (this.getAnimation() != null) {
+            this.setAnimation(null);
+          } else {
+            this.setAnimation(google.maps.Animation.BOUNCE);
+          }
     }
 });
-
-
- 
-
-//.controller('parentParentController', function($scope) {
-//    $scope.$on('mapInitialized', function(event, map) {
-//        map.setCenter( .... )
-//      
-//    });
-//  });
