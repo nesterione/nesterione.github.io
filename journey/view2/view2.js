@@ -17,11 +17,19 @@ app.controller('View2Ctrl', function($scope, $http) {
       origin: [0,0],
       anchor: [0, 32]
     };
-        
+    
+//    $scope.beaches = [
+//      ['Мирский замок', "53.451281, 26.473303",1],
+//      ['Несвижский замок', "53.222892, 26.691773",2],
+//      ['Брестская крепость', "52.083109, 23.658875", 3],
+//      ['Гольшанский замок', "54.251562, 26.020300", 4],
+//      ['Дворец Румянцевых-Паскевичей', "52.422152, 31.016734",5]
+//    ];
+    
     $scope.places = [];
     
     $scope.$on('$viewContentLoaded', function() {
-        $http.get('http://services.nesterenya.com/journey/places/all').
+        $http.get('services.nesterenya.com/journey/places/all').
               success(function(data, status, headers, config) {
                    $scope.places = data;
               }).

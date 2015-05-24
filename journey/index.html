@@ -10,27 +10,31 @@
   <meta name="description" content="Туризм в Беларуси">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">   
-<!--  <link rel="shortcut icon" type="image/x-icon" href="favicon.png"> -->
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png"> 
+<!--  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">-->
+<!--  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">-->
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body> 
- <img src="favicon.png" class="left" alt="">
-  <ul class="menu">
+  <div class="toolbox">
+   <ul class="menu">
+   <li class="logo"></li>
     <li><a href="#/view1">О проекте</a></li>
     <li><a href="#/view2">Открыть карту</a></li>
+    <li><a href="#/add-place">Добавить место</a></li>
   </ul>
+  </div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-
+<div class="content-padding">
   <div ng-view></div>
+</div>
+  
 
-  <div>Angular seed app: v<span app-version></span></div>
-
+<footer><small class="text-caption">Нестереня Игорь ©2015. </small></footer>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
@@ -39,6 +43,7 @@
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
+  <script src="add-place/add-place.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
