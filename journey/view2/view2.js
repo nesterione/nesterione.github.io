@@ -29,7 +29,7 @@ app.controller('View2Ctrl', function($scope, $http) {
     $scope.places = [];
     
     $scope.$on('$viewContentLoaded', function() {
-        $http.get('services.nesterenya.com/journey/places/all').
+        $http.get('http://services.nesterenya.com/journey/places/all').
               success(function(data, status, headers, config) {
                    $scope.places = data;
               }).
