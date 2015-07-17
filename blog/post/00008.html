@@ -98,7 +98,7 @@
 	function loadComments() {
 		var xhr = new XMLHttpRequest();
 		// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-		xhr.open('GET', 'http://localhost:8080/api/blog/comments/get/55a6c0b8c9d11d263046182d', false);
+		xhr.open('GET', 'http://services.nesterenya.com/blog/comments/get/55a6c0b8c9d11d263046182d', false);
 		// 3. Отсылаем запрос
 		xhr.send();
 
@@ -121,13 +121,19 @@
       function addComment() {
        var xhr = new XMLHttpRequest();
 		// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-		xhr.open('PUT', 'http://localhost:8080/api/blog/comments/add/55a6c0b8c9d11d263046182d', false);
+		xhr.open('PUT', 'http://services.nesterenya.com/blog/comments/add/55a6c0b8c9d11d263046182d', false);  //http://localhost:8080/api
 		// 3. Отсылаем запрос
 		
         var data = {};
         data.user = document.getElementById('comment-user').value;
         data.text = document.getElementById('comment-text').value;
         
+          // TODO hard core
+          
+          if(data.text.trim()==="") {
+                return;
+          }
+          
         var string = JSON.stringify(data);
         xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
         //xhr.setRequestHeader("Content-length", string.length);
@@ -143,6 +149,21 @@
 		} else {
 		  // вывести результат
            //alert("OK");
+            
+            if(data.text.trim()==="") {
+                return;
+          }
+            
+            if(data.user.trim()==="") {
+                data.user = "аноним";
+             }
+            
+            var user = document.getElementById("comment-user");
+            user.value = "";
+            var text = document.getElementById("comment-text");
+            text.value = "";
+            
+            
              var  com =   getCommentNode (data.user, new Date(), data.text);
              var commentContainer = document.getElementById("comment-container");
              commentContainer.appendChild(com);
