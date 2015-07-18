@@ -3,6 +3,10 @@
   <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="../style.css" />
+	
+	<!-- comments enable-->
+	<link rel="stylesheet" href="../icomments/icomments.css">
+	<script src="../icomments/icomments.js"></script>
   </head>
 
 
@@ -39,20 +43,9 @@
 	<img class="big-image" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0008/001.jpg"/>
 	<img class="big-image" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0008/003.jpg"/>
   <br><br>
-  <input type="hidden" value="55a6c0b8c9d11d263046182d" />
-		<div class="nav">
-            <div id="header">Ваше имя:</div>
-            <input id="comment-user" class="input" type="text" value="" />
-            <br><br>
-            <div>Текст Коментария :</div>
-            <textarea id = "comment-text" class="input"  ></textarea>
-            <br><br>
-            <button class="btn" onclick="addComment()">Добавить комментарий</button>
-        </div>
-	  <div class="comments">
-			   <p>Комментарии:</p>
-			   <div id="comment-container"> </div>
-	  </div>
+  
+  <div id="icomments" data-commentid="55a6c0b8c9d11d263046182d" ></div>
+  
   </div>
 
   <script>
@@ -64,113 +57,5 @@
     ga('create', 'UA-59740475-1', 'auto');
     ga('send', 'pageview');
 
-  </script>
-
-  
-  <script> 
-      document.addEventListener("DOMContentLoaded", function(event) { 
-        loadComments(); 
-});
-	
-    function getCommentNode(user, date, text) {
-         p = document.createElement("p"); 
-        b = document.createElement("b");
-        b.textContent = user; 
-        p.appendChild(b);
-        
-        span = document.createElement("span");
-        var dd = new Date(date);
-        span.textContent = " "+dd.getDate() +"."+dd.getMonth() +"."+dd.getFullYear()+" "+dd.getHours()+":"+dd.getMinutes()+":"+dd.getSeconds() ;
-        p.appendChild(span);
-         div = document.createElement("div");
-         div.textContent = text;
-        
-        
-        divComment = document.createElement("div");
-        divComment.appendChild(p);
-        divComment.appendChild(div);
-        divComment.className += " comment";
-
-        return divComment;
-    }
-      
-      
-	function loadComments() {
-		var xhr = new XMLHttpRequest();
-		// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-		xhr.open('GET', 'http://services.nesterenya.com/blog/comments/get/55a6c0b8c9d11d263046182d', false);
-		// 3. Отсылаем запрос
-		xhr.send();
-
-		// 4. Если код ответа сервера не 200, то это ошибка
-		if (xhr.status != 200) {
-		  // обработать ошибку
-		  alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-		} else {
-		  // вывести результат
-            var data = JSON.parse(xhr.responseText);
-            data.forEach( function(item) {
-               
-                    var  com =     getCommentNode (item.user, item.date, item.text);
-                    var commentContainer = document.getElementById("comment-container");
-                    commentContainer.appendChild(com);
-            }); 
-		}
-	}
-      
-      function addComment() {
-       var xhr = new XMLHttpRequest();
-		// 2. Конфигурируем его: GET-запрос на URL 'phones.json'
-		xhr.open('PUT', 'http://services.nesterenya.com/blog/comments/add/55a6c0b8c9d11d263046182d', false);  //http://localhost:8080/api
-		// 3. Отсылаем запрос
-		
-        var data = {};
-        data.user = document.getElementById('comment-user').value;
-        data.text = document.getElementById('comment-text').value;
-        
-          // TODO hard core
-          
-          if(data.text.trim()==="") {
-                return;
-          }
-          
-        var string = JSON.stringify(data);
-        xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
-        //xhr.setRequestHeader("Content-length", string.length);
-        //xhr.setRequestHeader("Connection", "close");
-        
-        
-        xhr.send(string);
-
-		// 4. Если код ответа сервера не 200, то это ошибка
-		if (xhr.status != 200) {
-		  // обработать ошибку
-		  alert( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
-		} else {
-		  // вывести результат
-           //alert("OK");
-            
-            if(data.text.trim()==="") {
-                return;
-          }
-            
-            if(data.user.trim()==="") {
-                data.user = "аноним";
-             }
-            
-            var user = document.getElementById("comment-user");
-            user.value = "";
-            var text = document.getElementById("comment-text");
-            text.value = "";
-            
-            
-             var  com =   getCommentNode (data.user, new Date(), data.text);
-             var commentContainer = document.getElementById("comment-container");
-             commentContainer.appendChild(com);
-            commentContainer.insertBefore(com, commentContainer.firstChild);
-            
-		}
-      }
-	
   </script>
 </html>
