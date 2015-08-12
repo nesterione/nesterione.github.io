@@ -25,22 +25,23 @@
 	</header>
 	<section class="headstyle">
 		<div class="wrapper ">
-			<h3> Категории </h3>
-			<div id="categories"> 
-
-			</div>
 			
+			<h3> Фильтр по тегу: <input ng-model="query"> {{query}} \\ {{q1}}  {{qq}}</h3>
+			
+			<!--
 			<h3> Теги </h3>
 			<div id="tags"> 
-
 			</div>
+			-->
 			
-			<div class='project' ng-repeat="link in links">
-				<div class='header'><b> {{link.name}} </b></div>
+			<div class='project' ng-repeat="link in links | filter:query">
+				<div class='header'> <a href="{{link.link}}" target="_blank">  <b> {{link.header}} </b> </a> Рейтинг: <b>+{{link.likes}} | -{{link.dislikes}}</b> </div>
 				<div class='cont'>
 					<p>{{link.description}}</p>
-					<p>Категория: {{link.categories}}</p>
-					<p>Теги: {{link.tags}}</p>
+					<!--<p>Категория: {{link.categories}}</p>-->
+					<p>Теги: <span ng-repeat="tag in link.tags"> <a href="#">{{tag}}</a> </span> </p>
+					<p> Разместил ссылку: {{ link.author }} {{link.date|date:'dd.MM.yyyy HH:mm:ss'}} </p>
+				
 				</div>
 				<div class='clean'></div>
 			</div>
