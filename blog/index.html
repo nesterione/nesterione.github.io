@@ -3,24 +3,83 @@
   <head>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<style>
+	/* Start of Column CSS */
+		#container2 {
+			clear:left;
+			float:left;
+			width:100%;
+			overflow:hidden;
+		}
+		
+		#container1 {
+			float:left;
+			width:100%;
+			position:relative;
+			right:60%;
+		}
+		
+		#col1 {
+			float:left;
+			width:36%;
+			position:relative;
+			left:62%;
+			overflow:hidden;
+		}
+		
+		#col2 {
+			float:left;
+			width:46%;
+			position:relative;
+			left:66%;
+			overflow:hidden;
+		}
+		
+	</style>
 	<title>Блог программиста</title>
   </head>
 
   <div class="wrap"> 
   	<h1>Блог</h1>
   	<h6>Мой персональный блог. Если будет кому-то что-то полезное, буду рад</h6>
-  	<h4>Категории</h4>
-  	<lu>
-  		<li><a href="post/AboutAll.html"> Обо всем (4)</a></li>
-  		<li><a href="#">Инструменты (0)</a></li>
-  		<li><a href="#">Алгоритмы (0)</a></li>
-  		<li><a href="post/Java.html">Java (1)</a></li>
-  		<li><a href="post/ML.html">Машинное обучение и анализ данных (2)</a></li>
-		<li><a href="post/FrontEnd.html">Front-End (1)</a></li>
-  		<li><a href="post/OpenGL.html">OpenGL (1)</a></li>
-        <li><a href="post/Books.html">Книги (1)</a></li>
-  	</lu>
+	
+	<div id="container2">
+	<div id="container1">
+		<div id="col1">
+			<h4>Категории</h4>
+			<ul>
+				<li><a href="post/AboutAll.html"> Обо всем (4)</a></li>
+				<li><a href="#">Инструменты (0)</a></li>
+				<li><a href="#">Алгоритмы (0)</a></li>
+				<li><a href="post/Java.html">Java (1)</a></li>
+				<li><a href="post/ML.html">Машинное обучение и анализ данных (2)</a></li>
+				<li><a href="post/FrontEnd.html">Front-End (1)</a></li>
+				<li><a href="post/OpenGL.html">OpenGL (1)</a></li>
+				<li><a href="post/Books.html">Книги (1)</a></li>
+			</ul>
+			<!-- Column one end -->
+		</div>
+		<div id="col2">
+			<h4>Последние публикации</h4>
+			<ul>
+				<li><a href="post/AboutAll.html"> Обо всем (4)</a></li>
+				<li><a href="#">Инструменты (0)</a></li>
+				<li><a href="#">Алгоритмы (0)</a></li>
+				<li><a href="post/Java.html">Java (1)</a></li>
+				<li><a href="post/ML.html">Машинное обучение и анализ данных (2)</a></li>
+				<li><a href="post/FrontEnd.html">Front-End (1)</a></li>
+				<li><a href="post/OpenGL.html">OpenGL (1)</a></li>
+				<li><a href="post/Books.html">Книги (1)</a></li>
+			</ul>
+			<!-- Column two end -->
+		</div>
+	</div>
+	</div>
 
+
+	
+	
+	
   	<footer>Нестереня Игорь. 2015</footer>
   </div>
 
