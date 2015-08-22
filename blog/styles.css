@@ -1,7 +1,42 @@
+
+.demo-ribbon-index {
+  width: 100%;
+  height: 80vh;
+  background-color: #3F51B5;
+  flex-shrink: 0;
+}
+
+.demo-ribbon-cover {
+  width: 100%;
+  height: 60vh;
+  /* background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;*/
+  background-color: #3F51B5;
+  flex-shrink: 0;
+}
+
 .demo-ribbon {
   width: 100%;
   height: 40vh;
+  /* background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;*/
   background-color: #3F51B5;
+  flex-shrink: 0;
+}
+
+.demo-category {
+  margin-top: -55vh;
+  flex-shrink: 0;
+}
+
+.demo-index {
+  margin-top: -80vh;
   flex-shrink: 0;
 }
 

@@ -1,72 +1,90 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<style>
-	/* Start of Column CSS */
-		#container2 {
-			clear:left;
-			float:left;
-			width:100%;
-			overflow:hidden;
-		}
-		
-		#container1 {
-			float:left;
-			width:100%;
-			position:relative;
-			right:60%;
-		}
-		
-		#col1 {
-			float:left;
-			width:36%;
-			position:relative;
-			left:62%;
-			overflow:hidden;
-		}
-		
-		#col2 {
-			float:left;
-			width:46%;
-			position:relative;
-			left:66%;
-			overflow:hidden;
-		}
-		
-	</style>
-	<title>Блог программиста</title>
-  </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Блог программиста</title>
 
-  <div class="wrap"> 
-  	<h1>Блог</h1>
-  	<h6>Мой персональный блог. Если будет кому-то что-то полезное, буду рад</h6>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	
-	<div id="container2">
-	<div id="container1">
-		<div id="col1">
-			<h4>Категории</h4>
-			<ul><li><a href="post/OpenGL.html"> OpenGL (1) </a></li>
-<li><a href="post/AboutAll.html"> Обо всем (3) </a></li>
-<li><a href="post/FrontEnd.html"> Front-End (0) </a></li>
-<li><a href="post/ML.html"> Машинное обучение и анализ данных (0) </a></li>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-red.min.css">
+	<!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+     
+      <div class="demo-ribbon-index"></div>
+      <main class="demo-index mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+			<h2>Блог программиста</h1>
+			<h6>Мой персональный блог. Если будет кому-то что-то полезное, буду рад</h6>
+	
+			<div class="mdl-grid">
+				  <div class="mdl-cell mdl-cell--6-col">
+				  <h4>Категории</h4>
+								<ul><li><a href="post/AboutAll.html"> Обо всем (3) </a></li>
+<li><a href="post/Java.html"> Java (0) </a></li>
+<li><a href="post/OpenGL.html"> OpenGL (1) </a></li>
 <li><a href="post/Books.html"> Книги (0) </a></li>
-<li><a href="post/Java.html"> Java (0) </a></li></ul>
-			<!-- Column one end -->
-		</div>
-		<div id="col2">
-			<h4>Последние публикации</h4>
-			<ul><li><a href="post/00012.html"> Перемены в блоге (22.08.2015) </a></li>
+<li><a href="post/FrontEnd.html"> Front-End (0) </a></li>
+<li><a href="post/ML.html"> Машинное обучение и анализ данных (0) </a></li></ul>
+				  </div>
+				  <div class="mdl-cell mdl-cell--6-col">
+				  <h4>Последние публикации</h4>
+								<ul><li><a href="post/00012.html"> Перемены в блоге (22.08.2015) </a></li>
 <li><a href="post/00003.html"> Использование и установка SDL 2 на windows (27.03.2015) </a></li>
 <li><a href="post/00002.html"> Презентация о ИТ для школьников (13.03.2015) </a></li>
 <li><a href="post/00001.html"> Вместо приветствия (09.03.2015) </a></li></ul>
-			<!-- Column two end -->
+				  </div>
+		  
 		</div>
-	</div>
-	</div>
-  	<footer>Нестереня Игорь. 2015</footer>
-  </div>
+		
+			
+			
+          </div>
+		  
+        </div>
+		
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="http://nesterenya.com">Игорь Нестереня. 2015</a></li>
+              <!--<li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>-->
+            </ul>
+          </div>
+        </footer>
+      </main>
+	  
+    </div>
+	
+	
 	
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -78,4 +96,8 @@
         ga('send', 'pageview');
     </script>
     
+	
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </body>
 </html>
