@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<title>Использование и установка SDL 2 на windows</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="stylesheet" href="../github-markdown.css">
+	<style>
+
+	</style>
   </head>
-  
+
   <div class="wrap"> 
-  	<h1>Использование и установка SDL 2 на windows</h1>
-    <a href="OpenGL.html"><< Назад</a>
-  	<h6>Категория: Обо всем / Дата создания: 27.03.2015 / Последняя правка: 27.03.2015</h6>
-  
-    <h2>Что такое SDL?</h2>
-    <p>
-      Simple DirectMedia Layer (SDL) — это свободная кроссплатформенная мультимедийная библиотека, реализующая единый программный интерфейс к графической подсистеме, звуковым устройствам и средствам ввода для широкого спектра платформ. Данная библиотека активно используется при написании кроссплатформенных мультимедийных программ (в основном игр).
-    </p>
-    <h2>Приступим к установке</h2>
-    <p>SDL кроссплатформенная библиотека. Здесь я кратко поясню как можно установить SDL для разработки приложений на Windows с использованием компилятора MinGW. Почему я выбрал именно MinGW? Поскольку я ориентируюсь на кроссплатформенную разработку, и код написанный на MinGW можно будет без проблем перенести на Linux. </p>
-	<p> <i>Хочу заменить что я описываю установку в марте 2015, и поэтому со временем что-то может поменяться, но скорее всего суть останется прежней.</i></p>
-    <h2>1. Скачайте SDL библиотеки для разработчика</h2>
-   <p>Для начала вам нужно зайти на сайт SDL <a href="https://www.libsdl.org/" target="_blank"> https://www.libsdl.org/</a> и скачать его версия 2.0 для window, обратите внимание что вам нужны  <b> Development Libraries </b>:</p>
-   
-   
-   <img src="00003/image03.PNG"/>
-   <p>Скачивайте и в распакованном архиве выбирайте версию для своей платформы.</p>
-   <img src="00003/image05.PNG"/>
-   
-    <h2>Сделайте так чтобы ваш компилятор их нашел</h2>
-    <p>
-		И тут у вас 2 варианта, либо указать путь компилятору где находятся заголовочные файлы <b>*.h</b> и файлы библиотек <b>*.a</b> (для MinGW), или можете вручную забросить файлы в стандартные папки компилятора.
-	</p>
-	<h4>Вариант 1:</h4>
-	<p> Чтобы указать компилятору где искать include 
-	<pre><code class="bash">-IвашПуть</code></pre>
-        Чтобы указать компилятору где искать libs 
-    <pre><code class="bash">-LвашПуть</code></pre>. 
-Путь лучше брать в кавычки если вы компилируете с командной строки, можете просто дописать эти команды после команды компиляции, в другом случае смотрите как это сделать для вашей среды разработки. </p>
-    <h4>Вариант 2 (разбросать файлы по нужным каталогам):</h4>
-    <p>
-    Открыть папку с установленным MinGW и скопировать библиотеки для вашей платформы: 
-    </p>
-    <img width="100%" src="00003/image01.PNG"/>
-   <p>И это все!</p>
+	<!--<h1>Использование и установка SDL 2 на windows</h1>-->
+	<a href="OpenGL.html"><< Назад</a>
+	<h6>Категория: OpenGL / Дата создания: 27.03.2015/ Последняя правка: 22.08.2015</h6>
     
-    <h2>Компиляция:</h2>
-    <p>Чтобы собрать программу, компилятору нужно указать ссылки на библиотеки  
-    
-    <pre><code class="bash">-lmingw32 -lSDL2main -lSDL2 </code></pre>   
-    
-    <b>(! Их нужно указывать именно в таком порядке, иначе получите ошибки помпиляции)</b>
-    </p>
-    
-    <p>Я использую для небольших программ geany  <a href="http://www.geany.org/" target="_blank">http://www.geany.org/</a>  и команды компиляции выглядят следующим образом: </p>
-    <img width="100%" src="00003/image06.PNG"/>
-    
-    <p>Теперь создайте файл (например test.cpp), и попробуйте скомпилировать следующий код (просто создает окно, которое закрывается через некоторое время):</p>
-    <pre><code class="cpp">
-// Using SDL and standard IO
-#include &lt;SDl2/SDL.h&gt;
-#include &lt;stdio.h&gt;
+	<article class="markdown-body">
+		<!--
+{ "title":"Использование и установка SDL 2 на windows",
+  "category":"OpenGL",
+  "date":"27.03.2015",
+  "change":"22.08.2015",
+  "slug":"00003",
+  "comments":"55aa81c9a4e0b5d90568fc81" }
+-->
+
+<h1>Использование и установка SDL 2 на windows</h1>
+<h3>Что такое SDL?</h3>
+<p>Simple DirectMedia Layer (SDL) — это свободная кроссплатформенная мультимедийная библиотека, реализующая единый программный интерфейс к графической подсистеме, звуковым устройствам и средствам ввода для широкого спектра платформ. Данная библиотека активно используется при написании кроссплатформенных мультимедийных программ (в основном игр).</p>
+<h3>Приступим к установке</h3>
+<p>SDL кроссплатформенная библиотека. Здесь я кратко поясню как можно установить SDL для разработки приложений на Windows с использованием компилятора MinGW. Почему я выбрал именно MinGW? Поскольку я ориентируюсь на кроссплатформенную разработку, и код написанный на MinGW можно будет без проблем перенести на Linux.</p>
+<p><em>Хочу заменить что я описываю установку в марте 2015, и поэтому со временем что-то может поменяться, но скорее всего суть останется прежней.</em></p>
+<h3>1. Скачайте SDL библиотеки для разработчика</h3>
+<p>Для начала вам нужно зайти на сайт SDL <a href="https://www.libsdl.org/">https://www.libsdl.org/</a> и скачать его версия 2.0 для window, обратите внимание что вам нужны  <strong>Development Libraries</strong>:</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image03.PNG" /></p>
+<p>Скачивайте и в распакованном архиве выбирайте версию для своей платформы.</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image05.PNG" /></p>
+<h3>Сделайте так чтобы ваш компилятор их нашел</h3>
+<p>И тут у вас 2 варианта, либо указать путь компилятору где находятся заголовочные файлы <strong> *.h </strong> и файлы библиотек <strong> *.a </strong> (для MinGW), или можете вручную забросить файлы в стандартные папки компилятора.</p>
+<h4>Вариант 1:</h4>
+<p>Чтобы указать компилятору где искать include</p>
+<pre><code class="sh">Чтобы указать компилятору где искать libs
+</code></pre>
+
+<pre><code class="sh">-LвашПуть
+</code></pre>
+
+<p>Путь лучше брать в кавычки если вы компилируете с командной строки, можете просто дописать эти команды после команды компиляции, в другом случае смотрите как это сделать для вашей среды разработки.</p>
+<h4>Вариант 2 (разбросать файлы по нужным каталогам):</h4>
+<p>Открыть папку с установленным MinGW и скопировать библиотеки для вашей платформы:</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image01.PNG" /></p>
+<p>И это все!</p>
+<h3>Компиляция:</h3>
+<p>Чтобы собрать программу, компилятору нужно указать ссылки на библиотеки  </p>
+<pre><code class="bash">-lmingw32 -lSDL2main -lSDL2
+</code></pre>
+
+<p><strong>(! Их нужно указывать именно в таком порядке, иначе получите ошибки помпиляции)</strong></p>
+<p>Я использую для небольших программ geany
+<a href="http://www.geany.org/">http://www.geany.org/</a> и команды компиляции выглядят следующим образом:</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image06.PNG" /></p>
+<p>Теперь создайте файл (например test.cpp), и попробуйте скомпилировать следующий код (просто создает окно, которое закрывается через некоторое время):</p>
+<pre><code class="cpp">// Using SDL and standard IO
+#include &lt;SDl2/SDL.h&gt;;
+#include &lt;stdio.h&gt;;
 
 // Screen dimension constants
 const int SCREEN_WIDTH = 640;
@@ -71,23 +78,23 @@ int main(int argc, char* argv[]) {
     SDL_Surface* screenSurface = NULL;
 
     // Initialize SDL
-    if( SDL_Init( SDL_INIT_VIDEO) &lt; 0 ) {
-        printf( "SDL could not initialize! SDL_GetError: %s\n", SDL_GetError() );
-    } 
+    if( SDL_Init( SDL_INIT_VIDEO) &amp;lt; 0 ) {
+        printf( &quot;SDL could not initialize! SDL_GetError: %s\n&quot;, SDL_GetError() );
+    }
     else {
         // Create window
- 
-        window = SDL_CreateWindow("My SDL Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
+
+        window = SDL_CreateWindow(&quot;My SDL Window&quot;, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
              SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
         if( window == NULL ) {
-            printf( "Window could not be created! SDL_GetError: %s\n", SDL_GetError() );
+            printf( &quot;Window could not be created! SDL_GetError: %s\n&quot;, SDL_GetError() );
         }
         else {
             // Get window surface
             screenSurface = SDL_GetWindowSurface( window );
 
             // Fill the surface white
-            SDL_FillRect( screenSurface, NULL, SDL_MapRGB( screenSurface->format, 0xFF, 0xFF, 0xFF));
+            SDL_FillRect( screenSurface, NULL, SDL_MapRGB( screenSurface-&gt;format, 0xFF, 0xFF, 0xFF));
 
             // Update the surface
             SDL_UpdateWindowSurface( window );
@@ -105,44 +112,46 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-  </code></pre>
-   
-  <p>При запуске у вас будет пустое окно:</p> 
-  <img src="00003/image02.PNG"/>
-  
-  <p>Теперь вы можете, например, подключить OpenGL и сделать свою игру! Не забывайте, чтобы ваша программа запускалась на других компьютерах нужно копировать 
-  вместе с *.exe файлом, еще и файл SDL2.dll (Можно скачать с сайта или взять из архива который вы скачали). Ложить его нужно вместе с exe файлом</p>
-    
-  <h2>Проблемы при компиляции?</h2>
-  <p>В зависимости от версии SDL у вас может возникнуть следующая проблема:</p>
-  <img src="00003/image00.PNG"/>
-  <p>Описание проблемы есть на stackoverflow</p>
-  <a href="http://stackoverflow.com/questions/22446008/winapifamily-h-no-such-file-or-directory-when-compiling-sdl-in-codeblocks" target="_blank">Вопрос на stakoverflow</a>
-  <p>Это ошибка в заголовочном файле SDL. Вы можете скачать обновленный файл <a href="https://hg.libsdl.org/SDL/raw-file/e217ed463f25/include/SDL_platform.h">(Скачать)</a></p>
-  <p>и заменить его в папке, куда вы скопировали библиотеки, в моем случае:</p>
-  <img src="00003/image04.PNG"/>
-  <p>Теперь компиляция должна пройти успешно (если нет, посмотрите или правильные версии библиотек вы скопировали)</p>
-  
-  <div id="icomments" data-commentid="55aa81c9a4e0b5d90568fc81" ></div>
+</code></pre>
+
+<p>При запуске у вас будет пустое окно:</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image02.PNG" /></p>
+<p>Теперь вы можете, например, подключить OpenGL и сделать свою игру! Не забывайте, чтобы ваша программа запускалась на других компьютерах нужно копировать вместе с *.exe файлом, еще и файл SDL2.dll (Можно скачать с сайта или взять из архива который вы скачали). Ложить его нужно вместе с exe файлом</p>
+<h2>Проблемы при компиляции?</h2>
+<p>В зависимости от версии SDL у вас может возникнуть следующая проблема:</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image00.PNG" /></p>
+<p>Описание проблемы есть на stackoverflow
+<a href="http://stackoverflow.com/questions/22446008/winapifamily-h-no-such-file-or-directory-when-compiling-sdl-in-codeblocks">Вопрос на stakoverflow</a></p>
+<p>Это ошибка в заголовочном файле SDL. Вы можете скачать обновленный файл <a href="https://hg.libsdl.org/SDL/raw-file/e217ed463f25/include/SDL_platform.h">(скачать)</a></p>
+<p>и заменить его в папке, куда вы скопировали библиотеки, в моем случае:</p>
+<p><img alt="Library" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0003/image04.PNG" /></p>
+<p>Теперь компиляция должна пройти успешно (если нет, посмотрите или правильные версии библиотек вы скопировали)</p>
+	</article>
+	
+	<div id="icomments" data-commentid="55aa81c9a4e0b5d90568fc81"></div>
   </div>
 
     <!-- comments enable-->
 	<link rel="stylesheet" href="../icomments/icomments.css">
 	<script src="../icomments/icomments.js"></script>
- 
-<link rel="stylesheet" href="../../libs/highlight/styles/default.css">
-<script src="../../libs/highlight/highlight.pack.js"></script>
+	
+	
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-59740475-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
 </html>

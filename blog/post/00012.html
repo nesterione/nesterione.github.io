@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Перемены в блоге</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="stylesheet" href="../github-markdown.css">
+	<style>
+
+	</style>
+  </head>
+
+  <div class="wrap"> 
+	<!--<h1>Перемены в блоге</h1>-->
+	<a href="AboutAll.html"><< Назад</a>
+	<h6>Категория: Обо всем / Дата создания: 22.08.2015/ Последняя правка: 22.08.2015</h6>
+    
+	<article class="markdown-body">
+		<!--
+{ "title":"Перемены в блоге",
+  "category":"AboutAll",
+  "date":"22.08.2015",
+  "change":"22.08.2015",
+  "slug":"00012",
+  "comments":"55d7a6bb328aebc762b464db" }
+-->
+
+<h1>Перемены в блоге</h1>
+<p>Ну вот, случилось, я решил добавить некоторые нововедения. Писать обычные HTML странички и прописывать вручную ссылки не путь программиста.</p>
+<h3>Почему не Wordpress:</h3>
+<p>Если вы ищете решение для себя, то лучше воспользоваться стандартным решением, которое проверено временем. Я тоже задумался: скачать Wordpress, тему, запустить на бесплатном хостинге и все готово. Но нет, не хочу, много лишнего. Мне нужен максимально простой блог, где я полностью могу контралировать, как отображаются и как храняться посты. Так что Wordpress использовать не захотел.</p>
+<h3>Почему не Ghost:</h3>
+<p>Тоже довольно хорошее, новое решение для блогов, написанное на node.js, выглядит весьма привлекательно, все хранится в простой БД, текст набирается в markdown, удобный редактор. Но опять же, если придется настраивать все так, как я хочу - придется много чего настраивать. От решения тоже решил отказаться.</p>
+<h3>Tumblr и Quora</h3>
+<p>А может вообще перейти на, что-то социальное и удобное в использовании, например Tumblr или Quora? Решение тоже не плохое, особенно если вы собираетесь вести обычный, классический текстовы блог. Но это еще одни социальные сервисы, со своими заморочками. Хоть в том же Tumblr можно настроить блог как угодно, начиная от оформления и заканчивая подключенными плагинами, решение мне не понравилось.</p>
+<h3>Написать свойю систему</h3>
+<p>Думал. Велосипед? да. Но ничего сложного. У меня есть свой REST сервис, куда я обычно добавляю контроллеры для разный небольших задач. Можно добавить и сохранение и отображение постов. Хранить их в mongodb в виде markdown. На клиенте использовать AngularJS. Да ничего сложного, но все же, есть недостатки. Например используя Angular нужно дополнительно конфигурировать все, чтобы поисковики индексировали контент. Все это решаемо, но для себя мало ногов, и заниматься этим долго не хочется.</p>
+<h3>Статические генераторы (jekyll)</h3>
+<p>Хорошее решение, для простого блога отлично подходит. Но использовать его не захотел. Вопрос почему? Ну просто не захотелось.</p>
+<h3>Решение</h3>
+<p>В конце концов пришел к следующему. Написал простой генератор контента на python. Не будут тут расписывать подробно, но основная идея следующая: есть каталог с markdown документами, в каждом документе вверху в комментарии содержится информация о разделе и тегах. Еще есть шаблоны для статьи, и шаблоны для самого блога. Все это обрабатывается скриптом, md документы преобразуются в html. Недостатки решения? Ну основной недостаток в том, что необходимости в этом нету, и правильнее использовать готовое решение.</p>
+<h3>Плюсы</h3>
+<p>Положительные стороны всего этого: я могу полностью контралировать всё. Можно легко вставлять изображения</p>
+<p><img alt="Image of Yaktocat" src="https://octodex.github.com/images/yaktocat.png" />
+задавать их размер
+<img src="https://octodex.github.com/images/yaktocat.png" width="100"></p>
+<p>Также хочу вставлять формулы, и чтобы не в виде картинок сохранять, для этого <a href="https://www.mathjax.org/">mathjax</a> отлично подходит:
+пишу это</p>
+<pre><code>$$
+\frac{1}{\sigma\sqrt{2\pi}}
+   \color{green}e\left(-\frac{(x-\mu)^2}{2\sigma^2}\right).
+$$
+</code></pre>
+
+<p>получаю формулу:</p>
+<p>$$
+\frac{1}{\sigma\sqrt{2\pi}}
+   \color{green}e\left(-\frac{(x-\mu)^2}{2\sigma^2}\right).
+$$</p>
+<p>ну и естественно листинги программ. <a href="https://highlightjs.org/">highlightjs</a> отлично справляется.</p>
+<pre><code class="java">
+public class Main {
+
+  public static void main(String[] args) {
+    System.out.println(&quot;Hello world&quot;);
+  }
+
+}
+
+</code></pre>
+
+<h3>Что использовано:</h3>
+<ul>
+<li>Python 3.4</li>
+<li>markdown</li>
+<li>highlightjs</li>
+<li>mathjax</li>
+</ul>
+<p>ps. Этот пост первый, который был сгенерирован автоматически.</p>
+	</article>
+	
+	<div id="icomments" data-commentid="55d7a6bb328aebc762b464db"></div>
+  </div>
+
+    <!-- comments enable-->
+	<link rel="stylesheet" href="../icomments/icomments.css">
+	<script src="../icomments/icomments.js"></script>
+	
+	
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</html>
