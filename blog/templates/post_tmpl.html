@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>{{title}}</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="stylesheet" href="../github-markdown.css">
+	<style>
+
+	</style>
+  </head>
+
+  <div class="wrap"> 
+	<!--<h1>{{title}}</h1>-->
+	<a href="{{backlink}}"><< Назад</a>
+	<h6>Категория: {{category}} / Дата создания: {{date}}/ Последняя правка: {{change}}</h6>
+    
+	<article class="markdown-body">
+		{{article}}
+	</article>
+	
+	<div id="icomments" data-commentid="{{comments}}"></div>
+  </div>
+
+    <!-- comments enable-->
+	<link rel="stylesheet" href="../icomments/icomments.css">
+	<script src="../icomments/icomments.js"></script>
+	
+	{{include}}
+</html>
