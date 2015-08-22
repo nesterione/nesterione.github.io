@@ -2,93 +2,103 @@
 import codecs
 import markdown
 import json
+import os
+import re
+from datetime import datetime
+
+ANALYTICS = '''
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    '''
+
+class Category:
+    def __init__(self, template, title, name, description):
+        super(Category, self).__init__()
+        self.template = template
+        self.title = title
+        self.description = description
+        self.name = name
+        self.posts = []
+
+
+    def getpage(self):
+        t = self.template
+        t = t.replace("{{title}}", self.title)
+        t = t.replace("{{description}}", self.description)
+        t = t.replace("{{content}}", "content")
+        t = t.replace("{{include}}", ANALYTICS)
+        return t
+
+
+    def add_post(self, post):
+        self.posts+=[post]
+
+
+class Post:
+    def __init__(self, title, date, change, slug, comments, article):
+        super(Post, self).__init__()
+        self.title = title
+        self.date = date
+        self.change = change
+        self.slug = slug
+        self.comments = comments
+        self.article = article
+
+
+categories = {}
+
 
 with open('config.json', encoding='utf-8') as config_file:
     config = json.loads(config_file.read())
 
-print(config['categories'])
 
-r = codecs.open("source/00012.md", "r", "utf-8")
-data=r.read()
-r.close()
-
-data = markdown.markdown(data, extensions=["markdown.extensions.fenced_code"])
-
-i1 = ''' 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
-'''
-i2 = '''
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  config: ["MMLorHTML.js"],
-  jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"],
-  extensions: ["MathMenu.js", "MathZoom.js"]
-});
-</script>
-
-'''
-
-i3 = '''
-<script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-'''
-
-i4 = '''
-<link rel="stylesheet" href="github-markdown.css">
-'''
-
-head = '''
-
-<!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-		<title>GitHub Markdown CSS demo</title>
-		<link rel="stylesheet" href="github-markdown.css">
-		<style>
-			body {
-				min-width: 200px;
-				max-width: 790px;
-				margin: 0 auto;
-				padding: 30px;
-			}
-		</style>
-    '''
-    
-head2 = '''    
-	</head>
-	<body>
-		<article class="markdown-body">'''
-
-end = '''
-		</article>
-	</body>
-</html>
-
-'''
-
-heig = '''
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-'''
-
-f = codecs.open('render/00012.html','w',"utf-8")
-
-f.write(head)
-f.write(i4)
-f.write(i3)
-f.write(heig)
-f.write(head2)
-f.write(data)
-f.write(end)
+category_tmpl = codecs.open("templates/category_tmpl.html", "r", "utf-8").read()
 
 
-#f.write(i4)
-#f.write(data)
-#f.write(i1)
-#f.write(i2)
-#f.write(i3)
-f.close()
+for c in config['categories']:
+    category = Category(category_tmpl, c['title'], c['name'], c['discription'])
+    categories[c['name']]=category
+
+
+# m = re.search('(?<=abc)def', 'abcdef')
+# >>> m.group(0)
+
+def load_config_page(text):
+    m = re.search('<!--([^-]*)-->', text)
+    cnftext = m.group(0).replace("<!--","").replace("-->","")
+    return json.loads(cnftext)
+
+recently = []
+
+
+for root, dirs, files in os.walk("source", topdown=False):
+    for name in files:
+        text = codecs.open( os.path.join(root, name), "r", "utf-8").read()
+        cnf = load_config_page(text)
+        dateformat = '%d.%m.%Y'
+        _title = cnf['title']
+        _category = cnf['category']
+        _slug = cnf['slug']
+        _comments = cnf['comments']
+        _date = datetime.strptime(cnf['date'], dateformat )
+        _change = datetime.strptime(cnf['change'], dateformat)
+        
+        post = Post(_title,_date,_change, _slug, _comments, text)
+        recently+=[post]
+        categories[_category].add_post(post)
+
+        
+
+for k, c in categories.items():
+    filename = 'render/'+ c.name + '.html'
+    f = codecs.open(filename,'w',"utf-8")
+    page = c.getpage()
+    f.write(page)
+    f.close()
