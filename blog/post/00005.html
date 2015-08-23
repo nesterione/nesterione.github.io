@@ -1,125 +1,175 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="../style.css" />
-  </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пакет Pandas (Для Python)</title>
 
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-  <div class="wrap"> 
-  	<h1>Пакет Pandas (Для Python) </h1>
-    <a href="ML.html"><< Назад</a>
-  	<h6>Категория: Машинное обучение и анализ данных / Дата создания: 03.04.2015 / Последняя правка: 03.04.2015</h6>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-red.min.css">
+	<!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../github-markdown.css">
     
-    <img src="00005/image00.png"/>
-    <h2>Вступление</h2>
-    <p>
-      Я относительно недавно занимаюсь машинным обучением и анализом данных, и при решении одной задачи на <a href="www.kaggle.com" target="_blank">www.kaggle.com</a> встретил pandas: библиотеку Python для предназначенную для анализа данных. В данной статье хочу выписать самые основы данного инструмента.
-   </p>
-    <p>
-    Эта публикация не претендует на tutorial, больше как введение для начала работы. Pandas имеет хорошую документацию и постоянно развивается, поэтому проблем с информацией нет.
-    Сразу же размещу ссылку исходный код примеров в данной статьи <a href="https://github.com/nesterione/experiments-of-programming/tree/master/Python/pandas" target="_blank">Исходный код примеров</a>
-    </p>
-   <p>В Pandas есть основные типы данных: Series и DataFrame</p>
-   <p>Series - индексированный одномерный массив значений. Похож на dict.
-DataFrame - индексированный многомерный массив. Каждый столбец DataFrame -> Series.
-</p>
-    <p>
-    Pandas умеет загружать данные с различных источников. Я буду использовать csv файл (это обычный текстовый файл, где данные разделены каким-нибудь символом, как правило запятой). Большинство задач на <a href="www.kaggle.com" target="_blank">www.kaggle.com</a> исходный данные поставляются именно в таком формате. 
-    </p>
-    <p>Для чтения из файла:</p>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+		
+		<div class="demo-back">
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="ML.html" title="go back" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5096679918781px; height: 92.5096679918781px; transform: translate(-50%, -50%) translate(13px, 20px);"></span></span></a>
+        </div>
+				
+          <span class="mdl-layout-title">Машинное обучение и анализ данных</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              <a href="..">Главная </a> &gt; <a href="ML.html">Машинное обучение и анализ данных</a> &gt; Пакет Pandas (Для Python)
+            </div>
+			<div class="demo-crumbs mdl-color-text--grey-500">
+              Дата создания: 03.04.2015/ Последняя правка: 23.08.2015
+            </div>
+			<br>
+			<article class="markdown-body">
+				<!--
+{ "title":"Пакет Pandas (Для Python)",
+  "category":"ML",
+  "date":"03.04.2015",
+  "change":"23.08.2015",
+  "slug":"00005",
+  "comments":"55aa825aa4e0b5d90568fc83" }
+-->
 
-    <pre><code class="py">
-import pandas
+<h2>Пакет Pandas (Для Python)</h2>
+<p><img alt="Cover" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0005/image00.PNG" /></p>
+<h3>Вступление</h3>
+<p>Я относительно недавно занимаюсь машинным обучением и анализом данных, и при решении одной задачи на <a href="www.kaggle.com">www.kaggle.com</a> встретил pandas: библиотеку Python для предназначенную для анализа данных. В данной статье хочу выписать самые основы данного инструмента.</p>
+<p>Эта публикация не претендует на tutorial, больше как введение для начала работы. Pandas имеет хорошую документацию и постоянно развивается, поэтому проблем с информацией нет. Сразу же размещу ссылку исходный код примеров в данной статьи: <a href="https://github.com/nesterione/experiments-of-programming/tree/master/Python/pandas">Исходный код примеров</a></p>
+<p>В Pandas есть основные типы данных: <strong>Series</strong> и <strong>DataFrame</strong></p>
+<p>Series - индексированный одномерный массив значений. Похож на <strong>dict</strong>. <strong>DataFrame</strong> - индексированный многомерный массив. Каждый столбец <strong>DataFrame -&gt; Series</strong>.</p>
+<p>Pandas умеет загружать данные с различных источников. Я буду использовать <strong>csv</strong> файл (это обычный текстовый файл, где данные разделены каким-нибудь символом, как правило запятой). Большинство задач на <a href="www.kaggle.com">www.kaggle.com</a> исходный данные поставляются именно в таком формате.</p>
+<p>Для чтения из файла:</p>
+<pre><code class="python">import pandas
 
-f1 = pandas.read_csv("f1.csv")
-f2 = pandas.read_csv("f2.csv",";")
-  </code></pre>
-   
-<p>При чтении данных вы получите DataFrame</p>
-<h2>Что можно делать с данными?</h2>
+f1 = pandas.read_csv(&quot;f1.csv&quot;)
+f2 = pandas.read_csv(&quot;f2.csv&quot;,&quot;;&quot;)
+</code></pre>
+
+<p>При чтении данных вы получите <strong>DataFrame</strong></p>
+<h3>Что можно делать с данными?</h3>
 <p>Я покажу основные операции, которые вы привыкли делать на SQL, которых достаточно для начала работы.</p>
-<p>Можно вставлять столбцы командой insert. Если размерность вставляемого столбца не совпадает, получите ошибку. Первый параметр указывает после какого столбца следует добавить столбец.</p>
+<p>Можно вставлять столбцы командой <strong>insert</strong>. Если размерность вставляемого столбца не совпадает, получите ошибку. Первый параметр указывает после какого столбца следует добавить столбец.</p>
+<pre><code class="python">f2.insert(1, 'hedername', dataset)
+</code></pre>
 
-<pre><code class="py">
-f2.insert(1, 'hedername', dataset)
-</code></pre> 
-<p>Теперь проверим выборки данных. Нам нужно выбрать записи для которых некоторое поле рано указанному значению. Это подобно SELECT .., WHERE (condition) если вы знакомы с SQL. В pandas это делается так:</p>
+<p>Теперь проверим выборки данных. Нам нужно выбрать записи для которых некоторое поле рано указанному значению. Это подобно <strong>SELECT .., WHERE (condition)</strong> если вы знакомы с SQL. В pandas это делается так:</p>
+<pre><code class="python">dset = f2[f2.somecolumn== u'Sometext']
+</code></pre>
 
-<pre><code class="py">
-dset = f2[f2.somecolumn== u'Sometext']
-</code></pre> 
-
-<h4>Добавление строк в набор </h4> 
-<p>Добавлять можно Dict (словари) и Series и DataFrame вот пример</p>
-<pre><code class="py">
-news = pandas.DataFrame([["Name", "444","Gomel"], ["N2","43","Brest"]], columns=["country","shop","name"])
+<h4>Добавление строк в набор</h4>
+<p>Добавлять можно <strong>Dict</strong> (словари) и <strong>Series</strong> и <strong>DataFrame</strong> вот пример</p>
+<pre><code class="python">news = pandas.DataFrame([[&quot;Name&quot;, &quot;444&quot;,&quot;Gomel&quot;], [&quot;N2&quot;,&quot;43&quot;,&quot;Brest&quot;]], columns=[&quot;country&quot;,&quot;shop&quot;,&quot;name&quot;])
 print(news)
 f3 = f2.append(news)
 print(f3)
-</code></pre> 
+</code></pre>
 
-<p>обратите внимание что команда append не изменяет текущий DataFrame, а возращает новый, в который будут добавлены строки из другого фрейма.</p>
-
-<h4>Агрегация (Объединение)  данных</h4>
+<p>обратите внимание что команда append не изменяет текущий <strong>DataFrame</strong>, а возращает новый, в который будут добавлены строки из другого фрейма.</p>
+<h4>Агрегация (Объединение) данных</h4>
 <p>Эта конструкция очень похожа на JOIN в SQL (и принимает такиеже параметры: left, right, inner)</p>
-
-<pre><code class="py">
-res = f2.merge(f1, 'left', on='shop')
+<pre><code class="python">res = f2.merge(f1, 'left', on='shop')
 </code></pre>
 
-<img src="00005/image01.png"/>
-
-<p>Сводная таблица (GROUP BY в SQL)
-первый параметр, по которым будет выполняться расчет
-второй, список столбцов итоговой таблицы
-третий, как считать
-последний, каким значением заполнять пустые значения
-</p>
-
-<pre><code class="py">
-res = res.pivot_table(['qty'],['country'], aggfunc='sum', fill_value = 0)
+<p><img alt="Data" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0005/image01.PNG" /></p>
+<p>Сводная таблица (GROUP BY в SQL) первый параметр, по которым будет выполняться расчет второй, список столбцов итоговой таблицы третий, как считать последний, каким значением заполнять пустые значения</p>
+<pre><code class="python">res = res.pivot_table(['qty'],['country'], aggfunc='sum', fill_value = 0)
 </code></pre>
 
-<h2>Ресурсы</h2>
-
+<h3>Ресурсы</h3>
 <p>Полный код примера на GitHub (там же находятся и исходные файлы примеров)</p>
-<a href="https://github.com/nesterione/experiments-of-programming/tree/master/Python/pandas" target="_blank">Исходный код примеров</a>
-
+<p><a href="https://github.com/nesterione/experiments-of-programming/tree/master/Python/pandas">Исходный код примеров</a></p>
 <p>использованные источники:</p>
-<a href="http://habrahabr.ru/post/196980/ " target="_blank">http://habrahabr.ru/post/196980/ </a>
-
-<h2>Заключение</h2>
-<p>
-
-Это был небольшой обзор теперь можно приступать непосредственно к решению задач. 
-Я не стал сюда же добавлять еще и решение задачи, что бы не делать этот обзор очень большим, поэтому как только обзор задачи будет готов, 
-я добавлю сюда ссылку. Также при решении задачи, скорее всего понадобятся дополнительные функции pandas,
-которые я буду рассматривать прямо там. Для определенности скажу что я буду решать задачу с <a href="www.kaggle.com" target="_blank"> www.kaggle.com </a> 
-<a href="https://www.kaggle.com/c/titanic-gettingStarted" target="_blank">https://www.kaggle.com/c/titanic-gettingStarted</a> (это задача для новичков, там есть пояснения как решать и хорошо структурированы данные).
- Суть задачи проста, нужно определить по данным о пассажирах титаника, кто из них погиб. 
- Эту задачу предлагается решать в Excel, Python или R. Я буду использовать, как вы поняли, python и pandas. 
-</p>
-<div id="icomments" data-commentid="55aa825aa4e0b5d90568fc83" ></div>
-  </div>
-
-    <!-- comments enable-->
+<p><a href="http://habrahabr.ru/post/196980/">http://habrahabr.ru/post/196980/</a></p>
+<h3>Заключение</h3>
+<p>Это был небольшой обзор теперь можно приступать непосредственно к решению задач. Я не стал сюда же добавлять еще и решение задачи, что бы не делать этот обзор очень большим, поэтому как только обзор задачи будет готов, я добавлю сюда ссылку. Также при решении задачи, скорее всего понадобятся дополнительные функции pandas, которые я буду рассматривать прямо там. Для определенности скажу что я буду решать задачу с <a href="www.kaggle.com">www.kaggle.com</a>  <a href="https://www.kaggle.com/c/titanic-gettingStarted">titanic-gettingStarted</a> (это задача для новичков, там есть пояснения как решать и хорошо структурированы данные). Суть задачи проста, нужно определить по данным о пассажирах титаника, кто из них погиб. Эту задачу предлагается решать в Excel, Python или R. Я буду использовать, как вы поняли, python и pandas.</p>
+			</article>
+			<br>
+			<div id="icomments" data-commentid="55aa825aa4e0b5d90568fc83"></div>
+          </div>
+		  
+        </div>
+		
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="http://nesterenya.com">Игорь Нестереня. 2015</a></li>
+              <!--<li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>-->
+            </ul>
+          </div>
+        </footer>
+      </main>
+	  
+    </div>
+	
+	<!-- comments enable-->
 	<link rel="stylesheet" href="../icomments/icomments.css">
 	<script src="../icomments/icomments.js"></script>
+	
+	
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
-<link rel="stylesheet" href="../../libs/highlight/styles/default.css">
-<script src="../../libs/highlight/highlight.pack.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-59740475-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+	
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </body>
 </html>
