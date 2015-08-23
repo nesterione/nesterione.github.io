@@ -1,56 +1,105 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="../style.css" />
-  </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design и AngularJS</title>
 
-  
-  <div class="wrap"> 
-  	<h1>Material Design и AngularJS</h1>
-    <a href="FrontEnd.html"><< Назад</a>
-  	<h6>Категория: Front-End / Дата создания: 12.01.2015 / Последняя правка: 12.01.2015</h6>
-  
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-red.min.css">
+	<!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../github-markdown.css">
     
-    <p>
-        Ни для кого не секрет, что Google повсюду в своих продуктах внедряет так называемый material design. Как и любой другой стиль он имеет сторонников и противников. Не буду касаться этих споров. Если вам нравится данный подход, Google подготовил полную спецификацию и описание особенностей: <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a>. <br/>
-        <br/>
-        Для любителей angularjs появилась <a href="https://material.angularjs.org/#/">библиотека </a> с набором директив, реализующих графические компоненты и позволяющих создавать разметку в соответствии с принципами material design. О ней и пойдет рассказ. <br/>
-        <br/>
-        Я постараюсь кратко показать некоторые особенности и недостатки, а также покажу небольшое <a href="http://nesterione.github.io/md-angular-demo/">приложение </a> для демонстрации.<br/>
-        <br/>    
-    </p>
-   <img src="00004/image00.PNG"/>
-   
-   <h4>Что мы имеем?</h4><br/>
-<i>1. Готовые компоненты:</i><br/>
-<br/>
-Множество готовых angularjs директив для различных компонентов: кнопок, переключателей, вкладок. Все перечислять не буду, все это хорошо освещено в <a href="https://material.angularjs.org/#/demo/material.components.button">документации</a>, покажу лишь основной принцип: <br/>
-<br/>
-Вам нужна круглая кнопка?<br/>
-<br/>
-<img src="00004/image01.PNG" alt="image"/><br/>
-<br/>
-Используем готовую директиву, т.е. пишем:<br/>
-<br/>
-<pre><code class="html"> &lt;md-button class=&quot;md-fab md-primary&quot; md-theme=&quot;cyan&quot; aria-label=&quot;Profile&quot;&gt;
-      &lt;md-icon icon=&quot;/img/icons/ic_people_24px.svg&quot; style=&quot;width: 24px; height: 24px;&quot;&gt;&lt;/md-icon&gt;
- &lt;/md-button&gt;
-</code></pre><br/>
-Если нужно добавить всплывающую подсказку, тоже все предусмотрено:<br/>
-<br/>
-<pre><code class="html"> &lt;md-button class=&quot;md-fab md-primary&quot; md-theme=&quot;cyan&quot; aria-label=&quot;Profile&quot;&gt;
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+		
+		<div class="demo-back">
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="FrontEnd.html" title="go back" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5096679918781px; height: 92.5096679918781px; transform: translate(-50%, -50%) translate(13px, 20px);"></span></span></a>
+        </div>
+				
+          <span class="mdl-layout-title">Front-End</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              <a href="..">Главная </a> &gt; <a href="FrontEnd.html">Front-End</a> &gt; Material Design и AngularJS
+            </div>
+			<div class="demo-crumbs mdl-color-text--grey-500">
+              Дата создания: 12.01.2015/ Последняя правка: 23.08.2015
+            </div>
+			<br>
+			<article class="markdown-body">
+				<!--
+{ "title":"Material Design и AngularJS",
+  "category":"FrontEnd",
+  "date":"12.01.2015",
+  "change":"23.08.2015",
+  "slug":"00004",
+  "comments":"55aa81f5a4e0b5d90568fc82" }
+-->
+
+<h2>Material Design и AngularJS</h2>
+<p>Ни для кого не секрет, что Google повсюду в своих продуктах внедряет так называемый material design. Как и любой другой стиль он имеет сторонников и противников. Не буду касаться этих споров. Если вам нравится данный подход, Google подготовил полную спецификацию и описание особенностей: <a href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a>.</p>
+<p>Для любителей angularjs появилась <a href="https://material.angularjs.org/#/">библиотека</a> с набором директив, реализующих графические компоненты и позволяющих создавать разметку в соответствии с принципами material design. О ней и пойдет рассказ.
+Я постараюсь кратко показать некоторые особенности и недостатки, а также покажу небольшое <a href="http://nesterione.github.io/md-angular-demo/">приложение</a> для демонстрации.</p>
+<p><img alt="AngularJS" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image00.PNG" /></p>
+<h3>Что мы имеем?</h3>
+<p>1.Готовые компоненты:</p>
+<p>Множество готовых angularjs директив для различных компонентов: кнопок, переключателей, вкладок. Все перечислять не буду, все это хорошо освещено в <a href="https://material.angularjs.org/#/demo/material.components.button">документации</a>, покажу лишь основной принцип:</p>
+<p>Вам нужна круглая кнопка?</p>
+<p><img alt="Button" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image01.PNG" /></p>
+<p>Используем готовую директиву, т.е. пишем:</p>
+<pre><code class="html">&lt;md-button class=&quot;md-fab md-primary&quot; md-theme=&quot;cyan&quot; aria-label=&quot;Profile&quot;&gt;
+     &lt;md-icon icon=&quot;/img/icons/ic_people_24px.svg&quot; style=&quot;width: 24px; height: 24px;&quot;&gt;&lt;/md-icon&gt;
+&lt;/md-button&gt;
+</code></pre>
+
+<p>Если нужно добавить всплывающую подсказку, тоже все предусмотрено:</p>
+<pre><code class="html">&lt;md-button class=&quot;md-fab md-primary&quot; md-theme=&quot;cyan&quot; aria-label=&quot;Profile&quot;&gt;
       &lt;md-icon icon=&quot;/img/icons/ic_people_24px.svg&quot; style=&quot;width: 24px; height: 24px;&quot;&gt;&lt;/md-icon&gt;
       &lt;md-tooltip&gt;
         Photos
       &lt;/md-tooltip&gt;
- &lt;/md-button&gt;
-</code></pre><br/>
-<br/>
-Нужны переключатели?<br/>
-<br/>
-<img src="00004/image02.PNG" alt="image"/><br/>
-<br/>
+&lt;/md-button&gt;
+</code></pre>
+
+<p>Нужны переключатели?</p>
+<p><img alt="Button" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image02.PNG" /></p>
 <pre><code class="html">&lt;div class=&quot;inset&quot; ng-controller=&quot;SwitchDemoCtrl&quot;&gt;
   &lt;md-switch ng-model=&quot;data.cb1&quot; aria-label=&quot;Switch 1&quot;&gt;
     Switch 1: {{ data.cb1 }}
@@ -68,96 +117,80 @@
     Switch (md-primary): No Ink
   &lt;/md-switch&gt;
 &lt;/div&gt;
-</code></pre><br/>
-Все это удобным образом связывается с данными:<br/>
-<br/>
-<pre><code class="javascript">.controller('SwitchDemoCtrl', function($scope) {
+</code></pre>
+
+<p>Все это удобным образом связывается с данными:</p>
+<pre><code class="js">.controller('SwitchDemoCtrl', function($scope) {
   $scope.data = {
     cb1: true,
     cb4: true
   };
 });
-</code></pre><br/>
-Удобно? Конечно!.. Но только когда вам достаточно стандартных опций, которых не так уж и много. Заходите сделать какую-то особенность — и сразу все плюсы теряются.<br/>
-<br/>
-<i>2. Разметка </i><br/>
-<br/>
-Для того, чтобы создавать адаптивную разметку, предусмотрено почти все необходимое. Вы можете создавать колонки, строки, вкладывать эти элементы друг в друга. Можно указывать как отображаться элемента при разных размерах экранов, все это реализовано вполне удобно. Рекомендую ознакомиться с <a href="https://material.angularjs.org/#/layout/grid">примерами</a>. <br/>
-<br/>
-<i>3. Темы </i><br/>
-<br/>
-Еще одна особенность — возможность описывать темы. Темы можно менять динамически с помощью директив или в контроллере. Изначально темы уже описаны для всех основных цветов используемых в Material Design. <a href="https://material.angularjs.org/#/Theming/01_introduction">Подробнее</a>. <br/>
-<br/>
-<h4>Пример приложения</h4><br/>
-Лучший способ понять преимущества и недостатки чего-либо — использовать это. Я сделал небольшой демонстрационный проект. Это небольшое приложение, здесь я не использовал удаленный REST сервис [соответственно, вносимые изменения нигде не отобразятся], чтобы сосредоточиться непосредственно на angularjs и возможностях material-angular.<br/>
-<br/>
-Я сделаю простой редактор, в котором можно, нажав на плавающую кнопку, добавить задание, выбрав которые можно отметить, после чего они будут перенесены в архив.<br/>
-<br/>
-<img src="00004/image03.PNG" alt="image"width="100%"/><br/>
-<a href="http://nesterione.github.io/md-angular-demo/">live demo</a><br/>
-<a href="https://github.com/nesterione/material-angular-demo-project/tree/habr">проект на github</a><br/>
-<br/>
-Для начала создадим angular проект на базе angular-seed. Здесь я не буду рассказывать про ngRroute и ngView, кто работал с angularjs — это знают (если не знакомы с angularjs, прошу <a href="https://angularjs.org/">сюда</a>). <br/>
- <br/>
-Нам понадобится верхний toolbox:<br/>
-<br/>
-<img src="00004/image04.PNG" alt="image" width="100%"/><br/>
-<br/>
-Для этих целей предусмотрен соответствующий элемент: <br/>
-<br/>
-<pre><code class="html"> &lt;md-toolbar md-theme=&quot;indigo&quot; class=&quot;app-toolbar md-indigo-theme md-whiteframe-z2 fix-top&quot; &gt;
-    &lt;div class=&quot;md-toolbar-tools&quot; tabindex=&quot;0&quot;&gt;
-      &lt;md-button class=&quot;menu-icon nornal-btn&quot; ng-click=&quot;toggleRight()&quot; aria-label=&quot;Toggle Menu&quot;&gt;
-        &lt;md-tooltip &gt;
-          Меню
-        &lt;/md-tooltip&gt;
-        &lt;md-icon icon=&quot;img/icons/ic_menu_24px.svg&quot;&gt;&lt;/md-icon&gt;
-      &lt;/md-button&gt;
-      Список задач 
-    &lt;/div&gt;
-  &lt;/md-toolbar&gt;
-</code></pre><br/>
-Также нужно сделать слева выдвижное меню, для этого тоже все предусмотрено:<br/>
-<br/>
-<pre><code class="html"> &lt;md-sidenav class=&quot;md-sidenav-left md-whiteframe-z2&quot; md-component-id=&quot;left&quot;&gt;
+</code></pre>
+
+<p>Удобно? Конечно!.. Но только когда вам достаточно стандартных опций, которых не так уж и много. Заходите сделать какую-то особенность — и сразу все плюсы теряются.</p>
+<p>2.Разметка</p>
+<p>Для того, чтобы создавать адаптивную разметку, предусмотрено почти все необходимое. Вы можете создавать колонки, строки, вкладывать эти элементы друг в друга. Можно указывать как отображаться элемента при разных размерах экранов, все это реализовано вполне удобно. Рекомендую ознакомиться с <a href="https://material.angularjs.org/#/layout/grid">примерами</a>.</p>
+<p>3.Темы</p>
+<p>Еще одна особенность — возможность описывать темы. Темы можно менять динамически с помощью директив или в контроллере. Изначально темы уже описаны для всех основных цветов используемых в Material Design. <a href="https://material.angularjs.org/#/Theming/01_introduction">Подробнее</a>.</p>
+<h3>Пример приложения</h3>
+<p>Лучший способ понять преимущества и недостатки чего-либо — использовать это. Я сделал небольшой демонстрационный проект. Это небольшое приложение, здесь я не использовал удаленный REST сервис [соответственно, вносимые изменения нигде не отобразятся], чтобы сосредоточиться непосредственно на angularjs и возможностях material-angular.</p>
+<p>Я сделаю простой редактор, в котором можно, нажав на плавающую кнопку, добавить задание, выбрав которые можно отметить, после чего они будут перенесены в архив.</p>
+<p><img alt="Demo" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image03.PNG" /></p>
+<p><a href="http://nesterione.github.io/md-angular-demo/">live demo</a>
+<a href="https://github.com/nesterione/material-angular-demo-project/tree/habr">проект на github</a></p>
+<p>Для начала создадим angular проект на базе angular-seed. Здесь я не буду рассказывать про ngRroute и ngView, кто работал с angularjs — это знают (если не знакомы с angularjs, прошу <a href="https://angularjs.org/">сюда</a>).</p>
+<p>Нам понадобится верхний toolbox:</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image04.PNG" /></p>
+<p>Для этих целей предусмотрен соответствующий элемент:</p>
+<pre><code class="html">&lt;md-toolbar md-theme=&quot;indigo&quot; class=&quot;app-toolbar md-indigo-theme md-whiteframe-z2 fix-top&quot; &gt;
+   &lt;div class=&quot;md-toolbar-tools&quot; tabindex=&quot;0&quot;&gt;
+     &lt;md-button class=&quot;menu-icon nornal-btn&quot; ng-click=&quot;toggleRight()&quot; aria-label=&quot;Toggle Menu&quot;&gt;
+       &lt;md-tooltip &gt;
+         Меню
+       &lt;/md-tooltip&gt;
+       &lt;md-icon icon=&quot;img/icons/ic_menu_24px.svg&quot;&gt;&lt;/md-icon&gt;
+     &lt;/md-button&gt;
+     Список задач
+   &lt;/div&gt;
+&lt;/md-toolbar&gt;
+</code></pre>
+
+<p>Также нужно сделать слева выдвижное меню, для этого тоже все предусмотрено:</p>
+<pre><code class="html">&lt;md-sidenav class=&quot;md-sidenav-left md-whiteframe-z2&quot; md-component-id=&quot;left&quot;&gt;
     &lt;div ng-controller=&quot;LeftCtrl&quot; ng-click=&quot;close()&quot;&gt;
       &lt;md-toolbar md-theme=&quot;indigo&quot;&gt;
         &lt;h1 class=&quot;md-toolbar-tools&quot;&gt;Меню&lt;/h1&gt;
       &lt;/md-toolbar&gt;
       &lt;md-content &gt;
-        &lt;a class=&quot;menu-item menu-sub-item md-menu-item&quot; ng-click=&quot;menu.toggleSelectPage(page)&quot; ng-repeat=&quot;page in menu.pages&quot; ng-href=&quot;#{{page.url}}&quot; md-highlight=&quot;menu.isPageSelected(page)&quot; md-ink-ripple=&quot;#bbb&quot;&gt;  
-          &lt;span &gt; {{page.discription}} &lt;/span&gt; 
+        &lt;a class=&quot;menu-item menu-sub-item md-menu-item&quot; ng-click=&quot;menu.toggleSelectPage(page)&quot;
+        ng-repeat=&quot;page in menu.pages&quot; ng-href=&quot;#{{page.url}}&quot;
+        md-highlight=&quot;menu.isPageSelected(page)&quot; md-ink-ripple=&quot;#bbb&quot;&gt;  
+          &lt;span &gt; {{page.discription}} &lt;/span&gt;
         &lt;/a&gt;
       &lt;/md-content&gt;
     &lt;/div&gt;
   &lt;/md-sidenav&gt;
-</code></pre><br/>
-Для управления открытием можем использовать следующий код:<br/>
-<br/>
-<pre><code class="javascript">.controller('MainCtrl', function($scope, $timeout, $mdSidenav) {
+</code></pre>
+
+<p>Для управления открытием можем использовать следующий код:</p>
+<pre><code class="js">.controller('MainCtrl', function($scope, $timeout, $mdSidenav) {
   $scope.toggleRight = function() {
     $mdSidenav('left').toggle();
   };
 ...
 });
-</code></pre><br/>
-<br/>
-Таким образом, мы получили основной каркас. Теперь наполнение — это часть, которая будет изменятся при переходе между страницами. Наш view, в котором я буду отображать список задач:<br/>
-<br/>
-<img src="00004/image05.PNG" alt="image"/><br/>
-<br/>
-Можно либо сразу отметить задачу как выполненную, либо при наведении на кружок появляется checkbox и мы можем отметить несколько записей одновременно, после выделения хотя бы одной записи верхний toolbox меняет свой вид. Поскольку основной toolbox находится не во view, то было принято решение просто выводить другой toolbox поверх заданного в каркасе.<br/>
-<br/>
-<img src="00004/image06.PNG" alt="image" width="100%"/><br/>
- <br/>
-Добавление новых элементов. Было принято решение вызывать диалоговое окно, в котором можно задать параметры. <br/>
-Тут я поясню некоторую особенность, которая позволяет очень гибко управлять окнами. Данным фреймворком можно создавать как простые окна, так и сложные: для этого создается отдельная html страница, которая является шаблоном для модального окна. <br/>
-<br/>
-<img src="00004/image07.PNG" alt="image"/><br/>
-<br/>
-При создании своего окна для управления создается контроллер, который будет обрабатывать и передавать данные из окна. <br/>
-<br/>
-<pre><code class="html"> &lt;div class=&quot;md-actions&quot; layout=&quot;row&quot;&gt;
+</code></pre>
+
+<p>Таким образом, мы получили основной каркас. Теперь наполнение — это часть, которая будет изменятся при переходе между страницами. Наш view, в котором я буду отображать список задач:</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image05.PNG" /></p>
+<p>Можно либо сразу отметить задачу как выполненную, либо при наведении на кружок появляется checkbox и мы можем отметить несколько записей одновременно, после выделения хотя бы одной записи верхний toolbox меняет свой вид. Поскольку основной toolbox находится не во view, то было принято решение просто выводить другой toolbox поверх заданного в каркасе.</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image06.PNG" /></p>
+<p>Добавление новых элементов. Было принято решение вызывать диалоговое окно, в котором можно задать параметры.
+Тут я поясню некоторую особенность, которая позволяет очень гибко управлять окнами. Данным фреймворком можно создавать как простые окна, так и сложные: для этого создается отдельная html страница, которая является шаблоном для модального окна.</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image07.PNG" /></p>
+<p>При создании своего окна для управления создается контроллер, который будет обрабатывать и передавать данные из окна.</p>
+<pre><code class="html">&lt;div class=&quot;md-actions&quot; layout=&quot;row&quot;&gt;
     &lt;md-button ng-click=&quot;cancel()&quot;&gt;
      Отмена
     &lt;/md-button&gt;
@@ -165,11 +198,11 @@
     &lt;md-button ng-click=&quot;answer(todo)&quot; class=&quot;md-primary&quot;&gt;
       Добавить
     &lt;/md-button&gt;
-  &lt;/div&gt;
-</code></pre><br/>
-Код контроллера управляющего окном:<br/>
-<br/>
-<pre><code class="javascript">function DialogController($scope, $mdDialog) {
+&lt;/div&gt;
+</code></pre>
+
+<p>Код контроллера управляющего окном:</p>
+<pre><code class="js">function DialogController($scope, $mdDialog) {
  ...
 
   $scope.hide = function() {
@@ -182,81 +215,91 @@
     $mdDialog.hide(answer);
   };
 }
-</code></pre><br/>
-Тогда само окно может вызываться в коде следующим образом:<br/>
-<br/>
-<pre><code class="javascript">$mdDialog.show({
+</code></pre>
+
+<p>Тогда само окно может вызываться в коде следующим образом:</p>
+<pre><code class="js">$mdDialog.show({
       controller: DialogController,
       // вот здесь указывается путь к странице описывающей вид нашего модального окна
-      templateUrl: 'dialog.tmpl.html', 
+      templateUrl: 'dialog.tmpl.html',
       targetEvent: ev,
     })
     .then(function(answer) {
-    // answer это то что было передано из нашего окна 
+    // answer это то что было передано из нашего окна
     // и здесь происходит вся последующая обработка данных
 });
-</code></pre><br/>
-Я не стал подробно описывать как все реализовано, чтобы не нагромождать кучей довольно простого кода, только выделил моменты, касающиеся material angular. Все остальное вы можете посмотреть на <a href="https://github.com/nesterione/material-angular-demo-project/tree/habr">github</a>.<br/>
-<br/>
-<h4>Впечатления и выводы</h4><br/>
-Изначально я подумал, что появилась замечательная возможность разрабатывать angular приложения с material design, однако немного поработав могу однозначно сказать: использовать еще рано (на момент написания версия 0.6). Содержится множество мелких багов, некоторые элементы отображаются по-разному в различных браузерах и постоянно приходится подстраивать стили вручную.<br/>
-<br/>
-На данный момент множество проблем с отображением в различных браузерах. Проблем много (столкнулся при написании демонстрационного проекта), покажу только несколько (это примеры с официального сайта проекта, открытые в разных браузерах).<br/>
-<br/>
-Значки на кнопках:<br/>
-<br/>
-(Google Chrome):<br/>
-<img src="00004/image08.PNG" alt="image"/><br/>
-<br/>
-(Internent Exprorer 11):<br/>
-<img src="00004/image09.PNG" alt="image"/><br/>
-<br/>
-Диалоговые окна:<br/>
-<br/>
-(Google Chrome):<br/>
-<img src="00004/image10.PNG" alt="image"/><br/>
-<br/>
-(Internent Exprorer 11):<br/>
-<img src="00004/image11.PNG" alt="image"/><br/>
-<br/>
-Дальше показывать косяки, думаю, не имеет смысла, они есть, и их много, а это значит, что вам придется вручную все поправлять. <br/>
-<br/>
-Также к недостаткам можно отнести, что не сделано ничего дня поддержки различных анимаций. В Material Design много уделяют этому <a href="http://www.google.com/design/spec/animation/authentic-motion.html">вопросу </a>. Но все это придется делать именно вам.<br/>
-<br/>
-Пока сложно сказать, как скоро будут исправлены недостатки, но на данном этапе для использования angular material явно не готов.<br/>
-<br/>
-<h4>Ссылки</h4><br/>
+</code></pre>
+
+<p>Я не стал подробно описывать как все реализовано, чтобы не нагромождать кучей довольно простого кода, только выделил моменты, касающиеся material angular. Все остальное вы можете посмотреть на <a href="https://github.com/nesterione/material-angular-demo-project/tree/habr">github</a>.</p>
+<h3>Впечатления и выводы</h3>
+<p>Изначально я подумал, что появилась замечательная возможность разрабатывать angular приложения с material design, однако немного поработав могу однозначно сказать: использовать еще рано (на момент написания версия 0.6). Содержится множество мелких багов, некоторые элементы отображаются по-разному в различных браузерах и постоянно приходится подстраивать стили вручную.</p>
+<p>На данный момент множество проблем с отображением в различных браузерах. Проблем много (столкнулся при написании демонстрационного проекта), покажу только несколько (это примеры с официального сайта проекта, открытые в разных браузерах).</p>
+<p>Значки на кнопках:</p>
+<p>(Google Chrome):</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image08.PNG" /></p>
+<p>(Internent Exprorer 11):</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image09.PNG" /></p>
+<p>Диалоговые окна:</p>
+<p>(Google Chrome):</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image10.PNG" /></p>
+<p>(Internent Exprorer 11):</p>
+<p><img alt="Toolbox" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0004/image11.PNG" /></p>
+<p>Дальше показывать косяки, думаю, не имеет смысла, они есть, и их много, а это значит, что вам придется вручную все поправлять.</p>
+<p>Также к недостаткам можно отнести, что не сделано ничего для поддержки различных анимаций. В Material Design много уделяют этому <a href="http://www.google.com/design/spec/animation/authentic-motion.html">вопросу</a> . Но все это придется делать именно вам.</p>
+<p>Пока сложно сказать, как скоро будут исправлены недостатки, но на данном этапе для использования angular material явно не готов.</p>
+<h3>Ссылки</h3>
 <ul>
-<li><a href="http://nesterione.github.io/md-angular-demo/">Мой демо проект</a> </li>
-<li><a href="https://github.com/nesterione/material-angular-demo-project/tree/habr">Исходный код демо проекта</a> </li>
-<li><a href="https://material.angularjs.org">Сайт проекта Material Angular</a> </li>
-<li><a href="http://www.google.com/design/spec/material-design/introduction.html">Официальное описание принципов Material Design</a> </li>
+<li><a href="http://nesterione.github.io/md-angular-demo/">Мой демо проект</a></li>
+<li><a href="https://github.com/nesterione/material-angular-demo-project/tree/habr">Исходный код демо проекта</a></li>
+<li><a href="https://material.angularjs.org">Сайт проекта Material Angular</a></li>
+<li><a href="http://www.google.com/design/spec/material-design/introduction.html">Официальное описание принципов Material Design</a></li>
 </ul>
-<br>
-<br>
-<a href="http://habrahabr.ru/post/247719/">Оригинал моей статьи на Habrahabr.ru</a>
-
-			<div class="clear"></div>
- <div id="icomments" data-commentid="55aa81f5a4e0b5d90568fc82" ></div>
-  </div>
-
-    <!-- comments enable-->
+<p><a href="http://habrahabr.ru/post/247719/">Оригинал моей статьи на Habrahabr.ru</a></p>
+			</article>
+			<br>
+			<div id="icomments" data-commentid="55aa81f5a4e0b5d90568fc82"></div>
+          </div>
+		  
+        </div>
+		
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="http://nesterenya.com">Игорь Нестереня. 2015</a></li>
+              <!--<li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>-->
+            </ul>
+          </div>
+        </footer>
+      </main>
+	  
+    </div>
+	
+	<!-- comments enable-->
 	<link rel="stylesheet" href="../icomments/icomments.css">
 	<script src="../icomments/icomments.js"></script>
- 
-<link rel="stylesheet" href="../../libs/highlight/styles/default.css">
-<script src="../../libs/highlight/highlight.pack.js"></script>
+	
+	
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-59740475-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+	
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </body>
 </html>
