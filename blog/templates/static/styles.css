@@ -1,4 +1,17 @@
 
+/*Reset default ML*/
+blockquote:before {
+    position: absolute;
+    left: 0;
+    content: none;
+}
+
+blockquote:after {
+    position: absolute;
+    left: 0;
+    content: none;
+}
+
 .demo-ribbon-index {
   width: 100%;
   height: 80vh;
