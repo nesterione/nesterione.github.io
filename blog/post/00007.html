@@ -1,53 +1,131 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="../style.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Программирование на языке R [Отчет]</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-red.min.css">
+	<!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../github-markdown.css">
+    
   </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+		
+		<div class="demo-back">
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="ML.html" title="go back" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5096679918781px; height: 92.5096679918781px; transform: translate(-50%, -50%) translate(13px, 20px);"></span></span></a>
+        </div>
+				
+          <span class="mdl-layout-title">Машинное обучение и анализ данных</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              <a href="..">Главная </a> &gt; <a href="ML.html">Машинное обучение и анализ данных</a> &gt; Программирование на языке R [Отчет]
+            </div>
+			<div class="demo-crumbs mdl-color-text--grey-500">
+              Дата создания: 06.06.2015/ Последняя правка: 24.08.2015
+            </div>
+			<br>
+			<article class="markdown-body">
+				<!--
+{ "title":"Программирование на языке R [Отчет]",
+  "category":"ML",
+  "date":"06.06.2015",
+  "change":"24.08.2015",
+  "slug":"00007",
+  "comments":"55aa82a5a4e0b5d90568fc85" }
+-->
 
-
-  <div class="wrap"> 
-  	<h1>Программирование на языке R (Отчет)</h1>
-    <a href="ML.html"><< Назад</a>
-  	<h6>Категория: Машинное обучение / Дата создания: 06.06.2015 / Последняя правка: 06.06.2015</h6>
-    
-    <p>
-    Courcera.org замечательный ресурс для людей которые хотят научиться чему-то новому. В последнее время я 
-    прохошу большое кличество курсов. Многие только для ознакомления, но вот машинным обучением 
-    занимаюсь более серьезно. 
-    </p>
-    
-    <p>Для тех кому тоже интересна эта тема, советую пройти <a href="https://www.coursera.org/specialization/jhudatascience/1?utm_source=spark&utm_medium=banner" target="_blank"> </a> курсы из специализации "Наука о данных". 
-    Там 9 промежуточных курсов, каждый из которых длится 4 недели, программировать придется на языке R (там есть соответствующий курс)
-    
-    </p>
-    <img   src="00007/1.PNG"/>
-    <p>Я завершил очередной курс из серии, могу отметить качество организации курса. Информация дается в доступнй форме, есть субтитры на многих языках, 
-    достаточно практики. </p>     
-   <p>Вот мой сертификат:</p>
-   <img   src="00007/2.PNG"/>
-   <p>Я прохожу курсы бесплатно (т.е. мой сертификат не подтвержден). Но тем не менее, хочу отметить, что стимул получить сертификат, помогает 
-   не забрасывать курс, чтобы получить который нужно выполнять задания вовремя и в полном объеме.</p>
-<div id="icomments" data-commentid="55aa82a5a4e0b5d90568fc85" ></div>
-  </div>
-
-    <!-- comments enable-->
+<h2>Программирование на языке R [Отчет]</h2>
+<p><a href="https://www.coursera.org/">Courcera.org</a> замечательный ресурс для людей которые хотят научиться чему-то новому. В последнее время я прохожу большое количество курсов. Многие только для ознакомления, но вот машинным обучением занимаюсь более серьезно.</p>
+<p>Для тех кому тоже интересна эта тема, советую пройти курсы из специализации "Наука о данных". Там 9 промежуточных курсов, каждый из которых длится 4 недели, программировать придется на языке R (там есть соответствующий курс)</p>
+<p><img alt="Temp" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0007/1.PNG" /></p>
+<p>Я завершил очередной курс из серии, могу отметить качество организации курса. Информация дается в доступной форме, есть субтитры на многих языках, достаточно практики.</p>
+<p>Вот мой сертификат:</p>
+<p><img alt="Sertificat" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0007/2.PNG" /></p>
+<p>Я прохожу курсы бесплатно (т.е. мой сертификат не подтвержден). Но тем не менее, хочу отметить, что стимул получить сертификат, помогает не забрасывать курс, чтобы получить который нужно выполнять задания вовремя и в полном объеме.</p>
+			</article>
+			<br>
+			<div id="icomments" data-commentid="55aa82a5a4e0b5d90568fc85"></div>
+          </div>
+		  
+        </div>
+		
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="http://nesterenya.com">Игорь Нестереня. 2015</a></li>
+              <!--<li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>-->
+            </ul>
+          </div>
+        </footer>
+      </main>
+	  
+    </div>
+	
+	<!-- comments enable-->
 	<link rel="stylesheet" href="../icomments/icomments.css">
 	<script src="../icomments/icomments.js"></script>
+	
+	
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
-<link rel="stylesheet" href="../../libs/highlight/styles/default.css">
-<script src="../../libs/highlight/highlight.pack.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-59740475-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+	
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </body>
 </html>
