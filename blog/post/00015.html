@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Хостинг java 8 приложения на облаке Digitalocean (используем Apache Tomcat 8) </title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.teal-red.min.css">
+	<!--<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">-->
+    <link rel="stylesheet" href="../styles.css">
+	<link rel="stylesheet" href="../github-markdown.css">
+    
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+		
+		<div class="demo-back">
+          <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="Java.html" title="go back" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+          <span class="mdl-button__ripple-container"><span class="mdl-ripple is-animating" style="width: 92.5096679918781px; height: 92.5096679918781px; transform: translate(-50%, -50%) translate(13px, 20px);"></span></span></a>
+        </div>
+				
+          <span class="mdl-layout-title">Java</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <div class="demo-crumbs mdl-color-text--grey-500">
+              <a href="..">Главная </a> &gt; <a href="Java.html">Java</a> &gt; Хостинг java 8 приложения на облаке Digitalocean (используем Apache Tomcat 8) 
+            </div>
+			<div class="demo-crumbs mdl-color-text--grey-500">
+              Дата создания: 26.08.2015/ Последняя правка: 26.08.2015
+            </div>
+			<br>
+			<article class="markdown-body">
+				<!--
+{ "title":"Хостинг java 8 приложения на облаке Digitalocean (используем Apache Tomcat 8) ",
+  "category":"Java",
+  "date":"26.08.2015",
+  "change":"26.08.2015",
+  "slug":"00015",
+  "comments":"55de22ac328aebc762b4bbe0" }
+-->
+
+<h2>Хостинг java 8 приложения на облаке Digitalocean (используем Apache Tomcat 8)</h2>
+<h3>Оглавление</h3>
+<blockquote>
+<p>Статья рассчитана в первую очередь на новичков, не уверенно ориентирующихся в утилитах linux, и работающих впервые с digitalocean</p>
+</blockquote>
+<p>Сегодня расскажу о : </p>
+<ul>
+<li><a href="#digitalocean">Digitalocean</a></li>
+<li><a href="#droplet">Создание дроплета</a></li>
+<li><a href="#ssh">Доступ по ssh</a> </li>
+<li><a href="#install">Установка java 8 и apache tomcat 8</a></li>
+<li><a href="#permissions">Настройка запуска tomcat как сервиса и полномочий (TEMP)</a></li>
+<li><a href="#users">Настройка пользователей tomcat (TEMP)</a></li>
+<li><a href="#domain">Настроим свое доменное имя</a></li>
+<li><a href="#deploy">Загрузить свой проект (вручную, через web интерфейс)</a></li>
+<li><a href="#conclusion">Заключение</a> </li>
+</ul>
+<p>Также это будет первой из следующий статей (темы могут поменяться)</p>
+<ul>
+<li><a href="nesterenya.com/blog/post/00015.html">Хостинг java 8 приложения на облаке Digitalocean (используем Apache Tomcat 8) </a></li>
+<li>Настройка виртуальных хостов на apache tomcat </li>
+<li>Установка и настройка mongodb на Digitalocean </li>
+<li>Автоматическая сборка и разворачивание проекта на Digitalocean (с maven, git)</li>
+<li>Переходим на Docker </li>
+</ul>
+<h3><a name="digitalocean"></a>Digitalocean</h3>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/01.png" /></p>
+<p>И так, для хостинга будем использовать облачный сервис <a href="https://www.digitalocean.com/">digitalocean</a>. Вам предоставляют облачный сервер (<a href="https://ru.wikipedia.org/wiki/VPS">VPS</a>), к которому вы имеете root доступ, в вправе делать с ним, что захотите, т.е. можете поднимать любой http сервер, ставить любое ПО.</p>
+<p>В digitalocean ключевое понятие - дроплет (droplet). Это работающая единица, своего рода виртуальная машина, с которой вы в последствии и будете работать.</p>
+<h3><a name="droplet"></a>Создание дроплета</h3>
+<p>Здесь ничего сложного, просто регистрируетесь на сайте <a href="https://cloud.digitalocean.com">https://cloud.digitalocean.com</a>. После регистрации вам нужно привязать платежную карточку или paypal. Цены разные, в зависимости от ресурсов, самый дешевый вариант - 5$ в месяц. Вы можете получить бонус - 10$ - введя промокод от подкаста   <a href="http://www.radio-t.com/">http://www.radio-t.com/</a> (подробности в любом выпуске).</p>
+<p>Для создания дроплета положите деньги на счет, они будут списываться каждый день, в зависимости от созданных вами дроплетов. </p>
+<p>Нажмите "создать новый дроплет"</p>
+<p>выберите то решение, что вам нужно:</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/02.png" /></p>
+<p>потом выберите регион, чем ближе он к вам, тем вероятнее будет скорость доступа к серверу. В моем случае это Амстердам.</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/03.png" /></p>
+<p>дальше выберите дистрибудив или приложение. На выбор вам даются разные версии Ubuntu, FreeBSD, Fedora, Debian, CoreOS, CentOS. Я предпочитаю Ubuntu 14.04x64. Вы также можете выбрать образ с предустановленным приложением. Например с Docer (его и советую).</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/04.png" /></p>
+<p>Дальше можно ничего не настраивать, но советую сразу добавить ключ для доступа по ssh.</p>
+<p>нажимайте "создать дроплет" и ждите около минуты, вам на почту придет root пароль и ваш IP. </p>
+<p>И сразу можете перейти к вашему дроплету и запустить web консоль </p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/05.png" /></p>
+<p>(в принципе можете через неё можно полноценно работать). При входе вам нужно будет создать изменить root пароль.</p>
+<p>Все, теперь у вас есть виртуальная машина, к которой вы имеете полный доступ. </p>
+<h3><a name="ssh"></a> Доступ по ssh</h3>
+<blockquote>
+<p>Это не обязательный шаг, все можно сделать и через предоставляемую веб-консоль. Но это менее удобно</p>
+</blockquote>
+<p>Если вы уже добавили ключ, то можете просто подключиться:</p>
+<pre><code class="bash">ssh root@your_id_address
+</code></pre>
+
+<p>Если нужно изменить или добавить новый ключи, зайдите в настройки</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/06.png" /></p>
+<p>И добавьте свой публичный ключ из .ssh/[name].pub</p>
+<p>Если у вас нет ssh ключа, сгенерируйте его, подробно процесс не описываю, информацию найти не сложно, в том числе и на русском языке. Если вы счастливый пользователь *unix системы, выполните:</p>
+<pre><code>ssh-keygen -t rsa
+</code></pre>
+
+<p>если же вы пользователь windows, вам придется дополнительно установить нужное ПО (PuTTY), а еще удобно использовать использовать линуксовый терминал (я предпочитаю использовать git bash)</p>
+<blockquote>
+<p>Если по настройке и генерации ключей нужно больше информации, сообщите мне, я дополню. </p>
+</blockquote>
+<h3><a name="install"></a> Установка java 8 и apache tomcat 8</h3>
+<p>Я предпочел использовать oracle jdk, и самый новый на данный момент tomcat. По этому вопросу будут полезны статьи:</p>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-14-04">How to install apache tomcat 8 on ubunto 14-04</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/java-ubuntu-apt-get-ru">Java ubuntu apt get ru</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-ubuntu-14-04-via-apt-get">How to install apache tomcat 7 on ubuntu 14.04 via apt-get</a></li>
+</ul>
+<p>Рекомендую первые 2 ссылки. Самое основное изложу здесь с пояснениями.</p>
+<p>Чтобы использовать tomcat, нужно установить java. Первым делом проверьте или её еще нет. Потом добавьте источники, чтобы установить используя apt-get</p>
+<pre><code class="bash">sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+
+</code></pre>
+
+<p>теперь установите JDK 8</p>
+<pre><code class="bash">sudo apt-get install oracle-java8-installer
+</code></pre>
+
+<p>Проверьте или все работает.</p>
+<p>Теперь переходим к установке tomcat, идея простая: скачиваем архив и извлекаем. Устанавливать его не нужно.</p>
+<p><a href="http://tomcat.apache.org/download-80.cgi">Тут ссылки на скачивания tomcat</a></p>
+<p>Перейдите в home </p>
+<pre><code class="bash">cd ~
+</code></pre>
+
+<p>скачайте архив</p>
+<pre><code class="bash">wget http://mirror.sdunix.com/apache/tomcat/tomcat-8/v8.0.23/bin/apache-tomcat-8.0.23.tar.gz
+</code></pre>
+
+<p>нужно извлечь архив. Извлекаем в <code>/opt/tomcat</code></p>
+<blockquote>
+<p><strong>opt</strong> предназначенна для добавления пакетов ПО, или для других компонентов не являющихся базой системы. Некоторые используют её, другие просто <code>/usr/local</code> - выбор за вами</p>
+</blockquote>
+<p>создайте целевую папку:</p>
+<pre><code class="bash">sudo mkdir /opt/tomcat
+</code></pre>
+
+<p>извлеките </p>
+<pre><code class="bash">sudo tar xvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+</code></pre>
+
+<blockquote>
+<p>Пояснение по команде <code>tar</code>: ключ <code>xvf</code> предназначен для извлечения содержимого tar.gz архива. Ключ <code>-C</code> позволяет создать Tarpipe. Tarpipe — процесс создания tar-архива в stdout и последующего извлечения содержания архива в другом каталоге из stdin. Это очень удобный метод копирования содержания одной файловой системы в другую, так как происходит полное копирование, включая атрибуты файлов, символические ссылки, файлы устройств. Но если просто, вы указываете куда извлечь содержание архива. <code>--strip-components=1</code> - говорит, что нужно пропустить один уровень в имени, давайте на примере, если запустить без strip, то архив был бы извлечен в каталог <code>/opt/tomcat/apache-tomcat-8.0.26/&lt;содержание&gt;</code> , а с ключем <code>--strip-components=1</code> мы получим <code>/opt/tomcat/&lt;содержание&gt;</code></p>
+</blockquote>
+<p>ну и все, сервер теперь работоспособен, для проверки можете запустить: </p>
+<pre><code class="bash">/opt/tomcat/bin/./catalina sh run
+</code></pre>
+
+<p>откройте ваш браузер: http://<your_ip>:8080 и увидите:</p>
+<p><img alt="tomcat" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/07.png" /></p>
+<h3><a name="permissions"></a> Настройка запуска tomcat как сервиса и полномочий</h3>
+<p>Мы запустили tomcat, но такой вариант запуска несколько не удобен (разве что для отладки). Сейчас настроим запуск tomcat как сервис. Как обычно есть много вариантов как это сделать, я опишу один из них.</p>
+<h4>1.Обновим разрешения.</h4>
+<blockquote>
+<p>Если вы все делаете по root, то вам не нужен этот шаг. Но по ряду причин, это плохой тон, запускать все с root правами </p>
+</blockquote>
+<p>зайдите в папку с tomcat</p>
+<pre><code class="bash">cd /opt/tomcat
+</code></pre>
+
+<p>Then give the tomcat user write access to the conf directory, and read access to the files in that directory:</p>
+<p>Затем дайте пользователю tomcat доступ на запись к каталогу <strong>conf</strong>, и доступ на чтение к файлам в этом каталоге:</p>
+<pre><code class="bash">sudo chgrp -R tomcat conf
+sudo chmod g+rwx conf
+sudo chmod g+r conf/*
+</code></pre>
+
+<blockquote>
+<p>Пояснения </p>
+<p>Группа — это несколько пользователей Linux, которые могут использовать (при достаточных правах доступа) файлы и папке на уровне с их владельцем. Изменить группу пользователей ассоциированных с файлом или директорией можно командой chgrp</p>
+<p>chgrp позволяет изменить группу файлов. Ключ <strong>-R</strong> включает рекурсивное изменение группы для каталогов и их содержимого. <strong>tomcat</strong> - это, естественно, имя группы. <strong>conf</strong> - каталог для которого мы меняем группу </p>
+<p>chmod (change mode) – это широко используемая команда для изменения прав доступа к файлам и папкам в Linux. Она позволяет устанавливать права на доступ как пользователю, так и группе пользователей и для всех остальных.</p>
+<p><code>g+rwx</code> расшифруем: <code>g+</code> добавляет разрешение для группы, <code>rw</code> на чтение (r) и запись (w). и символ <code>x</code> - дает право быть запускаемым (execute). </p>
+</blockquote>
+<p>И теперь назначим пользователя <code>tomcat</code> владельцем директорий: work/ temp/ logs/ , командой chown  (change owner)</p>
+<pre><code class="bash">sudo chown -R tomcat work/ temp/ logs/
+</code></pre>
+
+<p><a href="http://itandlife.ru/os/prava-dostupa-v-linux-komandy-ls-chmod-chown-chgrp-primery/">подробно о правах доступа в Linux</a></p>
+<h4>2.Настроим скрипт для записи.</h4>
+<p>Нам нужно узнать путь к java, его обычно называют JAVA_HOME, простейший путь найти вашу java, выполнить команду:</p>
+<pre><code class="bash">sudo update-alternatives --config java
+</code></pre>
+
+<p>так вот, JAVA_HOME это путь без bin/java на конце </p>
+<pre><code class="bash">output:
+
+There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/java-8-oracle/jre/bin/java
+Nothing to configure.
+
+</code></pre>
+
+<p>в моем случае это:</p>
+<pre><code class="bash">/usr/lib/jvm/java-8-oracle/jre
+</code></pre>
+
+<p>у нас все готово для написания скрипта для запуска, для этого нужно создать файл <code>/etc/init/tomcat.conf</code></p>
+<p>для этих целей можете использовать любой консольный текстовый редактор. Например <code>nano</code>, я же предпочитаю <code>vi</code>:</p>
+<blockquote>
+<p>Я не объясняю как работать с VI, если не сталкивались, можете кратко почитать <a href="https://sudouser.com/osnovy-raboty-v-tekstovom-redaktore-vim.html">основы vi</a>. Или используйте другой редактор.</p>
+</blockquote>
+<p>откройте файл:</p>
+<pre><code class="bash">sudo vi /etc/init/tomcat.conf
+</code></pre>
+
+<p>для начала приведу минимальный скрипт, который вам нужно написать (только если вы запустите все с root-правами, как я уже говорил, нет причин делать так)</p>
+<blockquote>
+<p>Обратите внимание на переменные среды <code>JAVA_HOME</code> и <code>CATALINA_HOME</code> там должны быть ваши значения: для java, то что мы узнали выше, для catalina, то куда в установили </p>
+</blockquote>
+<pre><code>description &quot;Tomcat Server&quot;
+
+  start on runlevel [2345]
+  stop on runlevel [!2345]
+  respawn
+  respawn limit 10 5
+
+  env JAVA_HOME=/usr/lib/jvm/java-8-oracle/jre
+  env CATALINA_HOME=/opt/tomcat
+
+  exec $CATALINA_HOME/bin/catalina.sh run
+</code></pre>
+
+<blockquote>
+<p>Итак, пояснения </p>
+<p><code>description</code> - как следует из названия, описывает информацию о сервисе.</p>
+<p><code>start on runlevel [2345]</code> - говорит что сервис должен запустится при достижении системой уровня выполнения 2,3,4 или 5.</p>
+<p><code>stop on runlevel [!2345]</code> - говорит что сервис должен остановиться при достижении системой уровня выполнения не 2,3,4 или 5.</p>
+<p><a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C_%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F">Информация о уровнях выполнения</a></p>
+<p><a href="https://help.ubuntu.com/community/UpstartHowto">Подробнее про upstart</a> и <a href="http://upstart.ubuntu.com/wiki/Stanzas">еще</a></p>
+<p><code>respawn</code> - флаг который говорит, что сервис должен быть перезапущен при неожиданном завершении </p>
+<p><code>respawn limit 10 5</code> - ограничение на количеств переподключений/ <code>respawn limit count timeout</code> </p>
+<p><code>env</code> задает нужные переменные окружения, для работы tomcat нужна JAVA_HOME и CATALINA_HOME</p>
+<p><code>exec</code> описывает непосредственно действие, которое должно быть выполнено. А именно, запуск нашего сервера.</p>
+</blockquote>
+<p>Теперь дополним скрипт, добавим группу tomcat, скрипты после завершения и опции:</p>
+<pre><code class="bash">description &quot;Tomcat Server&quot;
+
+  start on runlevel [2345]
+  stop on runlevel [!2345]
+  respawn
+  respawn limit 10 5
+
+  setuid tomcat
+  setgid tomcat
+
+  env JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre
+  env CATALINA_HOME=/opt/tomcat
+
+  # Вы можете задавать настройки, например:
+  # env JAVA_OPTS=&quot;-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom&quot;
+  # env CATALINA_OPTS=&quot;-Xms512M -Xmx1024M -server -XX:+UseParallelGC&quot;
+
+  exec $CATALINA_HOME/bin/catalina.sh run
+
+  # Очистка директории temp после завершения скриптов
+  post-stop script
+    rm -rf $CATALINA_HOME/temp/*
+  end script
+
+</code></pre>
+
+<p>В этой версии скрипта добавились <code>setuid</code> и <code>setgid</code>, а также <code>post-stop script</code></p>
+<blockquote>
+<p>Чтобы понять зачем setuid и setgid советую почитать <a href="https://ru.wikipedia.org/wiki/Suid#setuid_.D0.BD.D0.B0_.D1.84.D0.B0.D0.B9.D0.BB.D0.B0.D1.85">эту статью</a>.
+setuid и setgid нужны для присваивания нашему процессу группы пользователей<code>tomcat</code> , как вы помните, выше мы настраивали разрешения для них. Таким образом мы подымем приоритет для нашего процесса, хотя пользователь не будет иметь root прав.</p>
+<p>Биты setuid и setgid, установленные для каталогов, имеют совсем другой смысл. Бит setgid для директории (chmod g+s) заставляет только новые каталоги и файлы, созданные в ней, наследовать ID группы этой директории вместо ID группы пользователя, создавшего файл. Новые поддиректории также наследуют бит setgid. Это позволяет создать общее рабочее пространство для группы без неудобств членам группы явно менять их текущую группу для создания новых файлов и каталогов. Наследование устанавливается только для новых файлов и каталогов. Уже существующим файлам и каталогам этот бит нужно устанавливать вручную</p>
+<p>что касается блока<code>post-stop script</code>, это набор команд, как вы поняли из названия, того что должно выполнится после завершения. В нашем случае чистится папка для временных файлов.</p>
+</blockquote>
+<p>Поздравляю, вы все настроили, теперь просто перезагрузите настройки:</p>
+<pre><code class="bash">sudo initctl reload-configuration
+</code></pre>
+
+<p>и запустите сервис </p>
+<pre><code>sudo initctl start tomcat
+</code></pre>
+
+<p>или просто</p>
+<pre><code>sudo start tomcat
+</code></pre>
+
+<blockquote>
+<p>скрипт будет запускаться сам, при перезагрузке системы </p>
+</blockquote>
+<p>Проверить работу можно просто открыв в браузере:</p>
+<pre><code>http://server_IP_address:8080
+</code></pre>
+
+<p>если вы все сделали правильно, вы увидите стартовую страницу tomcat. </p>
+<p>Вы также можете остановить сервер <code>stop tomcat</code>, перезапустить <code>restart tomcat</code>, или проверить статус <code>status tomcat</code></p>
+<h3><a name="users"></a> Настройка пользователей tomcat</h3>
+<p>Пользователи tomcat нужны для управление сервером. Мы можем задавать им роли. Сейчас создадим пользователя, администратора, и дадим ему право управлять через веб интерфейс сервером. Информация о пользователях хранится в <code>tomcat-users.xml</code> :</p>
+<pre><code class="bash">/opt/tomcat/conf/tomcat-users.xml
+</code></pre>
+
+<p>в файле содержится информация о том, что вы можете сделать. Чтобы добавить пользователя, вставьте между тегами <code>tomcat-users</code> строку с параметрами, например:</p>
+<pre><code class="xml">&lt;tomcat-users&gt;
+    &lt;user username=&quot;admin&quot; password=&quot;password&quot; roles=&quot;manager-gui,admin-gui&quot;/&gt;
+&lt;/tomcat-users&gt;
+</code></pre>
+
+<p>после сохранения, перезапустите сервер (наш сервис):</p>
+<pre><code class="bash">sudo initctl restart tomcat
+</code></pre>
+
+<p>или просто</p>
+<pre><code class="bash">sudo restart tomcat
+</code></pre>
+
+<p>Теперь вы имеете доступ к веб-интерфейсу сервера.</p>
+<h3><a name="domain"></a> Настроим свое доменное имя</h3>
+<p>Для настройки доменного имени, откройте вкладку "DNS" на сайте digitalocean и добавьте запись. В которой напишите желаемое доменное имя (естественно, вы должны перед этим его купить), в примере я использую субдомен <code>igor</code> для своего доменного имени второго уровня <code>nesterenya</code></p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/06.png" /></p>
+<p>после добавление увидите</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/06.png" /></p>
+<p>вверху будет указан ваш домен (или субдомен в моем случае) и здесь можно ничего не менять. Обратите внимание на ваш IP, он вам нужен для настройки записи у провайдера вашего доменного имени. Настройка зависит от вашего провайдера, я использую <code>godaddy</code>, и я могу через веб-интерфейс редактировать записи, я добавляю A запись, в которой вы указываете хост и IP сервера. В моем случае это выглядит:</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/22.png" /></p>
+<blockquote>
+<p>еще раз напомню, что у вашего провайдера доменного имени настройки могут отличаться, но все равно суть будет той же - нужно создать запись, в которой будет задана связь вашего доменного имени и адресом вашего сервера.</p>
+<p>В моем случае godaddy моментально обновляет записи, но, обратите внимание, что смена записей может тянуться до двух дней, все зависит от вашего провайдера. Поэтому не стоит волноваться если адрес не работает, просто подождите пока обновятся записи о вашем доменном имени. </p>
+</blockquote>
+<p>На этом все, ваше доменное имя настроено, но не забывайте, что сейчас ваш tomcat запускается на порту <code>8080</code> если вы хотите, чтобы при захождении на ваш сайт не нужно было указывать порт, смените настройки tomcat, используйте стандартный порт: <code>80</code></p>
+<p>для этого откройте файл настроек сервера:</p>
+<pre><code class="bash">vi /opt/tomcat/conf/server.xml
+</code></pre>
+
+<p>измените порт </p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/23.png" /></p>
+<p>сохраните изменения, и перезапустите сервер.</p>
+<h3><a name="deploy"></a> Загрузить свой проект (вручную, через web интерфейс)</h3>
+<p>Чтобы развернуть проект существует множество способов. В данном случае мы просто загрузим проект через веб-интерфейс, не самый полезный способ для реальных задач, но очень простой. Откройте страницу, и введите свой пароль, который задали в настройках tomcat users:</p>
+<pre><code>&lt;your_site_address&gt;/manager/html
+</code></pre>
+
+<p>найдите раздел Deploy:</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/18.png" /></p>
+<p>Выберите загрузку WAR архива проекта (который вы изначально должны собрать, на своей машине)</p>
+<p>После загрузки проект развернется и будет доступен, по url указанному в настройках вашего проекта. Для примера я развернул свой REST-сервис, проект был развернут в папку <code>webapi</code></p>
+<p>вот результат:</p>
+<p><img alt="digitalocean" src="https://www.googledrive.com/host/0B2w0rtQkeBZadEpxd3Y2M3hMTUU/blog/0015/19.png" /></p>
+<blockquote>
+<p>В другой раз автоматизируем сборку и деплой проекта, но пока этого достаточно.</p>
+</blockquote>
+<h3><a name="conclusion"></a> Заключение</h3>
+<p>если вы сделали все правильно, у вас теперь работающий tomcat сервер, настроено доменное имя, и вы имеете доступ к управлению через web интерфейс своим сервером. Если что-то не понятно, или есть ошибки и замечания по тексту, пишите в комментариях или ко мне на почту.</p>
+<h3>P.S.</h3>
+<p>Также планирую связанные с Digitalocean статьи [оставил это здесь, чтобы заставить себя это сделать, пообещал - поэтому придется в ближайшее время с этим разобраться ]:</p>
+<ul>
+<li>Веб приложение для моделирования (МКЭ) - моя магисторская, видимо хостить я её буду здесь (или на red hat openshif cloud), там будут замешены angular, REST, МКЭ и WebGL.</li>
+<li>Микросервисы - ну тема сейчас сильно на слуху, нужно с ними познакомиться </li>
+<li>Сервисы на python для машинного обучения (scikit-learn) - планирую разработать REST-сервис для решения некоторых интересных задача с помощью машинного обучения. Скорее всего буду использовать Flask Framework. Нужно применить знания на чем-то более практическом, чем просто запуск скриптов на компьютере. </li>
+</ul>
+			</article>
+			<br>
+			<div id="icomments" data-commentid="55de22ac328aebc762b4bbe0"></div>
+          </div>
+		  
+        </div>
+		
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="http://nesterenya.com">Игорь Нестереня. 2015</a></li>
+              <!--<li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>-->
+            </ul>
+          </div>
+        </footer>
+      </main>
+	  
+    </div>
+	
+	<!-- comments enable-->
+	<link rel="stylesheet" href="../icomments/icomments.css">
+	<script src="../icomments/icomments.js"></script>
+	
+	
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/github.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-59740475-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+	
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </body>
+</html>
