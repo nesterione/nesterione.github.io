@@ -4,13 +4,13 @@
 <title>Getting Started · Spring Security and Angular JS</title>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no" id="Viewport" name="viewport">
 <link rel="shortcut icon" type="image/x-icon" href="https://spring.io/img/favicon.png">
-<link href="./Getting Started · Spring Security and Angular JS_files/css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="./Getting Started · Spring Security and Angular JS_files/main.css">
-<link rel="stylesheet" type="text/css" href="./Getting Started · Spring Security and Angular JS_files/gsguide.css">
-<script type="text/javascript" async="" src="./Getting Started · Spring Security and Angular JS_files/munchkin.js"></script><script type="text/javascript" async="" src="./Getting Started · Spring Security and Angular JS_files/inpage_linkid.js" id="undefined"></script><script type="text/javascript" async="" src="./Getting Started · Spring Security and Angular JS_files/ga.js"></script><script>
+<link href="./spring_files/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./spring_files/main.css">
+<link rel="stylesheet" type="text/css" href="./spring_files/gsguide.css">
+<script type="text/javascript" async="" src="./spring_files/munchkin.js"></script><script type="text/javascript" async="" src="./spring_files/inpage_linkid.js" id="undefined"></script><script type="text/javascript" async="" src="./spring_files/ga.js"></script><script>
         var baseUrl = '/';
   </script><style type="text/css"></style>
-<script async="" src="./Getting Started · Spring Security and Angular JS_files/curl.js" data-curl-run=""></script>
+<script async="" src="./spring_files/curl.js" data-curl-run=""></script>
 <meta content="7qGntFPD9lWAVCtUu5U77v4l68PsTHf6xpzgjQv2j2M" name="google-site-verification">
 <meta property="og:title" content="Spring Security and Angular JS">
 <meta property="og:image" content="/img/spring-by-pivotal.png">
@@ -36,7 +36,7 @@
       })();
   </script>
  
-<script type="text/javascript" charset="utf-8" async="" src="./Getting Started · Spring Security and Angular JS_files/run.js"></script><script type="text/javascript" charset="utf-8" src="./Getting Started · Spring Security and Angular JS_files/jquery-migrate-1.2.1.js"></script><script type="text/javascript" charset="utf-8" src="./Getting Started · Spring Security and Angular JS_files/munchkin(1).js"></script><style type="text/css">/*.lleo_errorSelection *::-moz-selection,
+<script type="text/javascript" charset="utf-8" async="" src="./spring_files/run.js"></script><script type="text/javascript" charset="utf-8" src="./spring_files/jquery-migrate-1.2.1.js"></script><script type="text/javascript" charset="utf-8" src="./spring_files/munchkin(1).js"></script><style type="text/css">/*.lleo_errorSelection *::-moz-selection,
 .lleo_errorSelection *::selection,
 .lleo_errorSelection *::-webkit-selection {
     background-color: red !important;
@@ -4238,7 +4238,7 @@ function($rootScope, $scope, $http, $location, $route) {
 <p>Here’s a picture of the basic system we are going to build to start with:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./Getting Started · Spring Security and Angular JS_files/double-simple.png" alt="Components of the System"></span></p>
+<p><span class="image"><img src="./spring_files/double-simple.png" alt="Components of the System"></span></p>
 </div>
 <div class="paragraph">
 <p>Like the other sample applications in this series it has a UI (HTML and JavaScript) and a Resource server. Like the sample in <a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_the_api_gateway_pattern_angular_js_and_spring_security_part_iv">Part IV</a> it has a Gateway, but here it is separate, not part of the UI. The UI effectively becomes part of the backend, giving us even more choice to re-configure and re-implement features, and also bringing other benefits as we will see.</p>
@@ -4574,7 +4574,7 @@ index.html
 <p>If you are looking at the sample in github, it also has a minimal navigation bar with a "Logout" button. Here’s the login form in a screenshot:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./Getting Started · Spring Security and Angular JS_files/login.png" alt="Login Page"></span></p>
+<p><span class="image"><img src="./spring_files/login.png" alt="Login Page"></span></p>
 </div>
 <div class="paragraph">
 <p>To support the login form we need some JavaScript with a "navigation" controller implementing the <code>login()</code> function we declared in the <code>&lt;form/&gt;</code>, and we need to set the <code>authenticated</code> flag so that the home page will render differently depending on whether or not the user is authenticated. For example:</p>
@@ -4695,7 +4695,7 @@ gateway.js
 <p>If we run this enhanced Gateway, instead of having to remember the URL for the UI we can just load the home page and follow links. Here’s the home page for an authenticated user:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./Getting Started · Spring Security and Angular JS_files/home.png" alt="Home Page"></span></p>
+<p><span class="image"><img src="./spring_files/home.png" alt="Home Page"></span></p>
 </div>
 </div>
 <div class="sect2">
@@ -4704,7 +4704,7 @@ gateway.js
 <p>Up to now our application is functionally very similar to the one in <a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_the_resource_server_angular_js_and_spring_security_part_iii">Part III</a> or <a href="https://spring.io/guides/tutorials/spring-security-and-angular-js/#_the_api_gateway_pattern_angular_js_and_spring_security_part_iv">Part IV</a>, but with an additional dedicated Gateway. The advantage of the extra layer may not be yet apparent, but we can emphasise it by expanding the system a bit. Suppose we want to use that Gateway to expose another backend UI, for users to "administrate" the content in the main UI, and that we want to restrict access to this feature to users with special roles. So we will add an "Admin" application behind the proxy, and the system will look like this:</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./Getting Started · Spring Security and Angular JS_files/double-components.png" alt="Components of the System"></span></p>
+<p><span class="image"><img src="./spring_files/double-components.png" alt="Components of the System"></span></p>
 </div>
 <div class="paragraph">
 <p>There is a new component (Admin) and a new route in the Gateway in <code>application.yml</code>:</p>
@@ -5754,7 +5754,7 @@ public String redirect() {
 </div>
 <aside class="span4 content-right-pane--container mobile-left-pane" id="sidebar">
 <a class="ci-status desktop-only" href="https://travis-ci.org/spring-guides/tut-spring-security-and-angular-js">
-<img src="./Getting Started · Spring Security and Angular JS_files/tut-spring-security-and-angular-js.svg">
+<img src="./spring_files/tut-spring-security-and-angular-js.svg">
 </a>
 <div class="right-pane-widget--container desktop-only">
 <div class="github-actions https">
@@ -5839,7 +5839,7 @@ Go To Repo
 <label>
 Subscribe to our newsletter
 </label>
-<iframe src="./Getting Started · Spring Security and Angular JS_files/newsletter.html" frameborder="0" scrolling="no" height="42px" width="332px" style="border:none"></iframe></div>
+<iframe src="./spring_files/newsletter.html" frameborder="0" scrolling="no" height="42px" width="332px" style="border:none"></iframe></div>
 </div>
 </div>
 </div>
