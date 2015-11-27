@@ -1,0 +1,26 @@
+.oneDiv, #a {
+ width: 120px;
+ height: 120px;
+ color: red;
+ border:1px #0FF solid;
+ float:left;
+}
+
+.twoDiv {
+.oneDiv;
+    background-color:#0FF;}
+.a {
+    #a;
+    margin-left:20px;
+}
+
+.hoverMixin() {
+    &:hover {
+    border: 1px solid red;    
+    background-color:#0C9;
+ }
+}
+
+.hov {
+
+.hoverMixin();}

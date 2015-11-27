@@ -1,0 +1,19 @@
+.mixin(@color) {
+     color: @color;
+}
+
+.mixin(@color; @width:100) {
+     color: @color;
+     width: @width;
+}
+
+.mixin(@color; @width; @height: 100px) {
+     color: @color;
+     width: @width;
+     height: @height;
+}
+
+.oneDiv {
+     .mixin(white, 200px);
+     background-color:#0C9;
+}
