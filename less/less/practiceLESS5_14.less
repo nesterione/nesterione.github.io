@@ -1,0 +1,35 @@
+@bgBody:black;
+
+@bg:hsla(90, 90%, 50%, 0.5);
+
+@bgFo:fadeout(@bg, 10%);
+
+@bgFi:fadein(@bg, 30%);
+
+@floL:left;
+
+@pd:20px;
+
+body {
+    background-color:@bgBody;
+}
+
+.oneDiv {
+    background-color:@bg;
+    float:@floL;
+    padding:@pd;
+    margin-right:@pd;
+}
+
+.twoDiv {
+    background-color:@bgFo;
+    float:@floL;
+    padding:@pd;
+    margin-right:@pd;
+}
+
+.threeDiv {
+    background-color:@bgFi;
+    float:@floL;
+    padding:@pd;
+}

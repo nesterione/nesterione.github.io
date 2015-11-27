@@ -1,0 +1,30 @@
+@bg:hsla(90, 90%, 50%, 0.5);
+
+@floL:left;
+
+@pd:20px;
+    .mixin (@a) when (@a >= 200px) {
+    background-color:@bg;
+}
+
+.mixin (@a) when (@a < 200px) {
+    background-color: red;
+}
+
+.mixin (@a) {
+    width: @a;
+}
+
+.oneDivс{
+    float:@floL;
+    padding:@pd;
+    margin-right:@pd;
+    .mixin(200px);
+}
+
+.twoDiv {
+    float:@floL;
+    padding:@pd;
+    margin-right:@pd;
+    .mixin(150px);
+}
