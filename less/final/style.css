@@ -1,0 +1,196 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: arial;
+}
+
+#wrap {
+	width: 715px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#header {
+	background-color: #526c4f;
+	height: 75px;
+	color: white;
+}
+
+#footer {
+	position: relative;
+	color: white;
+	background-color: #526c4f;
+	height: 20px;
+	
+	padding-bottom: 5px;
+}
+
+#content {
+	 position: relative;
+	margin-bottom: 10px;
+	
+}
+
+#content.sq{
+	margin-bottom: 6px;
+}
+
+#main {
+	position: relative;
+	height: 300px;
+	width: 500px;
+	
+}
+
+#right-nav {
+	position: relative;
+	float: right;
+	height: 300px;
+	width: 205px;
+	padding: 0 5px;
+}
+
+#section {
+	overflow: hidden;
+	padding-top: 5px;
+	background-color: #e2e0e1;
+	padding-bottom: 10px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+ul.menu {
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu li{
+	list-style: none;
+	background-color: #e6e7e9;
+	margin-bottom: 10px;
+}
+
+ul.menu a{
+	padding: 4px;
+	
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 8px;
+	color: #50674d;
+}
+
+ul.menu a:hover{
+	color: #91908c;
+}
+
+.cur-box {
+	width: 100%;
+	height: 18px;
+	background: url("images/px.png");
+}
+
+.text-up {
+	vertical-align: top;
+}
+
+.logo {
+	float: right;
+	width: 215px;
+	height: 70px;
+}
+
+.head {
+	float: left;
+	width: 500px
+	
+}
+
+#header h1 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 100;
+	margin-top: 30px;
+	background-color: #5cb450;
+	border: 1px dotted white;
+	border-left: none;
+	border-right: none;
+	padding: 10px 0 5px 25px;
+}
+
+#footer a{
+	padding: 4px 4px 2px 4px;
+	color: white;
+	text-transform: uppercase;
+	border-bottom: 1px dotted;
+	text-decoration: none;
+}
+
+#footer a:hover{
+	color: #91908c;
+}
+
+.info {
+	margin-right: 5px;
+	text-align: right;
+	position: relative;
+	float: right;
+	width: 100px;
+	padding-top: 10px;
+	font-size: 7px;
+	font-weight: 100;
+	
+}
+
+ul.menu.sq-menu li{
+	margin-bottom: 2px;
+
+}
+
+
+
+.spliter {
+
+	height: 20px;
+	font-size: 10px;
+	text-align: right;
+	padding: 0 5px;
+	vertical-align: middle;
+	line-height: 20px;
+	border: 2px solid #526c4f;
+	text-transform: uppercase;
+	color: red;
+	border-left: none;
+	border-right: none;
+}
+
+.pic {
+	position: relative;
+	width: 32px;
+	height: 32px;
+	margin-right: 7px;
+	margin-top: 4px;
+	float: left;
+}
+
+.images {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+h1 img {
+	width: 8px;
+	height: 8px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+.summary {
+	color: #515040;
+	font-size: 9px;
+}

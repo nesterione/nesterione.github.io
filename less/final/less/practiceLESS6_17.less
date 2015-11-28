@@ -1,0 +1,20 @@
+@bg:hsl(40, 60%, 80%);
+
+@floL:left;
+
+@pd:20px;
+
+.generate-columns(4);
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+    .div-@{i} {
+        width: (@i * 100px / @n);
+        height: (@i * 100px / @n);
+        background-color:@bg;
+        float:@floL;
+        padding:@pd;
+        margin-right:@pd;
+        border: 1px solid red;
+     }
+     .generate-columns(@n, (@i + 1));
+}

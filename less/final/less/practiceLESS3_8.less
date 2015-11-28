@@ -1,0 +1,32 @@
+@width:120px;
+
+@bgGreen:#82b085;
+
+@floL:left;
+
+@mR:20px;
+
+@bgG:@bgGreen+#555;
+
+.border-radius (@radius: 5px) {
+     border-radius: @radius;
+     -moz-border-radius: @radius;
+     -webkit-border-radius: @radius;
+}
+
+.oneDiv {
+    width:@width;
+    height:@width;
+    background-color:@bgGreen;
+    float:@floL;
+    margin-right:@mR;
+    .border-radius;
+}
+
+.twoDiv { 
+    width:@width;
+    height:@width;
+    background-color:@bgG;
+    float:@floL;
+    .border-radius(40px);
+}

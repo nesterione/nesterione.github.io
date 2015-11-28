@@ -1,0 +1,17 @@
+.mixin(@background-color: #82b085; @width: 120px; @height: 120px;) { 
+    background-color: @background-color;
+    width: @width;
+    height: @height; 
+}
+
+.oneDiv { 
+    .mixin(); 
+}
+
+.twoDiv { 
+    .mixin(@width: 200px; @background-color: #33acfe;); 
+}
+
+.threeDiv { 
+    .mixin(#efca44;150px;); 
+}
