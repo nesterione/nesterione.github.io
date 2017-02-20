@@ -1,136 +1,76 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>nesterenya.com</title>
-	<meta name="title" content="Site by Igor Nesterenya" />
-	<meta name="description" content="This is my own site, it keep my projects, good links, notes, trainings and many other information" />
-	<meta name="author" content="Igor Nesterenya">
-	<meta name="viewport" content="initial-scale=0.8, width=device-width, maximum-scale=0.8, minimum-scale=0.8, user-scalable=no">
+    <head>
+        <meta charset="UTF-8">
+	    <title>nesterenya.com</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <style>
+            body {
+                margin: 0;
+                padding: 10px;
+                background-color: #e8e8e8;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
 
-	<link rel="icon" type="image/png" href="favicon.png">
-	<!--<script type="text/javascript" src="scripts/examples.js"></script>-->
-	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+            .wrapper {
+                padding: 20px;
+                width: 800px;
+                margin: 0 auto;
+                color: #000;   
+                background-color: white;             
+                -webkit-box-shadow: -1px 4px 13px -1px rgba(0,0,0,1);
+                -moz-box-shadow: -1px 4px 13px -1px rgba(0,0,0,1);
+                box-shadow: -1px 4px 13px -1px rgba(0,0,0,1);
+            }
 
-</head>
-<body>
-	<header class="main background-sky">
-		<h1 class="main-title">Добро пожаловать!</h1>
-		<h2 class="main-subtitle">Я Нестереня Игорь</h2>
-	</header>
-	<article class="content">
-		<div class="intro">
-			<h3 class="text-headline text-uppercase"> Что здесь?</h3>
-			<p class="text-body">Это моя стартовая страница, здесь находятся ссылки на мои основные ресурсы: проекты, визитка, и прочее, все что 
-			будет появляться новое, будет появляться здесь.
-			</p>
-		</div>
-		
-		<div class="grid-fluid">
-		<h3 class="text-headline text-uppercase text-center">Ссылки</h3>
-		<a href="timeline" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head blue"></div>
-					<h3 class="text-headline card-title">Timeline</h3>
-					<p class="card-body">ключевые моменты на моём пути.</p>
-				</div>
-			</div>
-		</a>
-		<a href="blog.nesterenya.com" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head green"></div>
-					<h3 class="text-headline card-title">Мой блог</h3>
-					<p class="card-body">Да, и у меня есть блог, и иногда что-то добавляется новое</p>
-				</div>
-			</div>
-		</a>
-		<a href="business-card" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head blue"></div>
-					<h3 class="text-headline card-title">Старая визитка</h3>
-					<p class="card-body">резюме, и прочая информация (скорое уберу)</p>
-				</div>
-			</div>
-		</a>
-		<a href="projects" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head red"></div>
-					<h3 class="text-headline card-title">Некоторые демки</h3>
-					<p class="card-body">описание и демонстрация, если это возможно</p>
-				</div>
-			</div>
-		</a>
-		<a href="https://www.google.com/maps/contrib/103601681023547359198/photos/@53.9160319,27.5485628,8z" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head green"></div>
-					<h3 class="text-headline card-title">Мои панорамы</h3>
-					<p class="card-body">панорамы на Google maps сделанные мной</p>
-				</div>
-			</div>
-		</a>
-		<a href="sketch" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head yellow"></div>
-					<h3 class="text-headline card-title">Наброски</h3>
-					<p class="card-body">разноя мелочь, недоработки и прочее</p>
-				</div>
-			</div>
-		</a>
-		<a href="http://nesterenya.com/md-angular-demo/#/home" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head red"></div>
-					<h3 class="text-headline card-title">Демонстрация Angular material design</h3>
-					<p class="card-body">Небольшая демка по Material Angular</p>
-				</div>
-			</div>
-		</a>
-		<a href="http://modeling.nesterenya.com/cloud-modeling-app/modeling.html" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head red"></div>
-					<h3 class="text-headline card-title">Демонстрация Cloud modeling</h3>
-					<p class="card-body">Компьютерное моделирование, webgl и еще много чего</p>
-				</div>
-			</div>
-		</a>
-		<a href="moodle" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head blue"></div>
-					<h3 class="text-headline card-title">Генератор тестов moodle</h3>
-					<p class="card-body">Помогает быстро создавать простые тесты в сисеме moodle</p>
-				</div>
-			</div>
-		</a>
-		<a href="links" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head green"></div>
-					<h3 class="text-headline card-title">Полезные ссылки</h3>
-					<p class="card-body">Мое хранилище ссылок</p>
-				</div>
-			</div>
-		</a>
-		<a href="trainings" target="blank">
-			<div class="c3">
-				<div class="link-card">
-					<div class="card-head red"></div>
-					<h3 class="text-headline card-title">Java Trainings</h3>
-					<p class="card-body">Список тем по курсам Java</p>
-				</div>
-			</div>
-		</a>
-		</div>
-	</article>
-	<footer ><small class="text-caption">Нестереня Игорь ©2015. </small></footer>
-	<script>
+            .center {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="wrapper">
+            <h1 class="center">Hi! I'm Ihar Nestsiarenia (Igor Nesterenya) or @nesterione</h1>
+            <p class="center">If you are looking more information about me just use next links:</p>
+            <ul>
+                <li><a href="http://nesterione.com">nesterione.com</a> - My main site. I update it rarely</li>
+                <li><a href="https://www.linkedin.com/in/nesterione">linkedin.com/in/nesterione</a> - LinkedIn </li>                
+                <li><a href="https://github.com/nesterione">github.com/nesterione</a> - My github account</li>
+                <li><a href="http://nesterione.com/timeline">nesterione.com/timeline</a> - Timeline </li>                
+                <li><a href="http://blog.nesterione.com">blog.nesterione.com</a> - It is just my blog (In russian)</li>
+                <li><a href="https://www.facebook.com/nesterione">facebook.com/nesterione</a> - My facebook (I am not very active user)</li>
+                <li><a href="https://vk.com/nesterione">vk.com/nesterione</a> - vk</li>
+                <li><a href="https://www.instagram.com/nesterione/">instagram.com/nesterione/</a> - Instagram. </li>
+                <hr>
+                <li><a href="mailto:igor.nesterenya@gmail.com">igor.nesterenya@gmail.com</a> - Just mail me </li>                                                
+            </ul>
+
+            <p style="color: white;">Here is hidden text. Look at souces</p>
+            
+            <!--
+            
+            Hi, If you are open it. I'm programmer. Have at least 3 years java experience and 
+            2 python. I ready to work hard when 
+            it is intresting for me but I can do boring work. I know sometimes we need to do it.
+            
+            Currently I'm a Java Developer. But I work with machine learning and computer vision for my post graduate work. 
+            I really like it.
+            
+            My short summary:
+
+            Programming languages: Java, Python , C, C#, Java Script (I have experience with other languages 
+            and I sure programmer can use any language when it needs)
+
+            Frameworks: Spring, Flask, Angular (1,2), Hibernate and etc.
+
+            DB: MySQL, MongoDB, ElasticSearch (A litle bit MS SQL Server, PostgreSQL)
+
+            Machine Learning: jupyter, sklearn, spark (a litle bit), thensorflow, keras 
+            
+            Mail me on nesterione@gmail.com
+            -->
+        </section>
+    </body>
+    <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -138,6 +78,5 @@
 
 	  ga('create', 'UA-59740475-1', 'auto');
 	  ga('send', 'pageview');
-</script>
-</body>
+    </script>
 </html>
