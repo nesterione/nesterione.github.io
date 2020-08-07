@@ -2,13 +2,13 @@
 layout: default
 ---
 
-## ?? Personal Information
+## 🤵 Personal Information
 
 **email:** Ihar.Nestsiarenia@gmail.com 
 
 **telegram**: @nesterione
 
-## ?? Summary
+## 📊 Summary
 
 Currently, I'm a Team Lead and Machine Learning Engineer. I can organize the Machine Learning process end-to-end and bootstrap the work of the Data Science Team.
 
@@ -24,12 +24,12 @@ Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
 *Main qualification:* 
 
-- Analysis requirements, model selection, modeling, delivering Machine Learning models, integration in the product � I have implemented a huge amount of machine learning and integrated with productions systems (document classification, text segmentation, information extraction, NER-recognition)
-- Prepare requirements to the data, forming validation sets and model evaluation strategies � had experience with training data preparation and labeling
+- Analysis requirements, model selection, modeling, delivering Machine Learning models, integration in the product — I have implemented a huge amount of machine learning and integrated with productions systems (document classification, text segmentation, information extraction, NER-recognition)
+- Prepare requirements to the data, forming validation sets and model evaluation strategies — had experience with training data preparation and labeling
 - Organizing Machine Learning and data pipelines, manage machine learning environment, organize experiments
 - Organizing processes within the Machine Learning Team
 
-## ?? Skills
+## 🤹 Skills
 
 ***Machine Learning:*** NLP, Sklearn, Keras, Tensorflow, Gensim, Computer Vision, Data Analytics, Math, 
 
@@ -47,15 +47,15 @@ Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
 ***Architecture*:**  Component diagrams, Sequence diagrams, UML, technical documentation
 
-## ?? Working Experience:
+## 🔨 Working Experience:
 
-### ?? Machine Learning Engineer /Lead Software Engineer � EPAM Systems
+### 💻 Machine Learning Engineer /Lead Software Engineer — EPAM Systems
 
-***Time:*** Feb-2019 � Now
+***Time:*** Feb-2019 — Now
 
 ***Team size:*** 20+
 
-***Summary:***�Product goals to provide an advanced exploratory search for layers and provide analytics based on the case history. The product is oriented to several EU markets and included a lot of state-of-the-art machine learning research.
+***Summary:*** Product goals to provide an advanced exploratory search for layers and provide analytics based on the case history. The product is oriented to several EU markets and included a lot of state-of-the-art machine learning research.
 
 **Achievements:**
 
@@ -86,11 +86,11 @@ Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
 - flask, python, java, docker, docker-compose, AWS, TensorFlow projector, MLFlow, DVC, git, jira, jupyter lab, solr, keras, stanfordnlp, gensim, sklearn, word2vec, BPE embeddings, fasttext,
 
-### ?? Senior Teacher of Information Technologies Department � Gomel State Technical University
+### 📎 Senior Teacher of Information Technologies Department — Gomel State Technical University
 
-***Time:*** Sep-2018 � Jun 2019
+***Time:*** Sep-2018 — Jun 2019
 
-I was a contributor and main instructor of course:�***Fundamentals of Intelligent Data Analysis***. I was conducting lectures and exercises.
+I was a contributor and main instructor of course: ***Fundamentals of Intelligent Data Analysis***. I was conducting lectures and exercises.
 
 The course contains several sides of Data Mining focused mostly on Natural Language Processing.
 
@@ -98,13 +98,13 @@ The course contains several sides of Data Mining focused mostly on Natural Langu
 
 Besides, I was an instructor for a diploma, my students successfully defended their works.
 
-### ?? Machine Learning Engineer / Senior Software Engineer � EPAM Systems
+### 💻 Machine Learning Engineer / Senior Software Engineer — EPAM Systems
 
-***Time:*** Jul-2018 � Feb-2019
+***Time:*** Jul-2018 — Feb-2019
 
 ***Team size:*** 5
 
-***Summary:***�This period of works includes AI-related activity which includes many projects and POCs.
+***Summary:*** This period of works includes AI-related activity which includes many projects and POCs.
 
 **Achievements:**
 
@@ -130,16 +130,16 @@ Besides, I was an instructor for a diploma, my students successfully defended th
 
 - tensorflow, keras, sklearn, bigARTM, NLTK, spacy, fasttext, BM25, word2vec, gensim, matplotlib, jupyter notebook, nodejs, java, xslt,  elasticsearch
 
-### ?? Co-Founder Copeck
+### 💼 Co-Founder Copeck
 
-***Time:*** Jul, 2017 � Now
+***Time:*** Jul, 2017 — Now
 
 ***Team size:*** 6
 
 ***Summary:*** Product for small and near to the middle retail businesses which provide:
 
 - Client base management with a loyalty system
-- ?ccounting of purchases
+- Аccounting of purchases
 - Workers KPI monitoring
 
 The project had several pivots and finally, we came up with implementing CRM with personal analytics for small businesses. We provide a simple solution when business owners can integrate our product in several minutes and start using it. We will provide fulfill information about the client base and transaction history, also simplify communications with clients and we do advanced analytics on demand. MAU: 3K
@@ -156,7 +156,7 @@ Product Analytics, Architecture, Backend Implementation, OPS, Project Management
 
 Flask, Reactjs, Kotlin, Swift, JUnit, Python,  Vue.js, Linux, Docker, pytest, gitlab ci, Docker/docker-compose, git, maven, Gitlab CI, bash, trello, miro, notion, MongoDb, java 8, Spring Boot, Loki, grafana 
 
-### ?? Senior Software Engineer / Data Engineer - EPAM Systems
+### 💻 Senior Software Engineer / Data Engineer - EPAM Systems
 
 ***Time:*** Oct-2016 - Jun-2018
 
@@ -183,15 +183,15 @@ Flask, Reactjs, Kotlin, Swift, JUnit, Python,  Vue.js, Linux, Docker, pytest, gi
 
 Elasticsearch, graph databases, jena-tdb, jboss fuse, tomcat, apache fuseki, ELK, kibana, sonar, findbug, pmd, checkstyle, pmd, winscp, bamboo ci, git, jira, maven, ant linux, cron, java 7, Java EE, activemq, spring 3, REST, SOAP, tomcat, jboss fuse, jena, xslt, RDF, xml, xpath, semantic web, junit, cucumber, camel, blueprint, sparql, log4j, lombok
 
-### ?? Co-Founder Pharco
+### 💼 Co-Founder Pharco
 
-***Time:*** Oct, 2015 � Sep, 2016
+***Time:*** Oct, 2015 — Sep, 2016
 
 ***Team size:*** 8
 
-***Summary:*** B2B�**Pha**rmacy�**Co**nsultant: This product was developed to solve several problems:
+***Summary:*** B2B **Pha**rmacy **Co**nsultant: This product was developed to solve several problems:
 
-- *Recommendation of related products* � the seller gets recommendations, what else could be useful for the client according to his shopping cart � this increase sales and enhance client loyalty
+- *Recommendation of related products* — the seller gets recommendations, what else could be useful for the client according to his shopping cart — this increase sales and enhance client loyalty
 - *Semantic search*: Search by symptoms and provide useful guides regarding it. Smart filtering for specific clients: pregnant, lactation period, or children. Recommendations alternatives based on the official anthology of medicines.
 
 ***Retrospective analysis:** We did quite well to translate complex business requirements to an elegant design, implemented simple UX at the same time we did nice technical solutions to support many business requirements with a simple scalable design. We had a lack of business experience and our communication with customers and go-to-market strategy wasn't so good. Finally, the project was closed because of growth challenges.*
@@ -205,20 +205,20 @@ The project includes various components:
 - Recommendation system
 - CRM
 
-***Responsibilities:*** Technical Leader � SDLC process organization, code quality control, configured CI/CD, automatization. Backend developer � implementation search system including fuzzy matching, ranking, and search by anthology graph. Also developed a recommendation system based on rules. OPS, configuration servers, proxies, deployment management.
+***Responsibilities:*** Technical Leader — SDLC process organization, code quality control, configured CI/CD, automatization. Backend developer — implementation search system including fuzzy matching, ranking, and search by anthology graph. Also developed a recommendation system based on rules. OPS, configuration servers, proxies, deployment management.
 
 ***Technologies:*** Java 8, Spring MVC, Spring Security, Spring Data, Spring Boot, JSP, For admin-panel was used AngularJS. JPA/Hibernate, QueryDSL, Linux, Docker, JUnit / Spring Test Framework, docker-compose, git, Gradle, maven, Gitlab CI, Jenkins CI, bash, Python for data processing and aggregating from different sources, trello/gitlab issue tracker, Fiddler, MySQL (Used JPA/Hibernate, Spring Data)
 
-### ?? Senior Instructor (Java) � Educational Centere "IT Class"
+### 📎 Senior Instructor (Java) — Educational Centere "IT Class"
 
-Jun 2015 � Oct 2016
+Jun 2015 — Oct 2016
 
 I was responsible to develop a course to teach programming in java from scratch and conducting training lessons. The course program contained 2 sections: basic Java and Java EE. For the final project, students were implementing web applications that interact with the database and have authorization.
 I had good student retention and more then half of the students got jobs in the IT industry. I had 4 groups, different aged audience.
 
-### ?? Co-Founder Arenda-online
+### 💼 Co-Founder Arenda-online
 
-***Time:*** 2015 � 2016
+***Time:*** 2015 — 2016
 
 ***Team size:*** 2
 
@@ -226,23 +226,23 @@ I had good student retention and more then half of the students got jobs in the 
 
 ***Retrospective analysis:** When we started this project we focused mostly on the technical side and loosed important product and marketing questions. Unfortunately, you can't create a product without talking with clients. We didn't know a lot about Product Management.*
 
-***Technical Description:*** We had implemented with *spring* backend and *react.js* app for UI. Google Analytics and tag manager were used. As data storage was used�*MongoDb*, deployed in PaaS OpenShift then migrated to cloud service and *Docker*.
+***Technical Description:*** We had implemented with *spring* backend and *react.js* app for UI. Google Analytics and tag manager were used. As data storage was used *MongoDb*, deployed in PaaS OpenShift then migrated to cloud service and *Docker*.
 
 The project includes various components:
 
-- Crawlers � run by schedule.
-- Deduplication system � we had the same ads from different sources. This included fuzzy rules to detect the same advertisements from different sources.
+- Crawlers — run by schedule.
+- Deduplication system — we had the same ads from different sources. This included fuzzy rules to detect the same advertisements from different sources.
 - Restful API
 - Web Application developed in React.js.
-- The *Server-rendering component*, based on�PhantomJS�� allows us to create pre-rendered versions of the pages to help search crawlers to index all pages of our app.
+- The *Server-rendering component*, based on PhantomJS — allows us to create pre-rendered versions of the pages to help search crawlers to index all pages of our app.
 
 ***Responsibilities:*** Architecture, Backend Implementation, OPS, Product / Project Management
 
-***Technologies:***� Java, Spring boot, React.js, OpenShift, maven, git, jsoup, ODM morphia, docker, docker-compose, Linux
+***Technologies:***  Java, Spring boot, React.js, OpenShift, maven, git, jsoup, ODM morphia, docker, docker-compose, Linux
 
-### ?? Assistant of Information Technologies Department - Gomel State Technical University
+### 📎 Assistant of Information Technologies Department - Gomel State Technical University
 
-Aug-2014 � Aug-2016
+Aug-2014 — Aug-2016
 
 During my work at the university, I contributed to nearly all courses in our department:
 
@@ -257,31 +257,31 @@ Essentially I was helping with courses:
 - Numerical methods for solving differential equations. Finite Difference Method. finite element method
 - OOP programming in C# and Java
 
-## ?? Volunteer Experience
+## 🤗 Volunteer Experience
 
 I am actively participating in many activities aimed at growing people, I am glad to help motivated people to develop in the IT-field, I joy to see your shining eyes.
 
 Therefore, I am happy to take part as a participant or organizer for meetups, conferences, hackathons. I open to consultations about any related to my experience topics.
 
-### ?? Driving Community and Conference Speaker
+### 📢 Driving Community and Conference Speaker
 
 I'm leading the local community, about data science and data mining. Currently, more than 100 people gather for irregular meetups ([https://t.me/ds_gomel_chat](https://t.me/ds_gomel_chat) ). Besides, I'm cooperating with other city-level communities. I regularly have a technical talk.
 
-### ?? Advising and Mentoring
+### 🦉 Advising and Mentoring
 
 I play the role of a trainer and advisor for different disciplines: Java, Python, Machine Learning. Involved in mentoring activities.
 
-### ? Contribution to **Education**
+### ✒ Contribution to **Education**
 
 I am participating as a consultant for the university and training centers. I'm open to being invited to speak at the university about the current state of the IT industry and related to me topics.
 
-## ?? Education
+## 🎓 Education
 
-### ???? PhD (uncompleted) of Sukhoi state technical university of Gomel
+### 👨🏻 PhD (uncompleted) of Sukhoi state technical university of Gomel
 
 ***Department*:** 05.13.05 Elements and devices of computer technology and control systems
 
-***Time:*** 2016 � 2020
+***Time:*** 2016 — 2020
 
 ***Research domain:*** computer vision, object detection, vehicles tracking, traffic-light management, optimization
 
@@ -291,11 +291,11 @@ Systems as I worked on could be used as a supplementary component to tune alread
 
 Stretch goal: A city where all roads and traffic-lights know information about road situations every single moment, the system could dynamically change traffic lights regimes to normalize traffic. It is exciting, is not?
 
-### ???? Master of science of Bachelor of Sukhoi state technical university of Gomel
+### 👦🏻 Master of science of Bachelor of Sukhoi state technical university of Gomel
 
 ***Department:*** Mathematical modeling, numerical methods and program complexes
 
-***Time:*** 2014 � 2016 
+***Time:*** 2014 — 2016 
 
 ***Diploma score:*** (10 from 10)
 
@@ -307,22 +307,22 @@ Main components of developed modeling application:
 - Experiments management system
 - 3D web editor to compose objects to be modeled and visualizer of modeling results
 
-### ???? Master of Science of Saint Petersburg National Research University of Information Technologies, Mechanics and Optics - ????? (??? ??? ????)
+### 👦🏻 Master of Science of Saint Petersburg National Research University of Information Technologies, Mechanics and Optics - ЛИМТУ (при НИУ ИТМО)
 
 ***Department:*** Computer Engineering and Design
 
-***Time:*** 2014 � 2016 
+***Time:*** 2014 — 2016 
 
 ***Diploma score:*** 5 (from 5)
 
 ***Summary:*** I learned various approaches on how to *design web applications*, to works with vector and raster graphics.
 As a final project, I implemented a 3D web editor using *WebGL* (Three.js) and angular.js. As a result, this editor was used for other projects dedicated to *mathematical modeling.*
 
-### ???? Bachelor of Sukhoi State Technical University of Gomel
+### 👶🏻 Bachelor of Sukhoi State Technical University of Gomel
 
 ***Department:*** Information Technology
 
-***Time:*** 2009 � 2014
+***Time:*** 2009 — 2014
 
 ***Diploma score:*** 10 ****(from 10)
 
@@ -333,11 +333,11 @@ My final project was related to *transients processes modeling*. This project in
 - Application of the *finite element method* to novice problem of heating a metal plate under a load and
 - Software application with visual editor, experiment management system and custom math solver used to provide problem solutions.
 
-## ?? Courses
+## 📙 Courses
 
 - See all
 
-    ### School of management by Yandex (???????????? 2017) (self-education)
+    ### School of management by Yandex (Мобилизация» 2017) (self-education)
 
     [https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl](https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl) 
 
@@ -355,7 +355,7 @@ My final project was related to *transients processes modeling*. This project in
 
     2017
 
-    ### ?????? Angular 2
+    ### Основы Angular 2
 
     [https://www.youtube.com/playlist?list=PLqHlAwsJRxANDZPGvgX4DQCtN1TTUCUxx](https://www.youtube.com/playlist?list=PLqHlAwsJRxANDZPGvgX4DQCtN1TTUCUxx)
 
@@ -415,13 +415,13 @@ My final project was related to *transients processes modeling*. This project in
 
     June 2015
 
-    ### ???????? ??????? (Linear Algebra) (SHE)
+    ### Линейная алгебра (Linear Algebra) (SHE)
 
     Coursera 
 
     May 2015 
 
-    ### The Data Scientist�s Toolbox
+    ### The Data Scientist’s Toolbox
 
     Coursera ([https://www.coursera.org/course/datascitoolbox](https://www.coursera.org/course/datascitoolbox))
 
