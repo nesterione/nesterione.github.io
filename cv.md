@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Updated version (https://www.notion.so/nesterione/Ihar-Nestsiarenia-CV-full-b81f4307e753405ebb3f544a05ae0958)
+Updated version (https://www.notion.so/nesterione/Ihar-Nestsiarenia-CV-full-b81f4307e753405ebb3f544a05ae0958)[https://www.notion.so/nesterione/Ihar-Nestsiarenia-CV-full-b81f4307e753405ebb3f544a05ae0958]
 
 ## 🤵 Personal Information
 
