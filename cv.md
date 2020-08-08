@@ -2,6 +2,8 @@
 layout: default
 ---
 
+Updated version (https://www.notion.so/nesterione/Ihar-Nestsiarenia-CV-full-b81f4307e753405ebb3f544a05ae0958)
+
 ## 🤵 Personal Information
 
 **email:** Ihar.Nestsiarenia@gmail.com 
@@ -183,7 +185,7 @@ Flask, Reactjs, Kotlin, Swift, JUnit, Python,  Vue.js, Linux, Docker, pytest, gi
 
 Elasticsearch, graph databases, jena-tdb, jboss fuse, tomcat, apache fuseki, ELK, kibana, sonar, findbug, pmd, checkstyle, pmd, winscp, bamboo ci, git, jira, maven, ant linux, cron, java 7, Java EE, activemq, spring 3, REST, SOAP, tomcat, jboss fuse, jena, xslt, RDF, xml, xpath, semantic web, junit, cucumber, camel, blueprint, sparql, log4j, lombok
 
-### 💼 Co-Founder Pharco
+### 💼 Co-Founder of Pharco
 
 ***Time:*** Oct, 2015 — Sep, 2016
 
@@ -291,13 +293,13 @@ Systems as I worked on could be used as a supplementary component to tune alread
 
 Stretch goal: A city where all roads and traffic-lights know information about road situations every single moment, the system could dynamically change traffic lights regimes to normalize traffic. It is exciting, is not?
 
-### 👦🏻 Master of science of Bachelor of Sukhoi state technical university of Gomel
+### 👦🏻 Master of science of Sukhoi state technical university of Gomel
 
 ***Department:*** Mathematical modeling, numerical methods and program complexes
 
 ***Time:*** 2014 — 2016 
 
-***Diploma score:*** (10 from 10)
+***Diploma score:*** 10 (from 10)
 
 ***Summary:*** There is a continuation of my bachelor's work. I researched *dynamic transients processes modeling with the finite element method*.
 

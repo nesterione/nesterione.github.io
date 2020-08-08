@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Welcome! 
+Welcome! I'm Ihar Nestsiarenia, techno-optimist and machine learning engineer.
 
-[About me](./about.html).
+[CV](./cv.html).
 
