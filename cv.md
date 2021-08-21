@@ -12,38 +12,47 @@ layout: default
 
 ## 📊 Summary
 
-Currently, I'm a Team Lead and Machine Learning Engineer. I can organize the Machine Learning process end-to-end and bootstrap the work of the Data Science Team.
+Open for opportunities in **product** companies / startups (Seed/Series A)
 
-I'm business-oriented and focused on problem-solving, not just implement a technical solution. I'm excited about building new products and I have the strong technical knowledge to build complex AI-driven solutions. I'm interested in having a strong connection with business goals.
+Considering only locations: DE/UK/NL/PL/LT/EE
 
-I primarily worked with Java and Python stack and I can learn any new technologies when it is needed, I had wide experience with search engines (solr, elasticsearch), NLP frameworks (NLTK, Spacy, Stanza) Machine Learning frameworks (tensorflow, keras, sklearn) and dozen of other things.
+Role: Tech Leader in Machine Learning/ AI Architect / Backend / MLOps
 
-My hobby is developing pet-projects and products, I tried several times to organize my own company and launched some products on the local market. Also, I'm looking for a business mentor, from my side I can be useful to advise about cutting-edge technologies.
+Business oriented, have a product mindset and metrics driven. Have ambitions to become a CTO. I'm interested in creating new Data Driven products, I'm good at prototyping and fast hypothesis validation. 
 
-*Industries I have special experience with:*
+---
 
-Legal & Regulatory, Financial, Entertainment, Information Retrieval
+Currently, I'm playing roles: **Lead Machine Learning Engineer, AI Architect, Resource Manager and Delivery Manager**. Before I have experience with machine learning engineering, mlops, data engineering, information retrial and backend. 
 
-*Main qualification:* 
+I'm business-oriented, focused on problem-solving and metrics, not just implementing a technical solution. I'm excited about building new products and I have the strong technical knowledge to build complex AI-driven solutions. I'm interested in having a strong connection with business goals. In my work I strictly focused on fast hypothesis validation and fast implementations workable prototypes. 
 
-- Analysis requirements, model selection, modeling, delivering Machine Learning models, integration in the product — I have implemented a huge amount of machine learning and integrated with productions systems (document classification, text segmentation, information extraction, NER-recognition)
-- Prepare requirements to the data, forming validation sets and model evaluation strategies — had experience with training data preparation and labeling
-- Organizing Machine Learning and data pipelines, manage machine learning environment, organize experiments
-- Organizing processes within the Machine Learning Team
+I mostly working with Python and Java stack, but not restricted by those technologies and can rapidly learn other things it it is needed for achieving business goals. 
+
+I had wide experience with Search Engines (solr, elasticsearch), NLP frameworks (NLTK, Spacy, Stanza, huggingfaces, flair) Machine Learning frameworks (tensorflow, keras, sklearn, pytorch) and dozen of other things. I have wide experience with organizing  Machine Learning process end-to-end and bootstrapping the work of the Data Science Team. 
+
+Several times I launched own product for the local market. 
+
+*Industries I have special experience with:* Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
 ## 🤹 Skills
 
-***Machine Learning:*** NLP, Sklearn, Keras, Tensorflow, Gensim, Computer Vision, Data Analytics, Math, 
+***Machine Learning:*** Flair, Hugginfaces, Pytorch, Sklearn, Keras, Tensorflow, Gensim, Data Analytics, Math, Annoy, Faiss
 
-***Software Engineering:*** Python, Flask, Java, Spring Boot, JUnit, pytest, REST, Jena
+***Machine Learning Domains:*** NLP, tabula data, CV documents.
 
-***Databases:** MongoDb, MySQL, MS SQL Server, Graph Databases* 
+***ML Ops:*** DVC, MLFlow, Amazon Sagemaker 
+
+***Software Engineering:*** Python, Flask, Django, Java, Spring Boot, JUnit, pytest, REST, Jena
+
+***Search Engines:*** Elasticsearch, Solr, Lucine 
+
+***Databases:** MongoDb, MySQL, MS SQL Server,*
 
 ***Team Management:** Scrum, Kanban, SAFe, Jira, trello*
 
-***Environment:** Docker, Linux, Bamboo CI, Gitlab CI*
+***Environment:** Docker, Linux*
 
-***Search Engines:*** Elasticsearch, Solr, Lucine 
+***CI/CD:*** *Bamboo CI, Gitlab CI, Jenkins CI, Amazon Code Build* 
 
 ***Clouds:** AWS*
 
@@ -53,7 +62,34 @@ Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
 ### 💻 Machine Learning Engineer /Lead Software Engineer — EPAM Systems
 
-***Time:*** Feb-2019 — Now
+***Time:*** Aug 2020 — Now: Leading documents enrichment team 
+
+***Team size: 3*** 
+
+***Summary:** Product provides case-management system for lawyers. When user uploads case, document goes through enrichment pipeline where we had chain of models to classify document type, extract entities, recognize document layout and so on.* 
+
+**Achievements:**
+
+- Organized data versioning, experiments management, reproducibility and auto-deployment  with DVC, git, s3 and jenkins
+- Organized data annotation process with [labelstud.io](http://labelstud.io)
+- Designed and implemented data ETLs with Airflow
+
+**Responsibilities:**
+
+- Design AI architecture for Product
+- Implementation and integration
+- Defining problem which could be solved with Data-Driven approach, managing backlog and prioritization
+- Presentation of solutions
+
+**Environment:**
+
+- flair, spacy, huggingfaces, nlpaug, sklearn, flask, python, docker, docker-compose, jupyter lab, pytorch, AWS Step Functions, AWS SQS, Version control: git, DVC, s3, Project management: scrum, kanban, jira
+
+***Time:*** June 2021 — July 2021: Integration *Sagemaker*
+
+***Summary:** Introduced ****Sagemaker ****for machine learning team. Organized flow how to manage data, track metrics, manage computational resources, work on R&D tasks and create releases to make process transparent for whole team and reproducible.* 
+
+***Time:*** Feb-2019 — Aug 2020: Implementing, design and leading sub tracks of machine learning team 
 
 ***Team size:*** 20+
 
@@ -61,7 +97,7 @@ Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
 **Achievements:**
 
-- Set up process how to manage data, experiments, models, and metrics
+- Established process how to manage data, experiments, models, and metrics
 - Found problem with the selected approach, proposed and implemented alternative solution then business did a big pivot and used this POC as a core for the whole product.
 - Improved text classification algorithms, organization distributed text preprocessing
 - Implementation named entity recognition algorithms based taxonomy with synonyms, optimized algorithm to work with millions of documents with dictionary 40K
@@ -102,7 +138,7 @@ Besides, I was an instructor for a diploma, my students successfully defended th
 
 ### 💻 Machine Learning Engineer / Senior Software Engineer — EPAM Systems
 
-***Time:*** Jul-2018 — Feb-2019
+***Time:*** Jul-2018 — Feb-2019: Implementing and leading R&D team 
 
 ***Team size:*** 5
 
@@ -339,6 +375,18 @@ My final project was related to *transients processes modeling*. This project in
 
 - See all
 
+    ### XINE100 - 001 Introduction to Innovation and Entrepreneurship
+
+    [https://learning.stanford.edu/online/course/view.php?id=646](https://learning.stanford.edu/online/course/view.php?id=646)
+
+    2020
+
+    ### **Digital Dolina**
+
+    [https://netology.ru/profile/program/dd-1](https://netology.ru/profile/program/dd-1)
+
+    2020
+
     ### School of management by Yandex (Мобилизация» 2017) (self-education)
 
     [https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl](https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl) 
@@ -395,13 +443,13 @@ My final project was related to *transients processes modeling*. This project in
 
     ### M101P: MongoDB for Python Developers
 
-    MongoDB, Inc. ([http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7](http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7)) 
+    MongoDB, Inc. ([http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7](https://www.notion.so/07078d93ef844636b2fd43d16eaccda7)) 
 
     July 2015 
 
     ### M101J: MongoDB for Java Developers
 
-    MongoDB, Inc. ([http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b](http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b))
+    MongoDB, Inc. ([http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b](https://www.notion.so/738aed1cec4a4f5bb980cf97dc79024b))
 
     July 2015 
 
