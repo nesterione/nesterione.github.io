@@ -18,19 +18,19 @@ Considering only locations: DE/UK/NL/PL/LT/EE
 
 Role: Tech Leader in Machine Learning/ AI Architect / Backend / MLOps
 
-Business oriented, have a product mindset and metrics driven. Have ambitions to become a CTO. I'm interested in creating new Data Driven products, I'm good at prototyping and fast hypothesis validation. 
+Business oriented, have a product mindset and metrics-driven. Have ambitions to become a CTO. I'm interested in creating new Data-driven products, I'm good at prototyping and fast hypothesis validation. 
 
 ---
 
-Currently, I'm playing roles: **Lead Machine Learning Engineer, AI Architect, Resource Manager and Delivery Manager**. Before I have experience with machine learning engineering, mlops, data engineering, information retrial and backend. 
+Currently, I'm playing roles: **Lead Machine Learning Engineer, AI Architect, Resource Manager and Delivery Manager**. Before I had experience with machine learning engineering, MLOps, data engineering, information retrial and backend. 
 
-I'm business-oriented, focused on problem-solving and metrics, not just implementing a technical solution. I'm excited about building new products and I have the strong technical knowledge to build complex AI-driven solutions. I'm interested in having a strong connection with business goals. In my work I strictly focused on fast hypothesis validation and fast implementations workable prototypes. 
+I'm business-oriented, focused on problem-solving and metrics, not only implementing a technical solution. I'm excited about building new products and I have the strong technical knowledge to build complex AI-driven solutions. I'm interested in having a strong connection with business goals. In my work I strictly focused on fast hypothesis validation and fast implementations workable prototypes. 
 
-I mostly working with Python and Java stack, but not restricted by those technologies and can rapidly learn other things it it is needed for achieving business goals. 
+I've been mostly working with Python and Java stack, but not restricted by those technologies and can rapidly learn other things it is needed for achieving business goals. 
 
-I had wide experience with Search Engines (solr, elasticsearch), NLP frameworks (NLTK, Spacy, Stanza, huggingfaces, flair) Machine Learning frameworks (tensorflow, keras, sklearn, pytorch) and dozen of other things. I have wide experience with organizing  Machine Learning process end-to-end and bootstrapping the work of the Data Science Team. 
+I had wide experience with Search Engines (solr, elasticsearch), NLP frameworks (NLTK, Spacy, Stanza, huggingfaces, flair) Machine Learning frameworks (tensorflow, keras, sklearn, pytorch) and dozen of other things. I have wide experience with organizing  Machine Learning processes end-to-end and bootstrapping the work of the Data Science Team. 
 
-Several times I launched own product for the local market. 
+Several times I launched product for the local market so far. 
 
 *Industries I have special experience with:* Legal & Regulatory, Financial, Entertainment, Information Retrieval
 
@@ -78,7 +78,7 @@ Several times I launched own product for the local market.
 
 - Design AI architecture for Product
 - Implementation and integration
-- Defining problem which could be solved with Data-Driven approach, managing backlog and prioritization
+- Defining problems which could be solved with Data-Driven approach, managing backlog and prioritization
 - Presentation of solutions
 
 **Environment:**
@@ -87,9 +87,9 @@ Several times I launched own product for the local market.
 
 ***Time:*** June 2021 — July 2021: Integration *Sagemaker*
 
-***Summary:** Introduced ****Sagemaker ****for machine learning team. Organized flow how to manage data, track metrics, manage computational resources, work on R&D tasks and create releases to make process transparent for whole team and reproducible.* 
+***Summary:** Introduced ****SageMaker ****for machine learning team. Organized flow how to manage data, track metrics, manage computational resources, work on R&D tasks and create releases to make process transparent for the whole team and reproducible.* 
 
-***Time:*** Feb-2019 — Aug 2020: Implementing, design and leading sub tracks of machine learning team 
+***Time:*** Feb-2019 — Aug 2020: Implementing, design and leading sub-tracks of machine learning team 
 
 ***Team size:*** 20+
 
@@ -107,7 +107,7 @@ Several times I launched own product for the local market.
 
 **Responsibilities:**
 
-- Design algorithms, ETL-pipelines, define a model deployment strategy and integration with product.
+- Design algorithms, ETL pipelines, define a model deployment strategy and integration with product.
 - Presentations results to the business, requirements clarification, generation technical requirements
 - Organization of multi-level validation of models
 - Data Analytics and Exploratory Data Analysis
@@ -153,7 +153,7 @@ Besides, I was an instructor for a diploma, my students successfully defended th
 - Implementations of AI/ML architectures based on deep learning
 - Topic Modeling and Categorization legal correspondence
 - Text clustering systems
-- Design and implementation voice bots
+- Design and implementation of voice bots
 - Implementations algorithms of user input intent detection, building NLU models to find the most relevant answer to a user question.
 - Implementing categorization documents by content and metadata using agglomerative clustering and LDA.
 - Building a system for pattern base categorization legal documents.
@@ -170,7 +170,7 @@ Besides, I was an instructor for a diploma, my students successfully defended th
 
 ### 💼 Co-Founder Copeck
 
-***Time:*** Jul, 2017 — Now
+***Time:*** Jul 2017 — Now
 
 ***Team size:*** 6
 
@@ -184,7 +184,7 @@ The project had several pivots and finally, we came up with implementing CRM wit
 
 **Technical Descriptions:**
 
-For this project we used the many technologies, we had react.js apps and mobile applications implemented in swift and kotlin with backend implemented in java. The current version is pure python and web applications implemented in vue.js.
+For this project we used many technologies, we had react.js apps and mobile applications implemented in swift and kotlin with backend implemented in java. The current version is pure python and web applications implemented in vue.js.
 
 **Responsibilities:** 
 
@@ -196,7 +196,7 @@ Flask, Reactjs, Kotlin, Swift, JUnit, Python,  Vue.js, Linux, Docker, pytest, gi
 
 ### 💻 Senior Software Engineer / Data Engineer - EPAM Systems
 
-***Time:*** Oct-2016 - Jun-2018
+***Time:*** Oct 2016 — Jun 2018
 
 ***Team size:*** 8
 
@@ -210,7 +210,7 @@ Flask, Reactjs, Kotlin, Swift, JUnit, Python,  Vue.js, Linux, Docker, pytest, gi
 
 **Responsibility:**
 
-- Creating a resilient data processing pipelines;
+- Creating resilient data processing pipelines;
 - Implementation of REST/SOAP services for document processing;
 - Performance and memory profiling, heap dump investigation;
 - Implementing tools for personal user data migration;
@@ -223,7 +223,7 @@ Elasticsearch, graph databases, jena-tdb, jboss fuse, tomcat, apache fuseki, ELK
 
 ### 💼 Co-Founder of Pharco
 
-***Time:*** Oct, 2015 — Sep, 2016
+***Time:*** Oct 2015 — Sep 2016
 
 ***Team size:*** 8
 
@@ -234,7 +234,7 @@ Elasticsearch, graph databases, jena-tdb, jboss fuse, tomcat, apache fuseki, ELK
 
 ***Retrospective analysis:** We did quite well to translate complex business requirements to an elegant design, implemented simple UX at the same time we did nice technical solutions to support many business requirements with a simple scalable design. We had a lack of business experience and our communication with customers and go-to-market strategy wasn't so good. Finally, the project was closed because of growth challenges.*
 
-***Technical Description:*** Backend implemented with spring boot. Admin panel developed with AngularJS. Docker was used for project deployment. Nginx used as a proxy. We also actively used an analytics system to collect user behavior and recognize patterns to detect UX problems and evaluate the usefulness of features.
+***Technical Description:*** Backend implemented with spring boot. Admin panel developed with AngularJS. Docker was used for project deployment. Nginx is used as a proxy. We also actively used an analytics system to collect user behavior and recognize patterns to detect UX problems and evaluate the usefulness of features.
 
 The project includes various components:
 
@@ -247,12 +247,12 @@ The project includes various components:
 
 ***Technologies:*** Java 8, Spring MVC, Spring Security, Spring Data, Spring Boot, JSP, For admin-panel was used AngularJS. JPA/Hibernate, QueryDSL, Linux, Docker, JUnit / Spring Test Framework, docker-compose, git, Gradle, maven, Gitlab CI, Jenkins CI, bash, Python for data processing and aggregating from different sources, trello/gitlab issue tracker, Fiddler, MySQL (Used JPA/Hibernate, Spring Data)
 
-### 📎 Senior Instructor (Java) — Educational Centere "IT Class"
+### 📎 Senior Instructor (Java) — Educational Center "IT Class"
 
 Jun 2015 — Oct 2016
 
 I was responsible to develop a course to teach programming in java from scratch and conducting training lessons. The course program contained 2 sections: basic Java and Java EE. For the final project, students were implementing web applications that interact with the database and have authorization.
-I had good student retention and more then half of the students got jobs in the IT industry. I had 4 groups, different aged audience.
+I had good student retention and more than half of the students got jobs in the IT industry. I had 4 groups, different aged audience.
 
 ### 💼 Co-Founder Arenda-online
 
@@ -299,7 +299,7 @@ Essentially I was helping with courses:
 
 I am actively participating in many activities aimed at growing people, I am glad to help motivated people to develop in the IT-field, I joy to see your shining eyes.
 
-Therefore, I am happy to take part as a participant or organizer for meetups, conferences, hackathons. I open to consultations about any related to my experience topics.
+Therefore, I am happy to take part as a participant or organizer for meetups, conferences, hackathons. I'm open to consultations about any related to my experience topics.
 
 ### 📢 Driving Community and Conference Speaker
 
@@ -364,7 +364,7 @@ As a final project, I implemented a 3D web editor using *WebGL* (Three.js) and a
 
 ***Diploma score:*** 10 ****(from 10)
 
-***Summary:*** During student years I had *research experience,* participated in several conferences, and presented thesis's related to my final project.
+***Summary:*** My student years I had *research experience,* participated in several conferences, and presented thesis's related to my final project.
 
 My final project was related to *transients processes modeling*. This project includes two parts:
 
