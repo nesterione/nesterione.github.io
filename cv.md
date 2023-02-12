@@ -2,497 +2,339 @@
 layout: default
 ---
 
-[Updated version](https://www.notion.so/nesterione/Ihar-Nestsiarenia-CV-full-b81f4307e753405ebb3f544a05ae0958)
+# 🤵 Personal Information
 
-## 🤵 Personal Information
+**email:** nesterione@gmail.com
+**Linkedin:** https://www.linkedin.com/in/nesterione 
 
-**email:** Ihar.Nestsiarenia@gmail.com 
+# 📊 Summary
 
-**telegram**: @nesterione
+As an experienced machine learning engineer with over 8 years of industry experience, I possess a product mindset and a proven track record of successfully leading and delivering ML projects from R&D to production.
 
-## 📊 Summary
+My expertise lies in NLP and related technologies, with a focus on transitioning models from research to production, building search systems, and improving relevancy. Additionally, I am skilled in quickly prototyping to validate business hypotheses.
 
-Open for opportunities in **product** companies / startups (Seed/Series A)
+Currently, I’m based in Lithuania, and considering relocating (priority: IT, UK, NL) and am open to consulting contracts in the MLOps industry.
 
-Considering only locations: DE/UK/NL/PL/LT/EE
+My experience includes various roles such as team lead, machine learning engineer, delivery manager, product manager, and software engineer. I thrive in small, agile teams that can test ideas quickly, and am also well-versed in building systems and establishing production delivery.
 
-Role: Tech Leader in Machine Learning/ AI Architect / Backend / MLOps
+# 🤹 Core Skills
 
-Business oriented, have a product mindset and metrics-driven. Have ambitions to become a CTO. I'm interested in creating new Data-driven products, I'm good at prototyping and fast hypothesis validation. 
+**Domains:** NLP, Information Search, LegalTech, Document processing, OCR,
 
----
+***MLOps:*** AWS Sagemaker, DVC, MLFlow,
 
-Currently, I'm playing roles: **Lead Machine Learning Engineer, AI Architect, Resource Manager and Delivery Manager**. Before I had experience with machine learning engineering, MLOps, data engineering, information retrial and backend. 
+***Core Languages:*** Python, Java
 
-I'm business-oriented, focused on problem-solving and metrics, not only implementing a technical solution. I'm excited about building new products and I have the strong technical knowledge to build complex AI-driven solutions. I'm interested in having a strong connection with business goals. In my work I strictly focused on fast hypothesis validation and fast implementations workable prototypes. 
+# 🔨 Working Experience:
 
-I've been mostly working with Python and Java stack, but not restricted by those technologies and can rapidly learn other things it is needed for achieving business goals. 
+## 💻 2018 — now:  EPAM Systems
 
-I had wide experience with Search Engines (solr, elasticsearch), NLP frameworks (NLTK, Spacy, Stanza, huggingfaces, flair) Machine Learning frameworks (tensorflow, keras, sklearn, pytorch) and dozen of other things. I have wide experience with organizing  Machine Learning processes end-to-end and bootstrapping the work of the Data Science Team. 
+### 2021 — now: Lead Machine Learning Engineer / MLOps
 
-Several times I launched product for the local market so far. 
-
-*Industries I have special experience with:* Legal & Regulatory, Financial, Entertainment, Information Retrieval
-
-## 🤹 Skills
-
-***Machine Learning:*** Flair, Hugginfaces, Pytorch, Sklearn, Keras, Tensorflow, Gensim, Data Analytics, Math, Annoy, Faiss
-
-***Machine Learning Domains:*** NLP, tabula data, CV documents.
-
-***ML Ops:*** DVC, MLFlow, Amazon Sagemaker 
-
-***Software Engineering:*** Python, Flask, Django, Java, Spring Boot, JUnit, pytest, REST, Jena
-
-***Search Engines:*** Elasticsearch, Solr, Lucine 
-
-***Databases:** MongoDb, MySQL, MS SQL Server,*
-
-***Team Management:** Scrum, Kanban, SAFe, Jira, trello*
-
-***Environment:** Docker, Linux*
-
-***CI/CD:*** *Bamboo CI, Gitlab CI, Jenkins CI, Amazon Code Build* 
-
-***Clouds:** AWS*
-
-***Architecture*:**  Component diagrams, Sequence diagrams, UML, technical documentation
-
-## 🔨 Working Experience:
-
-### 💻 Machine Learning Engineer /Lead Software Engineer — EPAM Systems
-
-***Time:*** Aug 2020 — Now: Leading documents enrichment team 
-
-***Team size: 3*** 
-
-***Summary:** Product provides case-management system for lawyers. When user uploads case, document goes through enrichment pipeline where we had chain of models to classify document type, extract entities, recognize document layout and so on.* 
+***Summary:*** As a member of the EU product team, I was responsible for utilizing AI to address various challenges faced by legal professionals. This included designing and implementing search algorithms and other models to enhance legal research, as well as developing metrics, conducting experiments, establishing pipelines, and automating repetitive tasks.
 
 **Achievements:**
 
-- Organized data versioning, experiments management, reproducibility and auto-deployment  with DVC, git, s3 and jenkins
-- Organized data annotation process with [labelstud.io](http://labelstud.io)
-- Designed and implemented data ETLs with Airflow
+- Integrated SageMaker, streamlined development process with pipelines, improved delivery with MLOPS practices, accelerated development
+- Implemented MLOPS practices to improve delivery, including maintaining data, code, models, and documentation, which led to an acceleration in development.
+- Improved ML development process with criteria, goals, metrics, and a metrics framework for tracking product metrics and experimentation.
+- Utilized active learning approach and introduced data quality control measures.
+- Led hackathon team to runner-up prizes, implemented ideas to improve the product.
 
-**Responsibilities:**
+**Technologies:**
 
-- Design AI architecture for Product
-- Implementation and integration
-- Defining problems which could be solved with Data-Driven approach, managing backlog and prioritization
-- Presentation of solutions
+Tensorflow, Keras, scikit-learn, spaCy, BM25, word2vec, Solr, DVC, Sagemaker, Python, Docker
 
-**Environment:**
+### 2020 — 2021: Lead Machine Learning Engineer / AI Architect
 
-- flair, spacy, huggingfaces, nlpaug, sklearn, flask, python, docker, docker-compose, jupyter lab, pytorch, AWS Step Functions, AWS SQS, Version control: git, DVC, s3, Project management: scrum, kanban, jira
+***Summary:** As the Development Team Lead for an AI team, I played a crucial role in the design and implementation of document processing services for a case-management system for lawyers. The system included an enrichment pipeline that utilized a series of models to classify document types, extract named entities, recognize PDF document layouts, and extract key phrases. My responsibilities also included conducting R&D, prototyping, and implementing machine learning models and metrics to ensure the accuracy and performance of the system.*
 
-***Time:*** June 2021 — July 2021: Integration *Sagemaker*
+***Team size:** ML team 3, project team 12 *****
 
-***Summary:** Introduced ****SageMaker ****for machine learning team. Organized flow how to manage data, track metrics, manage computational resources, work on R&D tasks and create releases to make process transparent for the whole team and reproducible.* 
+**Achievements:**
 
-***Time:*** Feb-2019 — Aug 2020: Implementing, design and leading sub-tracks of machine learning team 
+- Streamlined R&D work in data science, transitioning from research to production
+- Enhanced the performance of the pdf layout recognition pipeline by selecting and tuning libraries
+- Organized data versioning, experiment management, reproducibility, and auto-deployment using DVC, Git, and Jenkins
+- Implemented and automated data labeling, data quality, and reporting process using Apache Airflow and Labelstud.io.
+
+**Technologies:**
+
+- flair, spacy, huggingfaces, nlpaug, sklearn, flask, python, docker, docker-compose, jupyter lab, pytorch, AWS Step Functions, AWS SQS, git, DVC, s3, scrum, kanban, jira, tesseract, ABBYY finereader, elasticsearch.
+
+### **2019 — 2020: Lead Machine Learning Engineer / Search Engineer**
+
+***Summary:*** Worked on ML algorithms, ETL pipelines, model deployment, and result analysis for a legal tech product targeting EU markets. Collaborated with business stakeholders to implement ranking algorithms, language models, document segmentation, and sentence splitting for 4 languages. Created NLP models such as text classification, text segmentation, cross-lingual information retrieval, natural language query understanding, subject domain categorization, key-phrase extraction, and similarity detection.
 
 ***Team size:*** 20+
 
-***Summary:*** Product goals to provide an advanced exploratory search for layers and provide analytics based on the case history. The product is oriented to several EU markets and included a lot of state-of-the-art machine learning research.
-
 **Achievements:**
 
-- Established process how to manage data, experiments, models, and metrics
-- Found problem with the selected approach, proposed and implemented alternative solution then business did a big pivot and used this POC as a core for the whole product.
-- Improved text classification algorithms, organization distributed text preprocessing
-- Implementation named entity recognition algorithms based taxonomy with synonyms, optimized algorithm to work with millions of documents with dictionary 40K
-- Implementation semantic document clustering, based on several criteria's
-- Organized process of how to train and evaluate word-, sentence- and document embedding.
-- The designed architecture of the service, which included model deployment, information storage, and custom business logic to solve the business problem based on model predictions.
+- Developed POC for business validation using Solr and classification models, designed and implemented core service architecture
+- Implemented NER algorithm using taxonomy and synonyms, optimized for millions of documents and 40k terms
+- Improved model performance by 100x without quality degradation through reimplementation and parameter selection
+- Designed API for analytics service, prepared documentation
+- Created prototype for vector-based search at scale using Annoy library, integrated with Solr pipeline
 
-**Responsibilities:**
+**Technologies:**
 
-- Design algorithms, ETL pipelines, define a model deployment strategy and integration with product.
-- Presentations results to the business, requirements clarification, generation technical requirements
-- Organization of multi-level validation of models
-- Data Analytics and Exploratory Data Analysis
-- Implementation service to provide API for the product UI
-- Machine learning models implementation (All models works for 4 European languages DE, NL, IT, PL):
-    - Text classification models for
-    - Cross-lingual information retrieval
-    - Natural language query understanding
-    - Subject domain categorization
-    - Key phrase extraction
-    - Similarity detection
+- flask, python, java, docker, docker-compose, AWS, TensorFlow projector, MLFlow, git, jira, jupyter lab, solr, keras, stanfordnlp, gensim, sklearn, word2vec, BPE embeddings, fasttext, solr, elasticsearch.
 
-**Environment:**
+### 2018 — 2019: Senior Machine Learning Engineer at R&D Team
 
-- flask, python, java, docker, docker-compose, AWS, TensorFlow projector, MLFlow, DVC, git, jira, jupyter lab, solr, keras, stanfordnlp, gensim, sklearn, word2vec, BPE embeddings, fasttext,
-
-### 📎 Senior Teacher of Information Technologies Department — Gomel State Technical University
-
-***Time:*** Sep-2018 — Jun 2019
-
-I was a contributor and main instructor of course: ***Fundamentals of Intelligent Data Analysis***. I was conducting lectures and exercises.
-
-The course contains several sides of Data Mining focused mostly on Natural Language Processing.
-
-- This course includes fundamental theoretical knowledge about Machine Learning and practical oriented exercises using modern NLP and ML tools. Central topics discussed during this course were: fundamentals of machine learning; model performance evaluation, metrics, cross-validation; NLP basics, data cleaning, preprocessing, lemmatization and stemming; developing the pipeline for text classification problem; neural networks for textual analysis
-
-Besides, I was an instructor for a diploma, my students successfully defended their works.
-
-### 💻 Machine Learning Engineer / Senior Software Engineer — EPAM Systems
-
-***Time:*** Jul-2018 — Feb-2019: Implementing and leading R&D team 
+***Summary:*** During this period, I was involved in various AI-related projects and POCs, including work with deep learning, topic modeling, and document categorization, voice bot implementation, document classification, ranking algorithm implementation, and knowledge management. Additionally, I was responsible for deploying and integrating models in production. I collaborated with the business team in the early stages to identify areas where ML could bring value, and developed the ability to quickly prototype to validate business ideas.
 
 ***Team size:*** 5
 
-***Summary:*** This period of works includes AI-related activity which includes many projects and POCs.
-
 **Achievements:**
 
-- Several products were successfully delivered to the customers and integrated with production systems
-
-**Responsibilities:**
-
-- Implementations of AI/ML architectures based on deep learning
-- Topic Modeling and Categorization legal correspondence
-- Text clustering systems
-- Design and implementation of voice bots
-- Implementations algorithms of user input intent detection, building NLU models to find the most relevant answer to a user question.
-- Implementing categorization documents by content and metadata using agglomerative clustering and LDA.
-- Building a system for pattern base categorization legal documents.
-- Design API, implementation ranking algorithms. Implemented fast pattern-based entity search in text documents.
-- Semantic search
-- Natural language query understanding
-- Question answering and semantic facets
-- Similarity detection
-- Word-, sentence- and document embedding, feature engineering
+- Successfully delivered a POC for unsupervised topical extraction for Legal Jurisprudence using LDA and clustering algorithms.
+- Designed, developed, and fine-tuned a platform for automatic topic allocation to legal jurisprudence based on a hierarchical taxonomy, and successfully deployed it in production.
+- Enhanced the quality of the voice bot by implementing vector search algorithms and intent detection.
+- As the first member of the AI team, I helped to establish the AI delivery pipeline to production and was instrumental in hiring additional AI engineers.
+- Improved ML models by training custom language models (word2vec, GloVe)
 
 **Technologies:** 
 
-- tensorflow, keras, sklearn, bigARTM, NLTK, spacy, fasttext, BM25, word2vec, gensim, matplotlib, jupyter notebook, nodejs, java, xslt,  elasticsearch
+Tensorflow, Keras, scikit-learn, bigARTM, NLTK, spaCy, Fasttext, BM25, word2vec, gensim, Matplotlib, Jupyter Notebook, Node.js, Java, XSLT, and Elasticsearch
 
-### 💼 Co-Founder Copeck
+### 2016 — 2018: Senior Software Engineer / Data Engineer
 
-***Time:*** Jul 2017 — Now
+***Summary:** As senior engineer assisted in the migration of a backend research platform for lawyers, which included services, APIs, and a Content Delivery Channel. The platform was designed to perform batch processing of content and metadata and to deliver that content to the search engine for improved accessibility and searchability.* 
+
+***Team size:*** 8
+
+**Achievements:**
+
+- Addressed peak load issues by integrating message brokers as middleware between services.
+- Enhanced delivery quality through the integration of linters, static scanners, and configuring Sonar Cube.
+- Designed and executed a user migration tool to a new system, successfully migrating over 20,000 active users.
+- Diagnosed and resolved memory leak issues using tools such as MAT and jstat.
+- Enhanced system performance by fine-tuning GC parameters, resulting in an increase in throughput.
+- Accelerated services configuration and deployment through integration of Docker and docker-compose for deployment.
+- Received a company award as a "Rising Star" for my dedication and focus on process improvement.
+
+**Technologies:**
+
+Elasticsearch, graph databases, Semantic Web, RDF/OWL, SPARQL Jena-TDB, JBoss Fuse, Tomcat, Apache Fuseki, ELK, Kibana, Sonar, FindBugs, PMD, Checkstyle, Winscp, Bamboo CI, Git, JIRA, Maven, Ant, Linux, Cron, Java 7, Java EE, ActiveMQ, Spring 3, REST, SOAP, Tomcat, JBoss Fuse, Jena, XSLT, RDF, XML, XPath, Semantic Web, JUnit, Cucumber, Camel, Blueprint, Log4J, Lombok.
+
+## 🧑🏻‍🏫 2018 — 2019: Senior Teacher of Information Technologies Department — GSTU by P. Sukhoi
+
+I was a primary instructor and contributor to the course "**Fundamentals of Intelligent Data Analysis,**" where I conducted lectures and exercises. The course covered various aspects of data mining, with a focus on natural language processing. It included fundamental theoretical knowledge about machine learning and practical-oriented exercises using modern NLP and ML tools. 
+
+Central topics discussed during the course were: fundamentals of machine learning; model performance evaluation, metrics, cross-validation; NLP basics, data cleaning, preprocessing, lemmatization, and stemming; developing the pipeline for text classification problem; neural networks for textual analysis.
+
+## 💼 2017 — 2020: Co-Founder Copeck — Loyalty system for SME
+
+***Summary:*** As a co-founder, I played multiple roles including Product Manager, backend developer, architect, and DevOps, in the development of a product for small and near-to-middle retail businesses. 
+
+The product provided client base management with a loyalty system, accounting of purchases, and worker's KPI monitoring. The project underwent several pivots, and ultimately resulted in the implementation of a CRM with personal analytics for small businesses. 
+
+Our solution is easy to integrate, allowing business owners to start using it within minutes and start tracking their sales, collecting client base and managing loyalty program for them. It offers detailed information about the client base and transaction history, simplifies communication with clients, and provides advanced analytics on demand. The product has a Monthly Active User (MAU) of 3,000.
 
 ***Team size:*** 6
-
-***Summary:*** Product for small and near to the middle retail businesses which provide:
-
-- Client base management with a loyalty system
-- Аccounting of purchases
-- Workers KPI monitoring
-
-The project had several pivots and finally, we came up with implementing CRM with personal analytics for small businesses. We provide a simple solution when business owners can integrate our product in several minutes and start using it. We will provide fulfill information about the client base and transaction history, also simplify communications with clients and we do advanced analytics on demand. MAU: 3K
-
-**Technical Descriptions:**
-
-For this project we used many technologies, we had react.js apps and mobile applications implemented in swift and kotlin with backend implemented in java. The current version is pure python and web applications implemented in vue.js.
-
-**Responsibilities:** 
-
-Product Analytics, Architecture, Backend Implementation, OPS, Project Management 
 
 **Technologies:**
 
 Flask, Reactjs, Kotlin, Swift, JUnit, Python,  Vue.js, Linux, Docker, pytest, gitlab ci, Docker/docker-compose, git, maven, Gitlab CI, bash, trello, miro, notion, MongoDb, java 8, Spring Boot, Loki, grafana 
 
-### 💻 Senior Software Engineer / Data Engineer - EPAM Systems
+## 💼 2015 — 2016: Co-Founder of Pharco — B2B **Pha**rmacy **Co**nsultant
 
-***Time:*** Oct 2016 — Jun 2018
-
-***Team size:*** 8
-
-***Summary:*** Content Delivery Chanel intended to perform batch processing of the content and metadata and deliver content to the search engine. This project includes several sub-systems: managing environment configurations, service for managing Table of Content.
-
-**Achievements:**
-
-- Introduced linter and configured Sonar Cube
-- Designed and implemented a user migration tool to a new system. It contained more than 20K active users.
-- Solved problem with peak loads by introducing Message brokers
-
-**Responsibility:**
-
-- Creating resilient data processing pipelines;
-- Implementation of REST/SOAP services for document processing;
-- Performance and memory profiling, heap dump investigation;
-- Implementing tools for personal user data migration;
-- Configuration of services, CI plans, environment;
-- Helping with organization of the development process, branching strategy, and artifacts deployment;
-
-**Technologies:** 
-
-Elasticsearch, graph databases, jena-tdb, jboss fuse, tomcat, apache fuseki, ELK, kibana, sonar, findbug, pmd, checkstyle, pmd, winscp, bamboo ci, git, jira, maven, ant linux, cron, java 7, Java EE, activemq, spring 3, REST, SOAP, tomcat, jboss fuse, jena, xslt, RDF, xml, xpath, semantic web, junit, cucumber, camel, blueprint, sparql, log4j, lombok
-
-### 💼 Co-Founder of Pharco
-
-***Time:*** Oct 2015 — Sep 2016
+***Summary:***  The product was designed to solve several problems, including the **recommendation of related products, which increased sales and enhanced client loyalty, and semantic search, which enabled search by symptoms and provided useful guides, as well as smart filtering for specific clients, such as pregnant women, lactating women, or children**. The product also offered recommendations alternatives based on the official anthology of medicines. The project was partially acquired.   
 
 ***Team size:*** 8
 
-***Summary:*** B2B **Pha**rmacy **Co**nsultant: This product was developed to solve several problems:
-
-- *Recommendation of related products* — the seller gets recommendations, what else could be useful for the client according to his shopping cart — this increase sales and enhance client loyalty
-- *Semantic search*: Search by symptoms and provide useful guides regarding it. Smart filtering for specific clients: pregnant, lactation period, or children. Recommendations alternatives based on the official anthology of medicines.
-
-***Retrospective analysis:** We did quite well to translate complex business requirements to an elegant design, implemented simple UX at the same time we did nice technical solutions to support many business requirements with a simple scalable design. We had a lack of business experience and our communication with customers and go-to-market strategy wasn't so good. Finally, the project was closed because of growth challenges.*
-
-***Technical Description:*** Backend implemented with spring boot. Admin panel developed with AngularJS. Docker was used for project deployment. Nginx is used as a proxy. We also actively used an analytics system to collect user behavior and recognize patterns to detect UX problems and evaluate the usefulness of features.
-
-The project includes various components:
-
-- Re-Ranking system
-- Search component
-- Recommendation system
-- CRM
-
-***Responsibilities:*** Technical Leader — SDLC process organization, code quality control, configured CI/CD, automatization. Backend developer — implementation search system including fuzzy matching, ranking, and search by anthology graph. Also developed a recommendation system based on rules. OPS, configuration servers, proxies, deployment management.
+***Responsibilities:*** As a co-founder, my responsibilities included serving as a Product Manager, Technical Leader, where I organized the SDLC process, controlled code quality, configured CI/CD, and automated processes, Backend developer where I implemented the search system including fuzzy matching, ranking, and search by anthology graph, and developed a recommendation system based on rules, and finally, I was responsible for OPS, server configuration, proxies, and deployment management.
 
 ***Technologies:*** Java 8, Spring MVC, Spring Security, Spring Data, Spring Boot, JSP, For admin-panel was used AngularJS. JPA/Hibernate, QueryDSL, Linux, Docker, JUnit / Spring Test Framework, docker-compose, git, Gradle, maven, Gitlab CI, Jenkins CI, bash, Python for data processing and aggregating from different sources, trello/gitlab issue tracker, Fiddler, MySQL (Used JPA/Hibernate, Spring Data)
 
-### 📎 Senior Instructor (Java) — Educational Center "IT Class"
+## 🧑🏻‍🏫 2015 — 2016: Senior Instructor (Java) — Educational Center "IT Class"
 
-Jun 2015 — Oct 2016
+As a course developer and trainer, I was responsible for creating and delivering a comprehensive Java programming course from scratch. The curriculum consisted of two sections: Basic Java and Java Enterprise Edition (Java EE).  I achieved high student retention and more than half of the students successfully obtained employment in the IT industry.
 
-I was responsible to develop a course to teach programming in java from scratch and conducting training lessons. The course program contained 2 sections: basic Java and Java EE. For the final project, students were implementing web applications that interact with the database and have authorization.
-I had good student retention and more than half of the students got jobs in the IT industry. I had 4 groups, different aged audience.
+## 💼 2015 — 2016: Co-Founder Arenda-online
 
-### 💼 Co-Founder Arenda-online
+As a co-founder, I was responsible for technical product management, DevOPS and  backend development of an aggregation service for collecting advertisements for long-term rent. The service collected advertisements, deduplicated, and normalized them, and provided a search function with ranking, filtering, and sorting results. The project was closed as we were not able to find a suitable match between the product and the market.
 
-***Time:*** 2015 — 2016
+The project included various components such as crawlers that ran on a schedule, a deduplication system that used fuzzy rules to detect the same advertisements from various sources, a RESTful API, a web application developed in React.js, and a server-rendering component based on PhantomJS that allowed us to create pre-rendered versions of the pages to help search crawlers index all pages of our app.
 
 ***Team size:*** 2
 
-***Summary:*** Aggregation service for collecting advertisements for long-term rent. Our service collects advertisements, deduplicates and normalizes them. Provides search with ranking, filtering, and sorting results.
+***Technologies:*** Java, Spring boot, React.js, PaaS OpenShift, maven, git, jsoup, mongodb, ODM morphia, docker, docker-compose, Linux, PhantomJS, Web Crawling, Search Engine Ranking, REST APIs, Product Management, DevOps
 
-***Retrospective analysis:** When we started this project we focused mostly on the technical side and loosed important product and marketing questions. Unfortunately, you can't create a product without talking with clients. We didn't know a lot about Product Management.*
+## 🧑🏻‍🏫 2014 — 2016: Assistant of Information Technologies Department - GSTU by P. Sukhoi
 
-***Technical Description:*** We had implemented with *spring* backend and *react.js* app for UI. Google Analytics and tag manager were used. As data storage was used *MongoDb*, deployed in PaaS OpenShift then migrated to cloud service and *Docker*.
+During my tenure, I contributed to core courses offered by the department. My responsibilities included:
 
-The project includes various components:
+- Improving the existing courses and developing practical exercises.
+- Acting as a lecturer and participating in the examination process.
+- Assisting with the organization of programming competitions.
+- Fundamentals of parallel and multi-process data processing and network applications.
+- Numerical methods for solving differential equations, including the Finite Difference Method and the finite element method.
 
-- Crawlers — run by schedule.
-- Deduplication system — we had the same ads from different sources. This included fuzzy rules to detect the same advertisements from different sources.
-- Restful API
-- Web Application developed in React.js.
-- The *Server-rendering component*, based on PhantomJS — allows us to create pre-rendered versions of the pages to help search crawlers to index all pages of our app.
+# 🧭 Other activities
 
-***Responsibilities:*** Architecture, Backend Implementation, OPS, Product / Project Management
+## 📢 Driving Communities
 
-***Technologies:***  Java, Spring boot, React.js, OpenShift, maven, git, jsoup, ODM morphia, docker, docker-compose, Linux
+- I have a strong background in machine learning and have had the opportunity to develop the first ML training program in my hometown of Gomel (with my friend Pavel Goncharov).
+- I also took initiative to create a local community of 100 people dedicated to the study and development of machine learning.
+- Then I joined the DataZen community and have taken on a leadership role in managing the community's news stream using ML algorithms to prepare digests.
 
-### 📎 Assistant of Information Technologies Department - Gomel State Technical University
+## 🦉 Advising and Mentoring
 
-Aug-2014 — Aug-2016
+I am a seasoned trainer and advisor with experience in a variety of disciplines including Java, Python, and Machine Learning. I have also been actively involved in mentoring activities, providing guidance and direction to individuals and teams.
 
-During my work at the university, I contributed to nearly all courses in our department:
+# 🎓 Education
 
-- Worked on improvements in our courses, had the experience of developing practical exercises.
-- Was a lecturer and stayed involved in the examination process.
-- Helping with the organization of programming competitions.
-
-Essentially I was helping with courses:
-
-- Fundamentals of parallel and multi-process data processing
-- Development of network applications
-- Numerical methods for solving differential equations. Finite Difference Method. finite element method
-- OOP programming in C# and Java
-
-## 🤗 Volunteer Experience
-
-I am actively participating in many activities aimed at growing people, I am glad to help motivated people to develop in the IT-field, I joy to see your shining eyes.
-
-Therefore, I am happy to take part as a participant or organizer for meetups, conferences, hackathons. I'm open to consultations about any related to my experience topics.
-
-### 📢 Driving Community and Conference Speaker
-
-I'm leading the local community, about data science and data mining. Currently, more than 100 people gather for irregular meetups ([https://t.me/ds_gomel_chat](https://t.me/ds_gomel_chat) ). Besides, I'm cooperating with other city-level communities. I regularly have a technical talk.
-
-### 🦉 Advising and Mentoring
-
-I play the role of a trainer and advisor for different disciplines: Java, Python, Machine Learning. Involved in mentoring activities.
-
-### ✒ Contribution to **Education**
-
-I am participating as a consultant for the university and training centers. I'm open to being invited to speak at the university about the current state of the IT industry and related to me topics.
-
-## 🎓 Education
-
-### 👨🏻 PhD (uncompleted) of Sukhoi state technical university of Gomel
+## 👨🏻 2016 — 2020: PhD (uncompleted) of Sukhoi state technical university of Gomel
 
 ***Department*:** 05.13.05 Elements and devices of computer technology and control systems
 
-***Time:*** 2016 — 2020
-
 ***Research domain:*** computer vision, object detection, vehicles tracking, traffic-light management, optimization
 
-***Summary:*** I was focused on the integration of *intellectual analytics and monitoring* systems of road traffic. My research was concentrated on extraction information from the video stream and building optimization models to reduce traffic-load. I was working on optimization models to be deployed on raspberry pi v3 and similar single board computers.
+***Summary:*** During my research, I focused on the integration of intelligent analytics and monitoring systems for road traffic.
 
-Systems as I worked on could be used as a supplementary component to tune already existing imitation models to correct traffic-light regimes.
+My research centered on extracting information from video streams and developing optimization models to reduce traffic load. In a city where all roads and traffic lights are aware of road conditions in real time, the system could dynamically change traffic light regimes to normalize traffic flow.
 
-Stretch goal: A city where all roads and traffic-lights know information about road situations every single moment, the system could dynamically change traffic lights regimes to normalize traffic. It is exciting, is not?
+I worked on optimization models that could be deployed on single-board computers. I developed a prototype for car tracking using OpenCV and deep neural networks, and presented my results at several international conferences, and published several papers on the topic.
 
-### 👦🏻 Master of science of Sukhoi state technical university of Gomel
+## 👦🏻 2014 — 2016: Master of science of Sukhoi state technical university of Gomel
 
 ***Department:*** Mathematical modeling, numerical methods and program complexes
 
-***Time:*** 2014 — 2016 
-
 ***Diploma score:*** 10 (from 10)
 
-***Summary:*** There is a continuation of my bachelor's work. I researched *dynamic transients processes modeling with the finite element method*.
+***Summary:*** As a continuation of my undergraduate studies, I conducted research on the modeling of dynamic transient processes using the Finite Element Method. My research resulted in the development of a modeling application that consisted of the following key components:
 
-Main components of developed modeling application:
+- A solver that employed the Finite Element Method to determine the distribution of heat generated by dynamic loads.
+- A 3D web-based editor that enabled the composition of objects to be modeled and a visualization tool for displaying the results of the modeling process.
 
-- Solver which uses the Finite Element Method to calculate the distribution of heat caused by dynamic load
-- Experiments management system
-- 3D web editor to compose objects to be modeled and visualizer of modeling results
-
-### 👦🏻 Master of Science of Saint Petersburg National Research University of Information Technologies, Mechanics and Optics - ЛИМТУ (при НИУ ИТМО)
+## 👦🏻 2014 — 2016: Master of Science of Saint Petersburg National Research University of Information Technologies, Mechanics and Optics - ЛИМТУ (при НИУ ИТМО)
 
 ***Department:*** Computer Engineering and Design
 
-***Time:*** 2014 — 2016 
-
 ***Diploma score:*** 5 (from 5)
 
-***Summary:*** I learned various approaches on how to *design web applications*, to works with vector and raster graphics.
-As a final project, I implemented a 3D web editor using *WebGL* (Three.js) and angular.js. As a result, this editor was used for other projects dedicated to *mathematical modeling.*
+***Summary:*** I acquired knowledge of various approaches for designing web applications and gained proficiency in working with vector and raster graphics, including the basics of design. My final project involved the implementation of a 3D web editor using WebGL (Three.js) and Angular.js. 
 
-### 👶🏻 Bachelor of Sukhoi State Technical University of Gomel
+## 👶🏻 2009 — 2014: Bachelor of Sukhoi State Technical University of Gomel
 
 ***Department:*** Information Technology
 
-***Time:*** 2009 — 2014
-
 ***Diploma score:*** 10 ****(from 10)
 
-***Summary:*** My student years I had *research experience,* participated in several conferences, and presented thesis's related to my final project.
+***Summary:*** During my student years, I gained **research experience and participated in multiple conferences**. I also presented a thesis related to my final project, which focused on the math modeling of transients processes. This project consisted of two parts: the application of the finite element method to the problem of heating a metal plate under a load, and the development of a software application with a visual editor, experiment management system, and custom math solver for solving problems.
 
-My final project was related to *transients processes modeling*. This project includes two parts:
-
-- Application of the *finite element method* to novice problem of heating a metal plate under a load and
-- Software application with visual editor, experiment management system and custom math solver used to provide problem solutions.
-
-## 📙 Courses
+## 📙 Courses with online certification
 
 - See all
-
+    
+    ### Project Initiation: Starting a Successful Project
+    
+    [https://www.coursera.org/account/accomplishments/certificate/LSLJQ4ZPQJGK](https://www.coursera.org/account/accomplishments/certificate/LSLJQ4ZPQJGK)
+    
+    December 2022 
+    
+    ### Foundations of Project Management
+    
+    [https://www.coursera.org/account/accomplishments/certificate/NF8SSVBW6LFL](https://www.coursera.org/account/accomplishments/certificate/NF8SSVBW6LFL) 
+    
+    November 2022
+    
     ### XINE100 - 001 Introduction to Innovation and Entrepreneurship
-
+    
     [https://learning.stanford.edu/online/course/view.php?id=646](https://learning.stanford.edu/online/course/view.php?id=646)
-
+    
     2020
-
+    
     ### **Digital Dolina**
-
+    
     [https://netology.ru/profile/program/dd-1](https://netology.ru/profile/program/dd-1)
-
+    
     2020
-
+    
     ### School of management by Yandex (Мобилизация» 2017) (self-education)
-
+    
     [https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl](https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl) 
-
+    
     2019
-
+    
     ### Scientific Thinking
-
+    
     [Stepic.org](http://stepic.org/) [](Stepic.org) ([https://stepik.org/certificate/40f4264301b69cdbd8f3c525e23eced4569db5b5.pdf](https://stepik.org/certificate/40f4264301b69cdbd8f3c525e23eced4569db5b5.pdf))
-
+    
     2017
-
+    
     ### Introduction in Machine Learning (Yandex, SHE)
-
+    
     Coursera ( [https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie/](https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie/) )
-
+    
     2017
-
-    ### Основы Angular 2
-
-    [https://www.youtube.com/playlist?list=PLqHlAwsJRxANDZPGvgX4DQCtN1TTUCUxx](https://www.youtube.com/playlist?list=PLqHlAwsJRxANDZPGvgX4DQCtN1TTUCUxx)
-
-    2017
-
+    
     ### Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship (University of Maryland)
-
+    
     Coursera 
-
+    
     2016 
-
-    ### Developing web services in Java (part 1)
-
-    [Stepic.org](http://stepic.org/) ([https://stepic.org/certificate/4d4ed0bd04d05f0d73d4767cffcd79dcb8ff42de.pdf](https://stepic.org/certificate/4d4ed0bd04d05f0d73d4767cffcd79dcb8ff42de.pdf))
-
-    February 2016  
-
-    ### Developing web services in java (part 2)
-
-    [Stepic.org](http://stepic.org/) ([https://stepic.org/certificate/5d92914bf1c0eaa8a87f2ffdfeee4dc75d5fb257.pdf](https://stepic.org/certificate/5d92914bf1c0eaa8a87f2ffdfeee4dc75d5fb257.pdf))
-
-    March 2016
-
+    
     ### Machine Learning
-
+    
     Coursera ([https://www.coursera.org/course/ml](https://www.coursera.org/course/ml))
-
-    April 2015 
-
+    
+    April 2015
+    
     ### Getting and Cleaning Data (john hopkins university)
-
+    
     Coursera ([https://www.coursera.org/learn/data-cleaning](https://www.coursera.org/learn/data-cleaning))
-
+    
     July 2015
-
+    
     ### M101P: MongoDB for Python Developers
-
-    MongoDB, Inc. ([http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7](https://www.notion.so/07078d93ef844636b2fd43d16eaccda7)) 
-
+    
+    MongoDB, Inc. ([http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7](http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7)) 
+    
     July 2015 
-
+    
     ### M101J: MongoDB for Java Developers
-
-    MongoDB, Inc. ([http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b](https://www.notion.so/738aed1cec4a4f5bb980cf97dc79024b))
-
+    
+    MongoDB, Inc. ([http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b](http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b))
+    
     July 2015 
-
+    
     ### edX Honor Code Certificate for Scalable Machine Learning with Spark
-
+    
     edX ([https://s3.amazonaws.com/verify.edx.org/downloads/80f83d397a604a14a63005ba173741cf/Certificate.pdf](https://s3.amazonaws.com/verify.edx.org/downloads/80f83d397a604a14a63005ba173741cf/Certificate.pdf)) 
-
+    
     June 2015
-
+    
     ### Data Science foundations using R (john hopkins university)
-
+    
     Coursera ([https://www.coursera.org/specializations/data-science-foundations-r](https://www.coursera.org/specializations/data-science-foundations-r))
-
+    
     June 2015
-
+    
     ### Линейная алгебра (Linear Algebra) (SHE)
-
+    
     Coursera 
-
+    
     May 2015 
-
+    
     ### The Data Scientist’s Toolbox
-
+    
     Coursera ([https://www.coursera.org/course/datascitoolbox](https://www.coursera.org/course/datascitoolbox))
-
+    
     March 2015
-
+    
     ### Programming Mobile Applications for Android Handheld Systems: Part 1 (University of Maryland)
-
+    
     Coursera
-
+    
     2015
-
-    ### Programming in Java and Java EE by Yakov Fain
-
-    youtube 
-
-    2015
-
+    
     ### **Scalable Microservices with Kubernetes**
-
-    udacity 
-
+    
+    udacity
+    
     2015
 
 [back](./)
