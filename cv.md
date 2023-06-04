@@ -4,8 +4,9 @@ layout: default
 
 # 🤵 Personal Information
 
-**email:** nesterione@gmail.com
-**Linkedin:** https://www.linkedin.com/in/nesterione 
+**email:** Ihar.Nestsiarenia@gmail.com
+
+**linkedin:** [https://www.linkedin.com/in/nesterione/](https://www.linkedin.com/in/nesterione/)
 
 # 📊 Summary
 
@@ -336,5 +337,7 @@ I worked on optimization models that could be deployed on single-board computers
     udacity
     
     2015
+    
+    *last update: March 1, 2023*
 
 [back](./)
