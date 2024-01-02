@@ -5,8 +5,8 @@ layout: default
 ## 🤵 Personal Information
 
 **email:** Ihar.Nestsiarenia@gmail.com
-
 **linkedin:** [https://www.linkedin.com/in/nesterione/](https://www.linkedin.com/in/nesterione/)
+**detailed version:** [CV (Full)](./cv.html)
 
 ## 📊 Summary
 
