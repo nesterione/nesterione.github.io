@@ -10,17 +10,17 @@ layout: default
 
 # 📊 Summary
 
-As an experienced machine learning engineer with over 8 years of industry experience, I possess a product mindset and a proven track record of successfully leading and delivering ML projects from R&D to production.
+As a Machine Learning Engineer with 9 years of experience, I excel in leading ML projects from concept to production, with a strong focus on product development. 
 
-My expertise lies in NLP and related technologies, with a focus on transitioning models from research to production, building search systems, and improving relevancy. Additionally, I am skilled in quickly prototyping to validate business hypotheses.
+Based in Vilnius, Lithuania, I am available for consulting roles and particularly interested in Tech Lead positions in Machine Learning, ideally within dynamic, small product teams.
 
-Currently, I’m based in Lithuania, and considering relocating (priority: IT, UK, NL) and am open to consulting contracts in the MLOps industry.
+My core specialization is NLP and its applications. I have a robust background in evolving NLP technologies, starting from statistical models, progressing to deep learning, and currently focusing on Large Language Models (LLMs). This progression equips me with the insight to judiciously choose between classical ML techniques and LLMs based on project needs. I am adept at rapid prototyping to confirm business assumptions, primarily pivoting towards integrating LLMs in system development.
 
-My experience includes various roles such as team lead, machine learning engineer, delivery manager, product manager, and software engineer. I thrive in small, agile teams that can test ideas quickly, and am also well-versed in building systems and establishing production delivery.
+Throughout my career, I've held diverse roles, including Tech Lead, Machine Learning Engineer, Product Manager, and Software Engineer. I am particularly effective in agile, compact teams, capable of swiftly validating ideas. My expertise extends to system architecture and the implementation of scalable production solutions.
 
 # 🤹 Core Skills
 
-**Domains:** NLP, Information Search, LegalTech, Document processing, OCR,
+**Domains:** NLP, LLMs, Information Search, LegalTech, Information Extraction, OCR
 
 ***MLOps:*** AWS Sagemaker, DVC, MLFlow,
 
@@ -30,7 +30,37 @@ My experience includes various roles such as team lead, machine learning enginee
 
 ## 💻 2018 — now:  EPAM Systems
 
-### 2021 — now: Lead Machine Learning Engineer / MLOps
+### *Aug 2022 - Now*: Machine Learning Engineer / Tech Lead
+
+***Summary:*** Part of the internal AI platform at a large organization, I facilitated the migration of MLOps from a newly acquired company, aligning them with organizational standards. My responsibilities included identifying bottlenecks, defining requirements, developing new features, and leading prototype development. I also led LLM-based prototyping to meet the organization's needs.
+
+**Achievements:**
+
+- **LLM Prototyping:** Developed an LLM-based prototype for technical writers, reducing their workload, shortening the feedback loop with product teams, and enabling faster, high-quality documentation delivery.
+- **Annotation Process:** Designed a document annotation process and developed UI prototypes for new image and OCR annotation types, improving process efficiency after validating with the target team.
+
+**Technologies:** 
+
+Amazon Sagemaker, Amazon Glue, Amazon Textract, GPT-4, Python
+
+### **Mar 2022 — Aug 2022***:* **Machine Learning Engineer / Tech Lead**
+
+***Summary:*** As the Tech Lead for an information extraction team at a US-based insurance company, I stepped in mid-project to streamline processes and meet critical deadlines. My key responsibilities included optimizing backend performance, refining the development and release process, managing requirements, and designing ML systems. My focus was on overcoming technical and process limitations to achieve business objectives. Upon resolving major business challenges, I successfully transitioned leadership to a mentored engineer.
+
+**Achievements:**
+
+- **Development Process:** Revised release processes and CI/CD pipelines, enhancing release stability. Reduced release time from 2 days to 1 hour, ensuring transparency in service releases.
+- **Scaling:** Analyzed and optimized data processing pipelines, leading to a 10x increase in system throughput, crucial for meeting business deadlines. Conducted system analysis, implemented keda-based scaling, significantly improving system efficiency.
+- **Document Indexing:** Designed pipelines for document search preparation and batch processing, enhancing data enrichment and geo-coordinate extraction.
+- **Monitoring:** Implemented data processing dashboards, increasing business transparency in extraction processes.
+- **MLOps Integration:** Introduced minimal MLOps practices, including data pipelines and model registry, stabilizing ML delivery.
+- **Innovation and Training:** Integrated Github Copilot and GPT, coaching the team for efficient use, contributing significantly to meeting project deadlines.
+
+**Technologies:**
+
+Azure, Kubernetes, Keda, Elasticsearch, DEPS, Pytorch, ChatGPT, Github Copilot, Amazon Textract, PostgreSQL
+
+### 2021 — 2023: Lead Machine Learning Engineer / MLOps
 
 ***Summary:*** As a member of the EU product team, I was responsible for utilizing AI to address various challenges faced by legal professionals. This included designing and implementing search algorithms and other models to enhance legal research, as well as developing metrics, conducting experiments, establishing pipelines, and automating repetitive tasks.
 
