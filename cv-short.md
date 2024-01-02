@@ -10,7 +10,24 @@ layout: default
 
 ## 📊 Summary
 
-Experienced machine learning engineer with over 8 years of industry experience, specializing in NLP and related technologies. Proven track record of successfully leading and delivering ML projects from R&D to production. Skilled in transitioning models from research to production, building search systems, and improving relevancy. Strong expertise in MLOps, with proficiency in AWS Sagemaker, DVC, MLFlow, and AI architecture. Currently seeking Tech Lead positions. 
+With a 9-year background in machine learning, specializing in NLP and product development, I excel in leading projects from concept to production. Skilled in rapid prototyping, particularly integrating LLMs into system development, I thrive in agile, small product teams. Seeking Tech Lead roles to leverage my expertise in evolving machine learning technologies.
+
+**Key skills:** NLP, LLMs, Information Search, LegalTech, Information Extraction, OCR, MLOps, AWS Sagemaker
+
+## 🔨 Working Experience
+
+### **Aug 2022 - Now: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
+
+Summary: Responsible for integrating and migrating MLOps from an acquired company, aligning with organizational standards. As part of the team, I'm also leading LLM prototypes for different business purposes.
+
+Key Projects: 
+
+- Developed and led an LLM-based prototyping initiative for technical writers, significantly reducing workload and enhancing documentation quality
+- Designed a document annotation process and developed UI prototypes for new image and OCR annotation types, improving process efficiency after validating with the target team.
+
+Technologies: Amazon Sagemaker, Glue, Textract, LLMs (GPT-4), Python.
+
+### **Mar 2022 - Aug 2022: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
 
 ## 🔨 Working Experience
 
