@@ -29,9 +29,19 @@ Technologies: Amazon Sagemaker, Glue, Textract, LLMs (GPT-4), Python.
 
 ### **Mar 2022 - Aug 2022: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
 
-## 🔨 Working Experience
+Summary: Stepped in as Tech Lead mid-project for a U.S.-based insurance company's information extraction team, focusing on optimizing backend processes and ML system design. Managed technical and process limitations to meet business deadlines.
 
-### 2021 — now: Lead Machine Learning Engineer / MLOps (EPAM Systems)
+Achievements: 
+
+- Overhauled development and release processes, reducing release time from 2 days to 1 hour.
+- Improved system throughput by 10x, crucial for meeting project deadlines.
+- Designed and implemented document search preparation and batch processing pipelines.
+- Established data processing dashboards for better business transparency.
+- Introduced MLOps practices, stabilizing ML delivery.
+
+Technologies: Azure, Kubernetes, Keda, Elasticsearch, DEPS, Pytorch, ChatGPT, Github Copilot, Amazon Textract, PostgreSQL
+
+### 2021 — Mar 2022: Lead Machine Learning Engineer / MLOps (EPAM Systems)
 
 Summary: Responsible for utilizing AI to address challenges faced by legal professionals, including designing and implementing search algorithms, developing metrics, establishing pipelines, and automating tasks. Integrated SageMaker, streamlined development process with pipelines, and improved delivery with MLOps practices.
 
