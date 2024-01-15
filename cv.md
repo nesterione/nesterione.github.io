@@ -30,7 +30,7 @@ Throughout my career, I've held diverse roles, including Tech Lead, Machine Lear
 
 ## 💻 2018 — now:  EPAM Systems
 
-### *Aug 2022 - Now*: Machine Learning Engineer / Tech Lead
+### *Aug 2023 - Now*: Machine Learning Engineer / Tech Lead
 
 ***Summary:*** As Part of the internal AI platform at a large organization, I facilitated the migration of MLOps from a newly acquired company, aligning them with organizational standards. My responsibilities included identifying bottlenecks, defining requirements, developing new features, and leading prototype development. I also led LLM-based prototyping to meet the organization's needs.
 
@@ -44,7 +44,7 @@ Throughout my career, I've held diverse roles, including Tech Lead, Machine Lear
 
 Amazon Sagemaker, Amazon Glue, Amazon Textract, GPT-4, Python
 
-### **Mar 2022 — Aug 2022***:* **Machine Learning Engineer / Tech Lead**
+### *Mar 2022 — Aug 2023:* Machine Learning Engineer / Tech Lead
 
 ***Summary:*** As the Tech Lead for an information extraction team at a US-based insurance company, I stepped in mid-project to streamline processes and meet critical deadlines. My key responsibilities included optimizing backend performance, refining the development and release process, managing requirements, and designing ML systems. My focus was on overcoming technical and process limitations to achieve business objectives. Upon resolving major business challenges, I successfully transitioned leadership to a mentored engineer.
 
