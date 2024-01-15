@@ -16,18 +16,19 @@ With a 9-year background in machine learning, specializing in NLP and product de
 
 ## 🔨 Working Experience
 
-### **Aug 2022 - Now: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
+### **Aug 2023 - Now: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
 
 Summary: Responsible for integrating and migrating MLOps from an acquired company, aligning with organizational standards. As part of the team, I'm also leading LLM prototypes for different business purposes.
 
 Key Projects: 
 
 - Developed and led an LLM-based prototyping initiative for technical writers, significantly reducing workload and enhancing documentation quality
+- Refined the LLM call strategy, leading to a 10x increase in processing throughput, enhancing system efficiency and performance.
 - Designed a document annotation process and developed UI prototypes for new image and OCR annotation types, improving process efficiency after validating with the target team.
 
 Technologies: Amazon Sagemaker, Glue, Textract, LLMs (GPT-4), Python.
 
-### **Mar 2022 - Aug 2022: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
+### **Mar 2022 - Aug 2023: Machine Learning Engineer / Tech Lead (**EPAM Systems**)**
 
 Summary: Stepped in as Tech Lead mid-project for a U.S.-based insurance company's information extraction team, focusing on optimizing backend processes and ML system design. Managed technical and process limitations to meet business deadlines.
 
