@@ -32,11 +32,12 @@ Throughout my career, I've held diverse roles, including Tech Lead, Machine Lear
 
 ### *Aug 2022 - Now*: Machine Learning Engineer / Tech Lead
 
-***Summary:*** Part of the internal AI platform at a large organization, I facilitated the migration of MLOps from a newly acquired company, aligning them with organizational standards. My responsibilities included identifying bottlenecks, defining requirements, developing new features, and leading prototype development. I also led LLM-based prototyping to meet the organization's needs.
+***Summary:*** As Part of the internal AI platform at a large organization, I facilitated the migration of MLOps from a newly acquired company, aligning them with organizational standards. My responsibilities included identifying bottlenecks, defining requirements, developing new features, and leading prototype development. I also led LLM-based prototyping to meet the organization's needs.
 
 **Achievements:**
 
 - **LLM Prototyping:** Developed an LLM-based prototype for technical writers, reducing their workload, shortening the feedback loop with product teams, and enabling faster, high-quality documentation delivery.
+- **LLM Optimization:** Refined the LLM call strategy, leading to a 10x increase in processing throughput, enhancing system efficiency and performance.
 - **Annotation Process:** Designed a document annotation process and developed UI prototypes for new image and OCR annotation types, improving process efficiency after validating with the target team.
 
 **Technologies:** 
