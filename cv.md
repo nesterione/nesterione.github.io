@@ -37,7 +37,7 @@ Throughout my career, I've held diverse roles, including Tech Lead, Machine Lear
 **Achievements:**
 
 - **LLM Prototyping:** Developed an LLM-based prototype for technical writers, reducing their workload, shortening the feedback loop with product teams, and enabling faster, high-quality documentation delivery.
-- **LLM Optimization:** Refined the LLM call strategy, leading to a 10x increase in processing throughput, enhancing system efficiency and performance.
+- **LLM Optimization:** Refined the LLM call strategy, leading to a 11x increase in processing throughput, enhancing system efficiency and performance.
 - **Annotation Process:** Designed a document annotation process and developed UI prototypes for new image and OCR annotation types, improving process efficiency after validating with the target team.
 
 **Technologies:** 
