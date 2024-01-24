@@ -35,7 +35,7 @@ Summary: Stepped in as Tech Lead mid-project for a U.S.-based insurance company'
 Achievements: 
 
 - Overhauled development and release processes, reducing release time from 2 days to 1 hour.
-- Improved system throughput by 10x, crucial for meeting project deadlines.
+- Improved system throughput by 11x, crucial for meeting project deadlines.
 - Designed and implemented document search preparation and batch processing pipelines.
 - Established data processing dashboards for better business transparency.
 - Introduced MLOps practices, stabilizing ML delivery.
