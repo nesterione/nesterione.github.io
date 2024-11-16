@@ -10,95 +10,131 @@ layout: default
 
 # 📊 Summary
 
-As a Machine Learning Engineer with 9 years of experience, I excel in leading ML projects from concept to production, with a strong focus on product development. 
+Experienced Machine Learning Engineer with over 10 years of leading ML projects from concept to production. Specializing in Natural Language Processing, Document processing, and Search technologies. Proficient in the full spectrum of NLP—from statistical models to deep learning and Large Language Models. Skilled at rapid prototyping and building scalable solutions from scratch to validate business ideas.
 
-Based in Vilnius, Lithuania, I am available for consulting roles and particularly interested in Tech Lead positions in Machine Learning, ideally within dynamic, small product teams.
+Roles have included Staff Engineer, Machine Learning Engineer, and AI Architect, with a current focus on technical implementation and system design. I excel in agile, compact teams, efficiently validating ideas and delivering production-ready solutions.
 
-My core specialization is NLP and its applications. I have a robust background in evolving NLP technologies, starting from statistical models, progressing to deep learning, and currently focusing on Large Language Models (LLMs). This progression equips me with the insight to judiciously choose between classical ML techniques and LLMs based on project needs. I am adept at rapid prototyping to confirm business assumptions, primarily pivoting towards integrating LLMs in system development.
+Open to consulting and mentoring opportunities, passionate about sharing knowledge and helping others grow in the AI field.
 
-Throughout my career, I've held diverse roles, including Tech Lead, Machine Learning Engineer, Product Manager, and Software Engineer. I am particularly effective in agile, compact teams, capable of swiftly validating ideas. My expertise extends to system architecture and the implementation of scalable production solutions.
 
 # 🤹 Core Skills
 
-**Domains:** NLP, LLMs, Information Search, LegalTech, Information Extraction, OCR
+**Domains:** NLP, LLMs, Information Search, LegalTech, Information Extraction, OCR, Document Processing, Prototyping, Rapid Development, MLOps, LLMOps
 
-***MLOps:*** AWS Sagemaker, DVC, MLFlow,
+**Technologies:** Python, Java, TensorFlow, PyTorch, Elasticsearch, Solr, LangChain, LangGraph, Argo, Langfuse, SageMaker, AWS, GCP, Azure, OpenAI API, GPT-4, Vector Databases (Qdrant, Chroma), MLOps Practices, CI/CD Pipelines, Git, DVC, Kubernetes, Docker
 
-***Core Languages:*** Python, Java
 
-# 🔨 Working Experience:
+# 🔨 Professional Experience:
 
 ## 💻 2018 — now:  EPAM Systems
 
-### *Aug 2023 - Now*: Machine Learning Engineer / Tech Lead
 
-***Summary:*** As Part of the internal AI platform at a large organization, I facilitated the migration of MLOps from a newly acquired company, aligning them with organizational standards. My responsibilities included identifying bottlenecks, defining requirements, developing new features, and leading prototype development. I also led LLM-based prototyping to meet the organization's needs.
+### **July 2024 - Now**: Staff AI Engineer / AI Architect in R&D Lab
 
-**Achievements:**
+- Leading development of GenAI applications tailored to internal business units
+- Driving R&D for emerging GenAI solutions and establishing best practices
+- Enhancing codebases with software engineering best practices for modularity
+- Mentoring team members and conducting workshops to share knowledge
 
-- **LLM Prototyping:** Developed an LLM-based prototype for technical writers, reducing their workload, shortening the feedback loop with product teams, and enabling faster, high-quality documentation delivery.
-- **LLM Optimization:** Refined the LLM call strategy, leading to a 11x increase in processing throughput, enhancing system efficiency and performance.
-- **Annotation Process:** Designed a document annotation process and developed UI prototypes for new image and OCR annotation types, improving process efficiency after validating with the target team.
+Achievements:
+- Natural Language Query Prototype: Created a prototype translating natural language into Elasticsearch queries
+- Vector Database Standards: Set guidelines for selecting vector databases based on project needs
+- Retrieval Evaluation Template: Developed a standardized template, accelerating experimentation for teams
+- Enhanced GenAI Codebase: Improved codebase with best practices for reusability and low coupling.
+- Multi-Agent Systems Template: Designed a template adopted by other teams to speed up development
+- Workshops and Training: Conducted sessions on building RAG systems and GenAI application evaluation.
 
 **Technologies:** 
+Kubernetes, vLLM, GCP, Qdrant, Chroma, LangGraph, LangChain, Argo, Langfuse
 
-Amazon Sagemaker, Amazon Glue, Amazon Textract, GPT-4, Python
+### **July 2024 - Now**: Staff AI Engineer / AI Architect
+
+- Transforming business challenges into AI solutions, building AI delivery processes from scratch.
+- Designing tech stacks, organizing tech processes, developing AI strategies, and mentoring teams
+- Designed multiple RAG systems for legal, code, and documentation assistance
+- Developed agentic architectures for scalable AI systems
+
+
+Achievements: 
+- Legal Assistant Development: Architected a legal assistant with a robust evaluation process.
+- Code Assistant Development: Evolved a code assistant from a basic model to an agentic system.
+- GenAI Application Management: Created a robust design integrating vector databases and workflow management.
+
+**Technologies:** 
+Elasticsearch, Chroma, Azure, Qdrant, LangGraph, LangChain, Argo, Langfuse
+
+
+### *Aug 2023 - July 2024*: Machine Learning Engineer / AI Engineer
+
+***Summary:*** 
+- Facilitated migration of ML ecosystems from an acquired companies.
+- Identified bottlenecks, defined requirements, and led prototype development.
+- Developed AI prototypes to improve internal processes using GenAI tools
+
+**Achievements:**
+- Content Scraping Agents: Designed a system using agentic architecture for faster parser implementation.
+- Agent for technical writers: Created an LLM-based prototype for technical writers, reducing workload.
+- LLM Pipeline Optimization: Achieved an 11x increase in processing throughput.
+- Annotation Process Improvement: Designed a new annotation process with improved UI prototypes.
+  
+**Technologies:** 
+AWS SageMaker, AWS Glue, AWS Textract, GPT-4, Python, OpenAI API
 
 ### *Mar 2022 — Aug 2023:* Machine Learning Engineer / Tech Lead
 
-***Summary:*** As the Tech Lead for an information extraction team at a US-based insurance company, I stepped in mid-project to streamline processes and meet critical deadlines. My key responsibilities included optimizing backend performance, refining the development and release process, managing requirements, and designing ML systems. My focus was on overcoming technical and process limitations to achieve business objectives. Upon resolving major business challenges, I successfully transitioned leadership to a mentored engineer.
+- Tech Lead for an information extraction team at a US-based insurance company.
+- Streamlined processes to meet critical deadlines.
+- Optimized backend performance, refined development processes, and designed ML systems.
 
 **Achievements:**
 
-- **Development Process:** Revised release processes and CI/CD pipelines, enhancing release stability. Reduced release time from 2 days to 1 hour, ensuring transparency in service releases.
-- **Scaling:** Analyzed and optimized data processing pipelines, leading to a 10x increase in system throughput, crucial for meeting business deadlines. Conducted system analysis, implemented keda-based scaling, significantly improving system efficiency.
+- **Process Improvement**: Reduced release time from 2 days to 1 hour.
+- **System Scaling:** Increased system throughput by 10x.
 - **Document Indexing:** Designed pipelines for document search preparation and batch processing, enhancing data enrichment and geo-coordinate extraction.
 - **Monitoring:** Implemented data processing dashboards, increasing business transparency in extraction processes.
 - **MLOps Integration:** Introduced minimal MLOps practices, including data pipelines and model registry, stabilizing ML delivery.
-- **Innovation and Training:** Integrated Github Copilot and GPT, coaching the team for efficient use, contributing significantly to meeting project deadlines.
+- Innovation and Training: Integrated GitHub Copilot and GPT, coaching the team.
 
 **Technologies:**
+Azure, Kubernetes, Keda, Elasticsearch, DEPS, PyTorch, ChatGPT, GitHub Copilot, AWS Textract, PostgreSQL
 
-Azure, Kubernetes, Keda, Elasticsearch, DEPS, Pytorch, ChatGPT, Github Copilot, Amazon Textract, PostgreSQL
+### 2021 — 2023: Machine Learning Engineer
 
-### 2021 — 2023: Lead Machine Learning Engineer / MLOps
-
-***Summary:*** As a member of the EU product team, I was responsible for utilizing AI to address various challenges faced by legal professionals. This included designing and implementing search algorithms and other models to enhance legal research, as well as developing metrics, conducting experiments, establishing pipelines, and automating repetitive tasks.
+- Part of the EU product team, solving challenges for legal research problem using AI.
+- Designed and implemented search algorithms and models to enhance legal research.
+- Developed metrics, conducted experiments, established pipelines, and automated tasks
 
 **Achievements:**
 
-- Integrated SageMaker, streamlined development process with pipelines, improved delivery with MLOPS practices, accelerated development
-- Implemented MLOPS practices to improve delivery, including maintaining data, code, models, and documentation, which led to an acceleration in development.
-- Improved ML development process with criteria, goals, metrics, and a metrics framework for tracking product metrics and experimentation.
-- Utilized active learning approach and introduced data quality control measures.
-- Led hackathon team to runner-up prizes, implemented ideas to improve the product.
+- SageMaker Integration: Streamlined development with pipelines and MLOps practices.
+- ML Development Improvement: Established metrics and a framework for product tracking.
+- Active Learning: Introduced data quality control measures.
+- Evaluation pipelines: Designed and implemented evaluation pipelines for system performance.
+- Hackathon Success: Led team to runner-up prizes and implemented ideas.
 
 **Technologies:**
+TensorFlow, Keras, scikit-learn, spaCy, BM25, Word2Vec, Solr, DVC, SageMaker, Python, Docker
 
-Tensorflow, Keras, scikit-learn, spaCy, BM25, word2vec, Solr, DVC, Sagemaker, Python, Docker
+### 2020 — 2021: Machine Learning Engineer / AI Architect
 
-### 2020 — 2021: Lead Machine Learning Engineer / AI Architect
-
-***Summary:** As the Development Team Lead for an AI team, I played a crucial role in the design and implementation of document processing services for a case-management system for lawyers. The system included an enrichment pipeline that utilized a series of models to classify document types, extract named entities, recognize PDF document layouts, and extract key phrases. My responsibilities also included conducting R&D, prototyping, and implementing machine learning models and metrics to ensure the accuracy and performance of the system.*
-
-***Team size:** ML team 3, project team 12 *****
+- Development Team Lead for an AI team building document processing services.
+- Implemented an enrichment pipeline with models for classification, entity extraction, and layout recognition
 
 **Achievements:**
 
-- Streamlined R&D work in data science, transitioning from research to production
-- Enhanced the performance of the pdf layout recognition pipeline by selecting and tuning libraries
-- Organized data versioning, experiment management, reproducibility, and auto-deployment using DVC, Git, and Jenkins
-- Implemented and automated data labeling, data quality, and reporting process using Apache Airflow and Labelstud.io.
+- R&D to Production: Streamlined transition of research work to production. Delivered solution replaced 3rd party services.
+- PDF Layout Recognition: Enhanced pipeline performance.
+- Data Management: Organized data versioning and experiment reproducibility.
+- Data Labeling: Implemented and automated data labeling, data quality, and reporting process using Apache Airflow and Labelstud.io.
 
 **Technologies:**
 
 - flair, spacy, huggingfaces, nlpaug, sklearn, flask, python, docker, docker-compose, jupyter lab, pytorch, AWS Step Functions, AWS SQS, git, DVC, s3, scrum, kanban, jira, tesseract, ABBYY finereader, elasticsearch.
 
-### **2019 — 2020: Lead Machine Learning Engineer / Search Engineer**
+### **2019 — 2020: Machine Learning Engineer**
 
-***Summary:*** Worked on ML algorithms, ETL pipelines, model deployment, and result analysis for a legal tech product targeting EU markets. Collaborated with business stakeholders to implement ranking algorithms, language models, document segmentation, and sentence splitting for 4 languages. Created NLP models such as text classification, text segmentation, cross-lingual information retrieval, natural language query understanding, subject domain categorization, key-phrase extraction, and similarity detection.
-
-***Team size:*** 20+
+- Worked on ML algorithms, ETL pipelines, model deployment, and analysis for a legal tech product.
+- Implemented ranking algorithms and classifications models for multiple languages.
 
 **Achievements:**
 
@@ -112,11 +148,10 @@ Tensorflow, Keras, scikit-learn, spaCy, BM25, word2vec, Solr, DVC, Sagemaker, Py
 
 - flask, python, java, docker, docker-compose, AWS, TensorFlow projector, MLFlow, git, jira, jupyter lab, solr, keras, stanfordnlp, gensim, sklearn, word2vec, BPE embeddings, fasttext, solr, elasticsearch.
 
-### 2018 — 2019: Senior Machine Learning Engineer at R&D Team
+### 2018 — 2019: Machine Learning Engineer at R&D Team
 
-***Summary:*** During this period, I was involved in various AI-related projects and POCs, including work with deep learning, topic modeling, and document categorization, voice bot implementation, document classification, ranking algorithm implementation, and knowledge management. Additionally, I was responsible for deploying and integrating models in production. I collaborated with the business team in the early stages to identify areas where ML could bring value, and developed the ability to quickly prototype to validate business ideas.
-
-***Team size:*** 5
+- Involved in AI projects like deep learning, topic modeling, document categorization, and voice bots.
+- Deployed and integrated models in production, rapidly prototyping solutions.
 
 **Achievements:**
 
@@ -132,9 +167,8 @@ Tensorflow, Keras, scikit-learn, bigARTM, NLTK, spaCy, Fasttext, BM25, word2vec,
 
 ### 2016 — 2018: Senior Software Engineer / Data Engineer
 
-***Summary:** As senior engineer assisted in the migration of a backend research platform for lawyers, which included services, APIs, and a Content Delivery Channel. The platform was designed to perform batch processing of content and metadata and to deliver that content to the search engine for improved accessibility and searchability.* 
-
-***Team size:*** 8
+- Assisted in migrating a backend research platform for lawyers.
+- Performed batch processing of content and improved search accessibility.
 
 **Achievements:**
 
@@ -257,118 +291,6 @@ I worked on optimization models that could be deployed on single-board computers
 
 ***Summary:*** During my student years, I gained **research experience and participated in multiple conferences**. I also presented a thesis related to my final project, which focused on the math modeling of transients processes. This project consisted of two parts: the application of the finite element method to the problem of heating a metal plate under a load, and the development of a software application with a visual editor, experiment management system, and custom math solver for solving problems.
 
-## 📙 Courses with online certification
 
-- See all
-    
-    ### Project Initiation: Starting a Successful Project
-    
-    [https://www.coursera.org/account/accomplishments/certificate/LSLJQ4ZPQJGK](https://www.coursera.org/account/accomplishments/certificate/LSLJQ4ZPQJGK)
-    
-    December 2022 
-    
-    ### Foundations of Project Management
-    
-    [https://www.coursera.org/account/accomplishments/certificate/NF8SSVBW6LFL](https://www.coursera.org/account/accomplishments/certificate/NF8SSVBW6LFL) 
-    
-    November 2022
-    
-    ### XINE100 - 001 Introduction to Innovation and Entrepreneurship
-    
-    [https://learning.stanford.edu/online/course/view.php?id=646](https://learning.stanford.edu/online/course/view.php?id=646)
-    
-    2020
-    
-    ### **Digital Dolina**
-    
-    [https://netology.ru/profile/program/dd-1](https://netology.ru/profile/program/dd-1)
-    
-    2020
-    
-    ### School of management by Yandex (Мобилизация» 2017) (self-education)
-    
-    [https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl](https://www.youtube.com/watch?v=yvSKcDrNYgw&list=PLEs8EuAPI73Bj78n7-BIW3s1we0r15yJl) 
-    
-    2019
-    
-    ### Scientific Thinking
-    
-    [Stepic.org](http://stepic.org/) [](Stepic.org) ([https://stepik.org/certificate/40f4264301b69cdbd8f3c525e23eced4569db5b5.pdf](https://stepik.org/certificate/40f4264301b69cdbd8f3c525e23eced4569db5b5.pdf))
-    
-    2017
-    
-    ### Introduction in Machine Learning (Yandex, SHE)
-    
-    Coursera ( [https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie/](https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie/) )
-    
-    2017
-    
-    ### Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship (University of Maryland)
-    
-    Coursera 
-    
-    2016 
-    
-    ### Machine Learning
-    
-    Coursera ([https://www.coursera.org/course/ml](https://www.coursera.org/course/ml))
-    
-    April 2015
-    
-    ### Getting and Cleaning Data (john hopkins university)
-    
-    Coursera ([https://www.coursera.org/learn/data-cleaning](https://www.coursera.org/learn/data-cleaning))
-    
-    July 2015
-    
-    ### M101P: MongoDB for Python Developers
-    
-    MongoDB, Inc. ([http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7](http://university.mongodb.com/course_completion/07078d93ef844636b2fd43d16eaccda7)) 
-    
-    July 2015 
-    
-    ### M101J: MongoDB for Java Developers
-    
-    MongoDB, Inc. ([http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b](http://university.mongodb.com/course_completion/738aed1cec4a4f5bb980cf97dc79024b))
-    
-    July 2015 
-    
-    ### edX Honor Code Certificate for Scalable Machine Learning with Spark
-    
-    edX ([https://s3.amazonaws.com/verify.edx.org/downloads/80f83d397a604a14a63005ba173741cf/Certificate.pdf](https://s3.amazonaws.com/verify.edx.org/downloads/80f83d397a604a14a63005ba173741cf/Certificate.pdf)) 
-    
-    June 2015
-    
-    ### Data Science foundations using R (john hopkins university)
-    
-    Coursera ([https://www.coursera.org/specializations/data-science-foundations-r](https://www.coursera.org/specializations/data-science-foundations-r))
-    
-    June 2015
-    
-    ### Линейная алгебра (Linear Algebra) (SHE)
-    
-    Coursera 
-    
-    May 2015 
-    
-    ### The Data Scientist’s Toolbox
-    
-    Coursera ([https://www.coursera.org/course/datascitoolbox](https://www.coursera.org/course/datascitoolbox))
-    
-    March 2015
-    
-    ### Programming Mobile Applications for Android Handheld Systems: Part 1 (University of Maryland)
-    
-    Coursera
-    
-    2015
-    
-    ### **Scalable Microservices with Kubernetes**
-    
-    udacity
-    
-    2015
-    
-    *last update: March 1, 2023*
 
 [back](./)
