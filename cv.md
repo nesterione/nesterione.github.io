@@ -4,9 +4,10 @@ layout: default
 
 # 🤵 Personal Information
 
-**email:** Ihar.Nestsiarenia@gmail.com
+**Full name:** Ihar Nestsiarenia 
+**Current role:** Machine Learning Engineer / Head of Machine Learning EPAM LT/LV
 
-**linkedin:** [https://www.linkedin.com/in/nesterione/](https://www.linkedin.com/in/nesterione/)
+**LinkedIn:** [https://www.linkedin.com/in/nesterione/](https://www.linkedin.com/in/nesterione/)
 
 # 📊 Summary
 
@@ -29,7 +30,7 @@ Open to consulting and mentoring opportunities, passionate about sharing knowled
 ## 💻 2018 — now:  EPAM Systems
 
 
-### **July 2024 - Now**: Staff AI Engineer / AI Architect in R&D Lab
+### **July 2024 - Now**: Lead AI Engineer at R&D Lab / AI Architect
 
 - Leading development of GenAI applications tailored to internal business units
 - Driving R&D for emerging GenAI solutions and establishing best practices
@@ -47,7 +48,7 @@ Achievements:
 **Technologies:** 
 Kubernetes, vLLM, GCP, Qdrant, Chroma, LangGraph, LangChain, Argo, Langfuse
 
-### **July 2024 - Now**: Staff AI Engineer / AI Architect
+### **July 2024 - Now**: Lead AI Engineer / AI Architect
 
 - Transforming business challenges into AI solutions, building AI delivery processes from scratch.
 - Designing tech stacks, organizing tech processes, developing AI strategies, and mentoring teams
@@ -64,7 +65,7 @@ Achievements:
 Elasticsearch, Chroma, Azure, Qdrant, LangGraph, LangChain, Argo, Langfuse
 
 
-### *Aug 2023 - July 2024*: Machine Learning Engineer / AI Engineer
+### *Aug 2023 - June 2024*: Machine Learning Engineer / AI Engineer
 
 ***Summary:*** 
 - Facilitated migration of ML ecosystems from an acquired companies.
@@ -117,7 +118,7 @@ TensorFlow, Keras, scikit-learn, spaCy, BM25, Word2Vec, Solr, DVC, SageMaker, Py
 
 ### 2020 — 2021: Machine Learning Engineer / AI Architect
 
-- Development Team Lead for an AI team building document processing services.
+- Development Team Lead for an AI team building document processing services, including systems design, model development, and productivization, creating ML infrastructure.
 - Implemented an enrichment pipeline with models for classification, entity extraction, and layout recognition
 
 **Achievements:**
