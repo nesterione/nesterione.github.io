@@ -30,7 +30,7 @@ Open to consulting and mentoring opportunities, passionate about sharing knowled
 ## 💻 2018 — now:  EPAM Systems
 
 
-### **July 2024 - Now**: Lead AI Engineer at R&D Lab / AI Architect
+### **July 2024 - Now**: Staff AI Engineer at R&D Lab
 
 - Leading development of GenAI applications tailored to internal business units
 - Driving R&D for emerging GenAI solutions and establishing best practices
