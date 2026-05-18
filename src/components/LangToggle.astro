@@ -1,0 +1,31 @@
+---
+import type { Lang } from '../i18n/ui';
+import { languages } from '../i18n/ui';
+
+interface Props {
+  current: Lang;
+  /** URL path in the other language, e.g. "/en/posts/llm-wiki/". Falls back to that language's home. */
+  alternates: Partial<Record<Lang, string>>;
+}
+
+const { current, alternates } = Astro.props;
+
+const order: Lang[] = ['ru', 'en'];
+---
+
+<nav class="lang" aria-label="Language">
+  {order.map((lang, i) => {
+    const isCurrent = lang === current;
+    const href = isCurrent ? null : (alternates[lang] ?? `/${lang}/`);
+    return (
+      <>
+        {i > 0 && <span class="sep">·</span>}
+        {isCurrent ? (
+          <span class="active" aria-current="true">{languages[lang]}</span>
+        ) : (
+          <a href={href!} hreflang={lang}>{languages[lang]}</a>
+        )}
+      </>
+    );
+  })}
+</nav>

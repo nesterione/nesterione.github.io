@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import PostList from '../../../components/PostList.astro';
+import { ui } from '../../../i18n/ui';
+
+const lang = 'en' as const;
+const t = ui[lang];
+const posts = await getCollection('posts', (p) => p.data.lang === lang);
+---
+
+<Base
+  lang={lang}
+  title={t.nav_posts}
+  description="All notes."
+  alternates={{ ru: '/ru/posts/', en: '/en/posts/' }}
+>
+  <h1>{t.all_posts}</h1>
+  {posts.length === 0
+    ? <p>{t.no_posts}</p>
+    : <PostList posts={posts} lang={lang} />}
+</Base>

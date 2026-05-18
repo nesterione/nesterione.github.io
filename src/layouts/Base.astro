@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import LangToggle from '../components/LangToggle.astro';
+import type { Lang } from '../i18n/ui';
+import { ui } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  /** URL paths in the other language; if missing, the toggle falls back to that language's home. */
+  alternates?: Partial<Record<Lang, string>>;
+}
+
+const { lang, title, description, alternates = {} } = Astro.props;
+
+const t = ui[lang];
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const fullTitle = title === t.brand ? title : `${title} — ${t.brand}`;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>{fullTitle}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title={`${t.brand} — RU`} href="/rss-ru.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${t.brand} — EN`} href="/rss-en.xml" />
+    {Object.entries({ ru: alternates.ru ?? '/ru/', en: alternates.en ?? '/en/' }).map(([l, href]) => (
+      <link rel="alternate" hreflang={l} href={new URL(href, Astro.site).toString()} />
+    ))}
+  </head>
+  <body>
+    <div class="page">
+      <header class="site">
+        <a href={`/${lang}/`} class="brand">{t.brand}</a>
+        <LangToggle current={lang} alternates={alternates} />
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer class="site">
+        <span>© {new Date().getFullYear()} {t.brand}</span>
+        <span>
+          <a href={`/rss-${lang}.xml`}>{t.rss}</a>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>

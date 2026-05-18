@@ -1,0 +1,36 @@
+---
+import Base from './Base.astro';
+import type { Lang } from '../i18n/ui';
+import { ui, formatDate } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  date: Date;
+  description?: string;
+  telegram_url?: string;
+  alternates?: Partial<Record<Lang, string>>;
+}
+
+const { lang, title, date, description, telegram_url, alternates } = Astro.props;
+const t = ui[lang];
+---
+
+<Base lang={lang} title={title} description={description} alternates={alternates}>
+  <article>
+    <h1>{title}</h1>
+    <time class="post-meta" datetime={date.toISOString().slice(0, 10)}>
+      {formatDate(date, lang)}
+    </time>
+    <div class="post-content">
+      <slot />
+    </div>
+    {telegram_url && (
+      <div class="post-footer">
+        <a href={telegram_url} rel="noopener noreferrer">
+          {t.originally_on_telegram} →
+        </a>
+      </div>
+    )}
+  </article>
+</Base>

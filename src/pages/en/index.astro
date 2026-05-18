@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { ui } from '../../i18n/ui';
+
+const lang = 'en' as const;
+const t = ui[lang];
+const posts = await getCollection('posts', (p) => p.data.lang === lang);
+const recent = posts
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 5);
+---
+
+<Base
+  lang={lang}
+  title={t.brand}
+  description="Personal site of Ihar Nestsiarenia: notes on AI, engineering, and product thinking."
+  alternates={{ ru: '/ru/', en: '/en/' }}
+>
+  <section class="hero">
+    <h1>{t.brand}</h1>
+    <p>Designed by curiosity.</p>
+  </section>
+
+  <nav class="links" aria-label="External links">
+    <a href="https://github.com/nesterione" rel="me noopener">GitHub</a>
+    <span class="sep">·</span>
+    <a href="https://www.linkedin.com/in/nesterione/" rel="me noopener">LinkedIn</a>
+    <span class="sep">·</span>
+    <a href="https://t.me/bayesian_noise" rel="me noopener">Telegram</a>
+  </nav>
+
+  <h2 class="section-label">{t.recent}</h2>
+  <PostList posts={recent} lang={lang} />
+</Base>

@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { Lang } from '../i18n/ui';
+import { formatDate } from '../i18n/ui';
+import { baseSlug } from '../utils/posts';
+
+interface Props {
+  posts: CollectionEntry<'posts'>[];
+  lang: Lang;
+}
+
+const { posts, lang } = Astro.props;
+
+const sorted = [...posts].sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+---
+
+<ul class="post-list">
+  {sorted.map((post) => (
+    <li>
+      <time datetime={post.data.date.toISOString().slice(0, 10)}>
+        {formatDate(post.data.date, lang)}
+      </time>
+      <a href={`/${lang}/posts/${baseSlug(post)}/`}>{post.data.title}</a>
+    </li>
+  ))}
+</ul>

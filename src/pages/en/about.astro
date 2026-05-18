@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ui } from '../../i18n/ui';
+
+const lang = 'en' as const;
+const t = ui[lang];
+---
+
+<Base
+  lang={lang}
+  title={t.nav_about}
+  description="About Ihar Nestsiarenia — what I do and what I write about."
+  alternates={{ ru: '/ru/about/', en: '/en/about/' }}
+>
+  <h1>About</h1>
+
+  <p>
+    I'm Ihar Nestsiarenia. Staff AI Engineer and Head of AI Baltics at EPAM (Lithuania, Latvia).
+    I've spent more than ten years taking ML and AI projects from concept to production.
+  </p>
+
+  <p>
+    My current focus is multi-agent systems, agentic coding, and quality in LLM applications
+    (eval-driven CI, agent graphs, observability infrastructure). Alongside delivery, I run the
+    AI engineering practice in the Baltics — hiring, mentoring, and programs for engineers.
+  </p>
+
+  <p>
+    Here I write short notes about what I notice in AI work: not news, not surveys —
+    observations that I myself find useful. Full work history lives on
+    <a href="https://www.linkedin.com/in/nesterione/" rel="me noopener">LinkedIn</a>.
+  </p>
+
+  <h2>Elsewhere</h2>
+  <ul>
+    <li><a href="https://github.com/nesterione" rel="me noopener">GitHub</a> — code and experiments</li>
+    <li><a href="https://www.linkedin.com/in/nesterione/" rel="me noopener">LinkedIn</a> — work history and the occasional thought</li>
+    <li><a href="https://t.me/bayesian_noise" rel="me noopener">Telegram: bayesian_noise</a> — short notes; often the original source for posts here</li>
+  </ul>
+
+  <p style="color: var(--color-muted); font-size: 14px;">
+    Open to consulting and mentoring.
+  </p>
+</Base>

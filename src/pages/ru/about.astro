@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import { ui } from '../../i18n/ui';
+
+const lang = 'ru' as const;
+const t = ui[lang];
+---
+
+<Base
+  lang={lang}
+  title={t.nav_about}
+  description="Об Игоре Нестеренко — что я делаю и о чём пишу."
+  alternates={{ ru: '/ru/about/', en: '/en/about/' }}
+>
+  <h1>Об авторе</h1>
+
+  <p>
+    Игорь Нестеренко. Staff AI Engineer и Head of AI Baltics в EPAM (Литва, Латвия).
+    Больше десяти лет веду ML- и AI-проекты — от концепта до прода.
+  </p>
+
+  <p>
+    Сейчас фокус — мульти-агентные системы, агентский кодинг и качество в LLM-приложениях
+    (eval-driven CI, графы агентов, инфраструктура наблюдаемости). Помимо доставки —
+    практика AI-инженерии в Балтиках: найм, менторство, программы для инженеров.
+  </p>
+
+  <p>
+    Здесь я пишу короткие заметки о том, что вижу в работе с ИИ: не новости и не обзоры,
+    а наблюдения, которые помогают мне самому. Долгая история работы — на
+    <a href="https://www.linkedin.com/in/nesterione/" rel="me noopener">LinkedIn</a>.
+  </p>
+
+  <h2>Где меня найти</h2>
+  <ul>
+    <li><a href="https://github.com/nesterione" rel="me noopener">GitHub</a> — код и эксперименты</li>
+    <li><a href="https://www.linkedin.com/in/nesterione/" rel="me noopener">LinkedIn</a> — рабочая история и иногда мысли</li>
+    <li><a href="https://t.me/bayesian_noise" rel="me noopener">Telegram: bayesian_noise</a> — короткие заметки, часто первичный источник постов отсюда</li>
+  </ul>
+
+  <p style="color: var(--color-muted); font-size: 14px;">
+    Открыт к консалтингу и менторству.
+  </p>
+</Base>

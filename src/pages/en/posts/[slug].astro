@@ -1,0 +1,43 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Post from '../../../layouts/Post.astro';
+import { baseSlug } from '../../../utils/posts';
+
+export async function getStaticPaths() {
+  const all = await getCollection('posts');
+  return all
+    .filter((p) => p.data.lang === 'en')
+    .map((entry) => ({
+      params: { slug: baseSlug(entry) },
+      props: { entry, all },
+    }));
+}
+
+interface Props {
+  entry: CollectionEntry<'posts'>;
+  all: CollectionEntry<'posts'>[];
+}
+
+const { entry, all } = Astro.props;
+const slug = baseSlug(entry);
+const { Content } = await entry.render();
+
+const ruCounterpart = all.find(
+  (p) => p.data.lang === 'ru' && baseSlug(p) === slug,
+);
+const alternates = {
+  ru: ruCounterpart ? `/ru/posts/${slug}/` : '/ru/',
+  en: `/en/posts/${slug}/`,
+};
+---
+
+<Post
+  lang="en"
+  title={entry.data.title}
+  date={entry.data.date}
+  description={entry.data.description}
+  telegram_url={entry.data.telegram_url}
+  alternates={alternates}
+>
+  <Content />
+</Post>
