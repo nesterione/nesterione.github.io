@@ -1,7 +1,14 @@
 ---
 import Base from './Base.astro';
+import TableOfContents from '../components/TableOfContents.astro';
 import type { Lang } from '../i18n/ui';
 import { ui, formatDate } from '../i18n/ui';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
 
 interface Props {
   lang: Lang;
@@ -10,13 +17,15 @@ interface Props {
   description?: string;
   telegram_url?: string;
   alternates?: Partial<Record<Lang, string>>;
+  headings?: Heading[];
 }
 
-const { lang, title, date, description, telegram_url, alternates } = Astro.props;
+const { lang, title, date, description, telegram_url, alternates, headings = [] } = Astro.props;
 const t = ui[lang];
 ---
 
 <Base lang={lang} title={title} description={description} alternates={alternates}>
+  <TableOfContents lang={lang} headings={headings} />
   <article>
     <h1>{title}</h1>
     <time class="post-meta" datetime={date.toISOString().slice(0, 10)}>

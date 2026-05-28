@@ -1,0 +1,107 @@
+---
+import type { Lang } from '../i18n/ui';
+import { ui } from '../i18n/ui';
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  lang: Lang;
+  headings: Heading[];
+}
+
+const { lang, headings } = Astro.props;
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+
+interface Node extends Heading {
+  children: Heading[];
+}
+
+const tree: Node[] = [];
+for (const h of items) {
+  if (h.depth === 2) {
+    tree.push({ ...h, children: [] });
+  } else if (tree.length > 0) {
+    tree[tree.length - 1].children.push(h);
+  }
+}
+
+const label = ui[lang].toc;
+---
+
+{items.length >= 2 && (
+  <aside class="post-toc" aria-label={label}>
+    <nav class="toc">
+      <p class="toc-label">{label}</p>
+      <ul>
+        {tree.map((node) => (
+          <li>
+            <a href={`#${node.slug}`} data-toc-slug={node.slug}>{node.text}</a>
+            {node.children.length > 0 && (
+              <ul>
+                {node.children.map((child) => (
+                  <li>
+                    <a href={`#${child.slug}`} data-toc-slug={child.slug}>{child.text}</a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </aside>
+)}
+
+<script>
+  const tocLinks = document.querySelectorAll<HTMLAnchorElement>('.post-toc a[data-toc-slug]');
+  if (tocLinks.length > 0) {
+    const linkBySlug = new Map<string, HTMLAnchorElement>();
+    tocLinks.forEach((a) => {
+      const slug = a.dataset.tocSlug;
+      if (slug) linkBySlug.set(slug, a);
+    });
+
+    const targets: HTMLElement[] = [];
+    linkBySlug.forEach((_, slug) => {
+      const el = document.getElementById(slug);
+      if (el) targets.push(el);
+    });
+
+    let activeSlug: string | null = null;
+    const setActive = (slug: string | null) => {
+      if (slug === activeSlug) return;
+      if (activeSlug) linkBySlug.get(activeSlug)?.classList.remove('is-active');
+      activeSlug = slug;
+      if (slug) linkBySlug.get(slug)?.classList.add('is-active');
+    };
+
+    const visible = new Set<string>();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          const slug = entry.target.id;
+          if (entry.isIntersecting) visible.add(slug);
+          else visible.delete(slug);
+        }
+        if (visible.size > 0) {
+          const firstVisible = targets.find((t) => visible.has(t.id));
+          if (firstVisible) setActive(firstVisible.id);
+        } else {
+          let above: string | null = null;
+          for (const t of targets) {
+            if (t.getBoundingClientRect().top < 0) above = t.id;
+            else break;
+          }
+          setActive(above);
+        }
+      },
+      { rootMargin: '-80px 0px -70% 0px', threshold: 0 },
+    );
+
+    targets.forEach((t) => observer.observe(t));
+  }
+</script>

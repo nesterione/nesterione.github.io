@@ -20,7 +20,7 @@ interface Props {
 
 const { entry, all } = Astro.props;
 const slug = baseSlug(entry);
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
 
 const enCounterpart = all.find(
   (p) => p.data.lang === 'en' && baseSlug(p) === slug,
@@ -38,6 +38,7 @@ const alternates = {
   description={entry.data.description}
   telegram_url={entry.data.telegram_url}
   alternates={alternates}
+  headings={headings}
 >
   <Content />
 </Post>

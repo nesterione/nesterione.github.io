@@ -16,6 +16,7 @@ export const ui = {
     originally_on_telegram: 'Изначально в Telegram',
     rss: 'RSS',
     no_posts: 'Пока ничего нет.',
+    toc: 'Содержание',
   },
   en: {
     brand: 'Ihar Nestsiarenia',
@@ -27,6 +28,7 @@ export const ui = {
     originally_on_telegram: 'Originally on Telegram',
     rss: 'RSS',
     no_posts: 'Nothing here yet.',
+    toc: 'Contents',
   },
 } as const;
 
